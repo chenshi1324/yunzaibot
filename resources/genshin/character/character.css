@@ -1,0 +1,609 @@
+
+@font-face {
+    font-family: 'HWZhongSong';
+    src: url('../../ys/字体/华文中宋.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tttgbnumber';
+    src: url('../../ys/字体/tttgbnumber.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    font-size: 16px;
+    color:#FFF;
+    font-family: 'tttgbnumber';
+    transform: scale(1.60);
+    transform-origin: 0 0;
+}
+.container{
+    width: 480px;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.role_box{
+    width: 480px;
+    padding: 5px 10px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+.title_box{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+.title{
+    font-size: 36px;
+    display: flex;
+    align-items: flex-end;
+}
+.role_name{
+    font-family: 'HWZhongSong';
+}
+.lv{
+
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.uid{
+    margin-left: 3px;
+}
+.title_right{
+    display: flex;
+}
+.title_right .item{
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+.detail{
+    margin-left: 5px;
+    width: 300px;
+    margin-top:3px;
+    padding: 5px 0;
+    display: flex;
+    position: relative;
+}
+.detail::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0) 100%);
+    width: 0%;
+    height: 1px;
+    top: 0;
+    left: -15px;
+    width: 300px;
+    opacity: 1;
+    transition: width 0.3s 0.1s, opacity 0.3s 0.1s;
+}
+.detail::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0) 100%);
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: -15px;
+    width: 300px;
+    opacity: 1;
+    transition: width 0.3s 0.1s, opacity 0.3s 0.1s;
+}
+.detail p{
+    margin-right:10px;
+    line-height: 20px;
+}
+.star{
+    width: 16px;
+    vertical-align: -2px;
+    margin-right: 1px;
+}
+.equiv{
+    margin-top: 12px;
+    min-height: 120px;
+}
+.row{
+    width: 240px;
+    display: flex;
+    flex-wrap:wrap ;
+    /*margin-bottom: 5px;*/
+}
+.row .item{
+    margin: 0 10px 8px 10px;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+    background: rgba(0,0,0,.6);
+    border-radius:5px;
+    height: 52px;
+    width: 52px;
+    position:relative;
+}
+.row .item .num{
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    font-size: 12px;
+    /*background: rgba(0,0,0,.6);*/
+    border-radius: 5px;
+    padding: 1px 5px;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    --bg-opacity: 0.75;
+    border-radius: 9999px;
+}
+.weapon_num{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    /*background: #ff4d4d;
+    background: rgba(0,0,0,.6);*/
+    border-radius:5px;
+    padding: 1px 3px;
+    background-color: rgba(0, 0, 0, var(--bg-opacity));
+    --bg-opacity: 0.75;
+}
+.row .item .img_box{
+    width: 46px;
+    height: 46px;
+    border: 1px solid #d3bc8d;
+    border-radius:5px;
+    overflow: hidden;
+}
+.row .item img{
+    width: 100%;
+    transform: scale(1.2, 1.2);    
+}
+.equiv_info{
+    max-width: 410px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 5px 1px 7px;
+    border-radius: 10px;
+    background: linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),rgba(114,102,104,.3);
+}
+.equiv_info .text{
+    margin-bottom: 5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.温迪_bg1{
+    background-image: url('../../ys/角色背景/温迪1.png');
+    background-size: auto  100%;
+    background-position: 100% 0%;
+    
+}
+.温迪_bg2{
+    background-image: url(../../ys/角色背景/温迪2.png);
+    background-size: 150%;
+    background-position: -25% 0%;
+}
+.阿贝多_bg1{
+    background-image: url(../../ys/角色背景/阿贝多1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+    
+}
+.阿贝多_bg2{
+    background-image: url(../../ys/角色背景/阿贝多2.png);
+    background-size: 135%;
+    background-position: -10% 15%;
+}
+.安柏_bg1{
+    background-image: url(../../ys/角色背景/安柏1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.安柏_bg2{
+    background-image: url(../../ys/角色背景/安柏2.png);
+    background-size: 110%;
+    background-position: -103% -1%;
+}
+.芭芭拉_bg1{
+    background-image: url(../../ys/角色背景/芭芭拉1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.芭芭拉_bg2{
+    background-image: url(../../ys/角色背景/芭芭拉2.png);
+    background-size: 110%;
+    background-position: -133% -107%;
+}
+.班尼特_bg1{
+    background-image: url(../../ys/角色背景/班尼特1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.班尼特_bg2{
+    background-image: url(../../ys/角色背景/班尼特2.png);
+    background-size: 120%;
+    background-position: -59% -9%;
+}
+.迪奥娜_bg1{
+    background-image: url(../../ys/角色背景/迪奥娜1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.迪奥娜_bg2{
+    background-image: url(../../ys/角色背景/迪奥娜2.png);
+    background-size: 120%;
+    background-position: -59% -9%;
+}
+.迪卢克_bg1{
+    background-image: url(../../ys/角色背景/迪卢克1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.迪卢克_bg2{
+    background-image: url(../../ys/角色背景/迪卢克2.png);
+    background-size: 120%;
+    background-position: -59% -9%;
+}
+.菲谢尔_bg1{
+    background-image: url(../../ys/角色背景/菲谢尔1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.菲谢尔_bg2{
+    background-image: url(../../ys/角色背景/菲谢尔2.png);
+    background-size: 120%;
+    background-position: -33% -9%;
+}
+.凯亚_bg1{
+    background-image: url(../../ys/角色背景/凯亚1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.凯亚_bg2{
+    background-image: url(../../ys/角色背景/凯亚2.png);
+    background-size: 120%;
+    background-position: -33% -9%;
+}
+.可莉_bg1{
+    background-image: url(../../ys/角色背景/可莉1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.可莉_bg2{
+    background-image: url(../../ys/角色背景/可莉2.png);
+    background-size: 120%;
+    background-position: -29% -9%;
+}
+.雷泽_bg1{
+    background-image: url(../../ys/角色背景/雷泽1.png);
+    background-size: auto  100%;
+    background-position: 37% 0%;
+}
+.雷泽_bg2{
+    background-image: url(../../ys/角色背景/雷泽2.png);
+    background-size: 136%;
+    background-position: -43% 220%;
+}
+.丽莎_bg1{
+    background-image: url(../../ys/角色背景/丽莎1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.丽莎_bg2{
+    background-image: url(../../ys/角色背景/丽莎2.png);
+    background-size: 120%;
+    background-position: -34% 47%;
+}
+.莫娜_bg1{
+    background-image: url(../../ys/角色背景/莫娜1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.莫娜_bg2{
+    background-image: url(../../ys/角色背景/莫娜2.png);
+    background-size: 120%;
+    background-position: -34% 47%;
+}
+.诺艾尔_bg1{
+    background-image: url(../../ys/角色背景/诺艾尔1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.诺艾尔_bg2{
+    background-image: url(../../ys/角色背景/诺艾尔2.png);
+    background-size: 130%;
+    background-position: -9% 32%;
+}
+.琴_bg1{
+    background-image: url(../../ys/角色背景/琴1.png);
+    background-size: auto  100%;
+    /*background-position: 100% 0%;*/
+}
+.琴_bg2{
+    background-image: url(../../ys/角色背景/琴2.png);
+    background-size: 130%;
+    background-position: -9% 32%;
+}
+.砂糖_bg1{
+    background-image: url(../../ys/角色背景/砂糖1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.砂糖_bg2{
+    background-image: url(../../ys/角色背景/砂糖2.png);
+    background-size: 120%;
+    background-position: -25% -2%;
+}
+.北斗_bg1{
+    background-image: url(../../ys/角色背景/北斗1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.北斗_bg2{
+    background-image: url(../../ys/角色背景/北斗2.png);
+    background-size: 115%;
+    background-position: -46% -2%;
+}
+.达达利亚_bg1{
+    background-image: url(../../ys/角色背景/达达利亚1.png);
+    background-size: auto  100%;
+    background-position: 40% 0%;
+}
+.达达利亚_bg2{
+    background-image: url(../../ys/角色背景/达达利亚2.png);
+    background-size: 115%;
+    background-position: -46% -2%;
+}
+.甘雨_bg1{
+    background-image: url(../../ys/角色背景/甘雨1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.甘雨_bg2{
+    background-image: url(../../ys/角色背景/甘雨2.png);
+    background-size: 120%;
+    background-position: -59% 22%;
+}
+.行秋_bg1{
+    background-image: url(../../ys/角色背景/行秋1.png);
+    background-size: auto  100%;
+    background-position: 100% 0%;
+}
+.行秋_bg2{
+    background-image: url(../../ys/角色背景/行秋2.png);
+    background-size: 110%;
+    background-position: -129% 51%;
+}
+.胡桃_bg1{
+    background-image: url(../../ys/角色背景/胡桃1.png);
+    background-size: auto 100%;
+    background-position: 34% 0%;
+}
+.胡桃_bg2{
+    background-image: url(../../ys/角色背景/胡桃2.png);
+    background-size: 120%;
+    background-position: -51% 9%;
+}
+.刻晴_bg1{
+    background-image: url(../../ys/角色背景/刻晴1.png);
+    background-size: auto 100%;
+    /*background-position: 34% 0%;*/
+}
+.刻晴_bg2{
+    background-image: url(../../ys/角色背景/刻晴2.png);
+    background-size: 130%;
+    background-position: -9% 30%;
+}
+.凝光_bg1{
+    background-image: url(../../ys/角色背景/凝光1.png);
+    background-size: auto 100%;
+    /*background-position: 34% 0%;*/
+}
+.凝光_bg2{
+    background-image: url(../../ys/角色背景/凝光2.png);
+    background-size: 125%;
+    background-position: -20% 17%;
+}
+.七七_bg1{
+    background-image: url(../../ys/角色背景/七七1.png);
+    background-size: auto 100%;
+    /*background-position: 34% 0%;*/
+}
+.七七_bg2{
+    background-image: url(../../ys/角色背景/七七2.png);
+    background-size: 130%;
+    background-position: -1% 14%;
+}
+.香菱_bg1{
+    background-image: url(../../ys/角色背景/香菱1.png);
+    background-size: auto 100%;
+    background-position: 34% 0%;
+}
+.香菱_bg2{
+    background-image: url(../../ys/角色背景/香菱2.png);
+    background-size: 130%;
+    background-position: -1% 14%;
+}
+.魈_bg1{
+    background-image: url(../../ys/角色背景/魈1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.魈_bg2{
+    background-image: url(../../ys/角色背景/魈2.png);
+    background-size: 120%;
+    background-position: 35% 14%;
+}
+.辛焱_bg1{
+    background-image: url(../../ys/角色背景/辛焱1.png);
+    background-size: auto 100%;
+    background-position: 42% 0%;
+}
+.辛焱_bg2{
+    background-image: url(../../ys/角色背景/辛焱2.png);
+    background-size: 110%;
+    background-position: -98% 0%;
+}
+.钟离_bg1{
+    background-image: url(../../ys/角色背景/钟离1.png);
+    background-size: auto 100%;
+    background-position: 95% 0%;
+}
+.钟离_bg2{
+    background-image: url(../../ys/角色背景/钟离2.png);
+    background-size: 130%;
+    background-position: -5% 0%;
+}
+.重云_bg1{
+    background-image: url(../../ys/角色背景/重云1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.重云_bg2{
+    background-image: url(../../ys/角色背景/重云2.png);
+    background-size: 130%;
+    background-position: -12% 0%;
+}
+.罗莎莉亚_bg1{
+    background-image: url(../../ys/角色背景/罗莎莉亚1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.罗莎莉亚_bg2{
+    background-image: url(../../ys/角色背景/罗莎莉亚2.png);
+    background-size: 120%;
+    background-position: -63% 0%;
+}
+.空_bg1{
+    background-image: url(../../ys/角色背景/空1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.空_bg2{
+    background-image: url(../../ys/角色背景/空2.png);
+    background-size: 80%;
+    background-position: 180% -1%;
+}
+.荧_bg1{
+    background-image: url(../../ys/角色背景/荧1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.荧_bg2{
+    background-image: url(../../ys/角色背景/荧2.png);
+    background-size: 80%;
+    background-position: 180% 17%;
+}
+.烟绯_bg1{
+    background-image: url(../../ys/角色背景/烟绯1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.烟绯_bg2{
+    background-image: url(../../ys/角色背景/烟绯2.png);
+    background-size: 110%;
+    background-position: -178% 8%;
+}
+.优菈_bg1{
+    background-image: url(../../ys/角色背景/优菈1.png);
+    background-size: auto 100%;
+    background-position: 85% 0%;
+}
+.优菈_bg2{
+    background-image: url(../../ys/角色背景/优菈2.png);
+    background-size: 110%;
+    background-position: -76% 100%;
+}
+.枫原万叶_bg1{
+    background-image: url(../../ys/角色背景/枫原万叶1.png);
+    background-size: auto 100%;
+    background-position: 85% 0%;
+}
+.枫原万叶_bg2{
+    background-image: url(../../ys/角色背景/枫原万叶2.png);
+    background-size: 95%;
+    background-position: 345% 100%;
+}
+.神里绫华_bg1{
+    background-image: url(../../ys/角色背景/神里绫华1.png);
+    background-size: auto 100%;
+    background-position: 85% 0%;
+}
+.神里绫华_bg2{
+    background-image: url(../../ys/角色背景/神里绫华2.png);
+    background-size: 103%;
+    background-position: -680% 0%;
+}
+.宵宫_bg1{
+    background-image: url(../../ys/角色背景/宵宫1.png);
+    background-size: auto 100%;
+    background-position: 34% 0%;
+}
+.宵宫_bg2{
+    background-image: url(../../ys/角色背景/宵宫2.png);
+    background-size: 120%;
+    background-position: 10% 9%;
+}
+.早柚_bg1{
+    background-image: url(../../ys/角色背景/早柚1.png);
+    background-size: auto 100%;
+    background-position: 34% 0%;
+}
+.早柚_bg2{
+    background-image: url(../../ys/角色背景/早柚2.png);
+    background-size: 135%;
+    background-position: -29% 16%;
+}
+.雷电将军_bg1{
+    background-image: url(../../ys/角色背景/雷电将军22.png);
+    background-size: auto 100%;
+    background-position: 15% 0%;
+}
+.雷电将军_bg22{
+    background-image: url(../../ys/角色背景/雷电将军22.png);
+    background-size: auto 100%;
+    background-position: 15% 0%;
+}
+.雷电将军_bg2{
+    background-image: url(../../ys/角色背景/雷电将军2.png);
+    background-size: 120%;
+    background-position: -50% 15%;
+}
+.九条裟罗_bg1{
+    background-image: url(../../ys/角色背景/九条裟罗1.png);
+    background-size: auto 100%;
+    background-position: 47% 0%;
+}
+.九条裟罗_bg2{
+    background-image: url(../../ys/角色背景/九条裟罗2.png);
+    background-size: 120%;
+    background-position: -28% 15%;
+}
+.埃洛伊_bg1{
+    background-image: url(../../ys/角色背景/埃洛伊1.png);
+    background-size: auto 100%;
+    background-position: 0% 0%;
+}
+.埃洛伊_bg2{
+    background-image: url(../../ys/角色背景/埃洛伊2.png);
+    background-size: 120%;
+    background-position: -38% 15%;
+}
+.珊瑚宫心海_bg1{
+    background-image: url(../../ys/角色背景/珊瑚宫心海1.png);
+    background-size: auto 100%;
+    background-position: 100% 0%;
+}
+.珊瑚宫心海_bg2{
+    background-image: url(../../ys/角色背景/珊瑚宫心海2.png);
+    background-size: 110%;
+    background-position: -180% 0%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../resources/genshin/role/role.css?v=1.0"
+    />
+  </head>
+  <body>
+    <style></style>
+    <div class="container" id="container">
+      <div class="base_info">
+        <div class="uid">ID: {{uid}} （{{activeDay}}天）</div>
+      </div>
+      <div class="data_box">
+        {{each line val}}
+        <div class="data_line">
+          {{each val item}}
+          <div class="data_line_item">
+            <div class="num">{{item.num}}</div>
+            <div class="lable">{{item.lable}}</div>
+          </div>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+      <div class="explor_box">
+        {{each explor val}}
+        <div class="item">
+          <img class="icon" src="../../../../resources/genshin/role/{{val.name}}.png" />
+          <div class="content">
+            <p class="name">{{val.name}}：{{val.exploration_percentage}}%</p>
+            <div class="progress">
+              <div
+                class="bar"
+                style="width: {{val.exploration_percentage}}%;"
+              ></div>
+            </div>
+            {{ if val.name!='雪山'}}
+            <p class="prestige">声望：{{val.level}}级</p>
+            {{/if}} {{ if val.offerings}}
+            <p>{{val.offerings.name}}等级：{{val.offerings.level}}级</p>
+            {{/if}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript"></script>
+</html>

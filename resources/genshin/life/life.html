@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../resources/genshin/life/life.css?v=1.0"
+    />
+  </head>
+  <body>
+    <style></style>
+    <div class="container" id="container">
+      <div class="base_info">ID: {{uid}} {{type}}星：{{num}}个</div>
+      <div class="item_box">
+        {{each list val}}
+        <div class="item">
+          <div class="role_box">
+            {{ if val.actived_constellation_num>0}}
+            <span class="life life{{val.actived_constellation_num}}">
+              {{val.actived_constellation_num}}命
+            </span>
+            {{/if}}
+            <div class="bg{{val.rarity}}"></div>
+            <img
+              class="role_img"
+              src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+              onerror="whenError(this)"
+            />
+            <div class="desc">Lv.{{val.level}}</div>
+            <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+          </div>
+          <div class="role_name">{{val.name}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function whenError(a) {
+      a.onerror = null;
+      a.src = "../../../../resources/genshin/logo/role/荧.png";
+    }
+  </script>
+</html>

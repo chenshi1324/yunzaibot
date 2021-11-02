@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "tttgbnumber";
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-size: 18px;
+  color: #1e1f20;
+  font-family: PingFangSC-Medium, PingFang SC, sans-serif;
+  transform: scale(1.25);
+  transform-origin: 0 0;
+}
+.container {
+  width: 480px;
+  padding: 10px 15px;
+}
+.base_info {
+  position: relative;
+  padding-left: 10px;
+}
+.uid:before {
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 24px;
+  border-radius: 1px;
+  left: 0;
+  top: 0;
+  background: #d3bc8d;
+}
+.data_box {
+  border: 1px solid #d3bc8d;
+  border-radius: 7px;
+  margin-top: 10px;
+  padding: 10px 15px 0px 15px;
+  background: #f8f8f8;
+}
+.data_line {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 14px;
+}
+.data_line_item {
+  width: 100px;
+  text-align: center;
+  /*margin: 0 20px;*/
+}
+.num {
+  font-family: tttgbnumber;
+  font-size: 22px;
+}
+.lable {
+  font-size: 14px;
+  color: #7f858a;
+  line-height: 1;
+  margin-top: 3px;
+}
+.explor_box {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.explor_box .item {
+  margin-top: 10px;
+  /*margin-right: 10px;*/
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  width: 220px;
+  height: 100px;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1;
+  background: #394467 url(./world-exploration-frame.png) center center
+    no-repeat;
+  background-origin: content-box;
+  background-size: contain;
+}
+.explor_box .icon {
+  width: 62px;
+}
+.explor_box .content {
+  margin-left: 5px;
+  width: 130px;
+}
+.explor_box .content p {
+  margin: 6px 0;
+}
+.explor_box .name {
+  color: #fff;
+  font-weight: 500;
+}
+.progress {
+  position: relative;
+  width: 120px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.progress .value {
+  position: absolute;
+  right: 0;
+  top: -14px;
+  font-size: 12px;
+}
+.progress .bar {
+  height: 100%;
+  background-color: #d3bc8d;
+}
+.explor_box .prestige {
+  color: #1e1f20;
+  background: #e9e5dc;
+  width: 88px;
+  border-radius: 2px;
+  padding: 3px 7px;
+}
+.homes_hidden {
+  display: none;
+}

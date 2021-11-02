@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../resources/genshin/weapon/weapon.css?v=1.0"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="base_info">ID: {{uid}}</div>
+      <div class="item_box">
+        {{each list val}}
+        <div class="item">
+          <span class="user">
+            <img
+              class="user_img"
+              src="../../../../resources/genshin/logo/side/{{val.role_name}}.png"
+            />
+          </span>
+          <div class="role_box">
+            {{ if val.affix_level>1}}
+            <span class="life life{{val.affix_level}}">
+                {{val.affix_level}}
+            </span>
+            {{/if}}
+            <div class="bg{{val.rarity}}"></div>
+            <img
+              class="role_img"
+              src="../../../../resources/genshin/logo/weapon/{{val.name}}.png"
+              onerror="whenError(this)"
+            />
+            <div class="desc">Lv.{{val.level}}</div>
+            <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+          </div>
+          <div class="role_name">{{val.name}}</div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function whenError(a) {
+      a.onerror = null;
+      a.src = "../../../../resources/genshin/logo/weapon/旅行剑.png";
+    }
+  </script>
+</html>

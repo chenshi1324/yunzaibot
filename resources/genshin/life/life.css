@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'tttgbnumber';
+    src: url("../../font/tttgbnumber.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    font-size: 12px;
+    color: #1e1f20;
+    max-width: 575px;
+    font-family: PingFangSC-Medium,PingFang SC,sans-serif;
+    transform: scale(1.5);
+    transform-origin: 0 0;
+}
+.container{
+    float:left;
+    min-width: 210px;
+    padding-right: 10px;
+    /*border: 1px solid #333;*/
+    padding-top: 7px;
+    background-color: #ececec;
+}
+.base_info{
+    /*width:  200px;*/
+    margin: 0 0 10px 10px;
+    font-size: 16px;
+}
+.item_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 65px;
+    margin: 0px 0 10px 15px;    
+
+}
+.role_box {
+    overflow: hidden;
+    height: 80px;
+    border-radius: 5px;
+    position: relative;
+    /*border: 2px solid #d3bc8d;*/
+    background: #e9e5dc;
+    box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%)    
+}
+.role_box .role_img{
+    width: 100%;
+    overflow:hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    /*filter: contrast(95%);*/
+
+}
+.bg105{ 
+    background-image: url(./bg105.png);
+    width: 100%;
+    height: 70px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ .bg5{ 
+    background-image: url(./bg5.png);
+    width: 100%;
+    height: 70px;
+    /*filter: brightness(1.1);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg4{ 
+    width: 100%;
+    height: 70px;
+    background-image: url(./bg4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.role_box .fill_img{ 
+    position: absolute;
+    width: 15px;
+    right: 0;
+    bottom: 17px;
+}
+.role_box .desc{
+    font-weight: 500;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    bottom: 0;
+    background: #e9e5dc;
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+}
+.role_name{
+    /* overflow: hidden; */
+    white-space:nowrap;
+    margin-top:5px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    /*margin-top: 5px;*/
+}
+.role_box .life{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 9;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-family: 'tttgbnumber';
+}
+.life1{background-color: #62a8ea;}
+.life2{background-color: #62a8ea;}
+.life3{background-color: #45b97c;}
+.life4{background-color: #45b97c;}
+.life5{background-color: #FF5722;}
+.life6{background-color: #FF5722;}
+.base_info span{
+    margin-left: 5px;
+}
+.avatar{
+    height: 24px;
+    width: 24px;
+    background-color: #ffb285;
+    vertical-align:-5px;
+    margin-left: 2px;
+    margin-right: 3px;
+    border: 1px solid #ffb285;
+    border-radius: 100%;
+}
