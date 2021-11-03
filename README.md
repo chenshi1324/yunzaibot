@@ -19,16 +19,17 @@ node app
 ```
 
 # 操作指令
-#角色
-![#角色](resources/readme/#角色.jpg)
-#深渊/#上期深渊
-![#角色](resources/readme/#深渊.jpg)
-#神里/#老婆/#老公
-![#角色](resources/readme/#神里.jpg)
-#四星/#五星
-![#角色](resources/readme/#五星.jpg)
-#武器
-![#角色](resources/readme/#武器.jpg)
+\#角色
+![角色](resources/readme/角色.jpg)
+\#深渊/\#上期深渊
+![深渊](resources/readme/深渊.jpg)
+\#神里/\#老婆/\#老公
+![神里](resources/readme/神里.jpg)
+![刻晴](resources/readme/刻晴.jpg)
+\#四星/#五星
+![四星](resources/readme/五星.jpg)
+\#武器
+![武器](resources/readme/武器.jpg)
 
 ## 致谢
 | Nickname                                                     | Contribution                        |
