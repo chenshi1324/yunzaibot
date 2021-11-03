@@ -112,9 +112,6 @@ dist
 # IDE auto generated file
 .idea
 
-/data/[0-9]*
-/data/image
-/data/record
-/data/html/*/*/[0-9]*.html
+/data
 
 /config/config.js
