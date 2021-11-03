@@ -1,7 +1,8 @@
 # Yunzai-Bot
-原神Q群机器人，通过米游社接口，查询原神游戏信息
+原神Q群机器人，通过米游社接口，查询原神游戏信息，生成图片返回
 
-#使用方法
+# 使用方法
+>环境准备： Window环境，Nodejs，Redis
 
 ```
 1.安装
@@ -10,21 +11,30 @@ cd Yunzai-Bot
 npm install
 
 2.配置
-打开config文件夹，复制一份config_default.js重命名为config.js
+打开config文件夹，复制一份 config_default.js 重命名为 config.js
 打开config.js填写好配置
 
 3.运行
 node app
 ```
 
-#操作指令
+# 操作指令
+#角色
+![#角色](resources/readme/#角色.jpg)
+#深渊/#上期深渊
+![#角色](resources/readme/#深渊.jpg)
+#神里/#老婆/#老公
+![#角色](resources/readme/#神里.jpg)
+#四星/#五星
+![#角色](resources/readme/#五星.jpg)
+#武器
+![#角色](resources/readme/#武器.jpg)
 
-
-
-
-
-
-
+## 致谢
+| Nickname                                                     | Contribution                        |
+| :----------------------------------------------------------: | ----------------------------------- |
+|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 提供了抽卡图片资源 |
+|[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
 
 
