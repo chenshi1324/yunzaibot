@@ -113,7 +113,7 @@ body {
     font-size: 14px
 }
 .role_name{
-    /* overflow: hidden; */
+    overflow: hidden;
     white-space:nowrap;
     margin-top:5px;
     font-weight: 500;

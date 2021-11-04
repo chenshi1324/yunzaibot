@@ -33,8 +33,8 @@ let config = {
     //每个群的单独配置(用于覆盖通用配置)
     // '123456':{
     //   //米游社信息查询
-    //   mysDayLimit: 10, //每天查询次数
-    //   mysUidLimit: 5, //每天查询uid个数
+    //   mysDayLimit: 5, //每天查询次数
+    //   mysUidLimit: 3, //每天查询uid个数
     // }
   },
 
@@ -46,6 +46,7 @@ let config = {
   //所有项目限制一个cookie只能查27个，避免超出限制，查询过的可以重复查
   //
   mysCookies: [
+    // "ltoken=***;ltuid=***",
     "",
   ],
 
