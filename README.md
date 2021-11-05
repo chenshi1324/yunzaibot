@@ -29,8 +29,8 @@ node app
 ![深渊](resources/readme/深渊.png)
 
 ### #神里/#老婆/#老公
-![神里](resources/readme/神里.jpg)
-![早柚](resources/readme/早柚.jpg)
+![神里](resources/readme/神里.png)
+![早柚](resources/readme/早柚.png)
 
 ### #四星/#五星
 ![四星](resources/readme/五星.png)
