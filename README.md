@@ -19,6 +19,8 @@ node app
 ```
 
 # 操作指令
+>#号+指令 触发
+>下面详细指令展示
 ### #角色
 ![角色](resources/readme/角色.png)
 
@@ -41,7 +43,7 @@ node app
 ## 致谢
 | Nickname                                                     | Contribution                        |
 | :----------------------------------------------------------: | ----------------------------------- |
-|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 提供了抽卡图片资源 |
+|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 使用了其抽卡图片资源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
 
