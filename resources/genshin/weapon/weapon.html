@@ -19,6 +19,7 @@
             <img
               class="user_img"
               src="../../../../resources/genshin/logo/side/{{val.role_name}}.png"
+              onerror="whenErrorRole(this)"
             />
           </span>
           <div class="role_box">
@@ -46,6 +47,10 @@
     function whenError(a) {
       a.onerror = null;
       a.src = "../../../../resources/genshin/logo/weapon/旅行剑.png";
+    }
+    function whenErrorRole(a) {
+      a.onerror = null;
+      a.src = "../../../../resources/genshin/logo/side/荧.png";
     }
   </script>
 </html>
