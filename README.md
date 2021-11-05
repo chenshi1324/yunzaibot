@@ -30,7 +30,7 @@ node app
 
 ### #神里/#老婆/#老公
 ![神里](resources/readme/神里.jpg)
-![刻晴](resources/readme/刻晴.jpg)
+![早柚](resources/readme/早柚.jpg)
 
 ### #四星/#五星
 ![四星](resources/readme/五星.png)
