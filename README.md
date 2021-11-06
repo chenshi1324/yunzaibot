@@ -21,7 +21,7 @@ node app
 # 操作指令
 >群昵称加上uid（仅第一次需要），#号+指令触发
 >
->下面详细指令展示，[其他说明](resources/命令说明.md)
+>下面详细指令展示，[其他说明](resources/readme/命令说明.md)
 ### #角色
 ![角色](resources/readme/角色.png)
 
