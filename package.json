@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Genshin QQ group Bot",
   "main": "app.js",
-  "type": "module",
   "scripts": {
     "test": "node ./lib/test.js",
     "start": "node ./app.js"
@@ -15,8 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "art-template": "^4.13.2",
+    "got": "^11.8.2",
     "md5": "^2.3.0",
-    "node-fetch": "^3.0.0",
     "oicq": "^1.21.2",
     "prettier": "^2.4.1",
     "puppeteer": "^10.4.0",

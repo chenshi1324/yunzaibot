@@ -1,8 +1,8 @@
-import { createClient } from "oicq";
-import { config } from "./config/config.js";
-import { init } from "./lib/init.js";
-import { dealMsg } from "./lib/dealMsg.js";
-
+const { createClient } = require("oicq");
+const config = require("./config/config.js");
+const { init } = require("./lib/init.js");
+const { dealMsg } = require("./lib/dealMsg.js");
+console.log(config);
 const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 
@@ -18,10 +18,10 @@ Bot.on("message.group", (event) => {
 });
 
 /** 监听私聊消息事件 */
-Bot.on("message.private", (event)=>{
+Bot.on("message.private", (event) => {
   event.isPrivate = true;
   dealMsg(event);
-})
+});
 
 /****************************************
  * 密码登录
@@ -34,12 +34,12 @@ Bot.on("system.login.slider", function (event) {
     this.sliderLogin(input); //输入ticket
   });
 })
-.on("system.login.device", function (event) {
-  //监听登录保护验证事件
-  process.stdin.once("data", () => {
-    this.login(); //验证完成后按回车登录
-  });
-})
-.login(config.account.pwd); //需要填写密码或md5后的密码
+  .on("system.login.device", function (event) {
+    //监听登录保护验证事件
+    process.stdin.once("data", () => {
+      this.login(); //验证完成后按回车登录
+    });
+  })
+  .login(config.account.pwd); //需要填写密码或md5后的密码
 
 init();

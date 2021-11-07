@@ -1,4 +1,4 @@
-let command = {
+module.exports = {
   gacha: "^#*(十|10|单)(连|抽)$",
   mysInfo: {
     role: "^#(角色)[ |0-9]*$",
@@ -9,5 +9,3 @@ let command = {
     character: "^#(.*)$",
   },
 };
-
-export { command };

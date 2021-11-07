@@ -1,4 +1,4 @@
-let element = {
+module.exports = {
   烟绯: "火",
   胡桃: "火",
   辛焱: "火",
@@ -169,5 +169,3 @@ let element = {
   破魔之弓: "弓",
   掠食者: "弓",
 };
-
-export { element };
