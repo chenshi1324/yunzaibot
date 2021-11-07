@@ -14,7 +14,7 @@ let config = {
   redis: {
     host: "127.0.0.1",
     port: 6379,
-    password: 1234,
+    password: '',
     db: 0,
   },
 
