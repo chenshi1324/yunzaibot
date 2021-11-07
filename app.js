@@ -3,8 +3,7 @@ import { config } from "./config/config.js";
 import { init } from "./lib/init.js";
 import { dealMsg } from "./lib/dealMsg.js";
 
-const account = config.account.qq;
-const Bot = createClient(account);
+const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 
 //监听上线事件
@@ -17,6 +16,12 @@ Bot.on("message.group", (event) => {
   event.isGroup = true;
   dealMsg(event);
 });
+
+/** 监听私聊消息事件 */
+Bot.on("message.private", (event)=>{
+  event.isPrivate = true;
+  dealMsg(event);
+})
 
 /****************************************
  * 密码登录
