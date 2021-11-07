@@ -2,7 +2,7 @@
 原神 qq群机器人，通过米游社接口，查询原神游戏信息，生成图片返回
 
 # 使用方法
->环境准备： Window环境，Nodejs（最低版本v14），Redis
+>环境准备： Window环境，Nodejs，Redis
 
 ```
 1.安装
