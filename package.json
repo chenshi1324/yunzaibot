@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node ./lib/test.js",
-    "start": "node .app.js"
+    "start": "node ./app.js"
   },
   "keywords": [
     "qqBot"
