@@ -12,10 +12,10 @@ let config = {
 
   //redis配置
   redis: {
-    host: "127.0.0.1",
-    port: 6379,
-    password: '',
-    db: 0,
+    host: "127.0.0.1",//redis地址
+    port: 6379,       //redis端口
+    password: '',     //redis密码，没有密码可以为空
+    db: 0,            //redis数据库
   },
 
   //群设置 
