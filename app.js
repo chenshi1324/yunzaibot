@@ -8,7 +8,10 @@ global.logger = Bot.logger;
 
 //监听上线事件
 Bot.on("system.online", () => {
-  logger.mark("上线成功");
+  logger.mark("----------");
+  logger.mark("Yunzai-Bot 上线成功 版本v1.0.0");
+  logger.mark("https://github.com/Le-niao/Yunzai-Bot");
+  logger.mark("----------");
 });
 
 //监听消息并回复
