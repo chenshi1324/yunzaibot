@@ -6,8 +6,8 @@
 let config = {
   //qq账号 密码
   account: {
-    qq:  "",
-    pwd: "",
+    qq:  "",     //账号
+    pwd: "",     //密码
   },
 
   //redis配置

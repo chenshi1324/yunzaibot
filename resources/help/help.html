@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <style type="text/css">
+      /* reset */
+      html,
+      body,
+      div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 18px;
+        color: #232323;
+        vertical-align: baseline;
+        line-height: 1;
+      }
+      table {
+        border-spacing: 0;
+        border: 1px solid #666;
+        border-radius: 5px;
+        /* 消除单元格之间的空隙 */
+        border-collapse: collapse;
+        /* 消除掉外边框 */
+        border-style:hidden;  
+        /* hack一下加个假边框 */
+        box-shadow: 0 0 0 1px #666;
+        overflow: hidden;
+      }
+      th,td {
+        border: 1px solid #666;
+      }
+      /* m-tb */
+      .m-tb2 {
+        width: 100%;
+      }
+
+      .m-tb2 th {
+        background-color: #dedede;
+        background-clip: padding-box;
+        padding: 8px;
+      }
+
+      .m-tb2 td {
+        background-color: #ffffff;
+        background-clip: padding-box;
+        padding: 8px;
+        text-align: center;
+      }
+      .container {
+        width: 600px;
+        padding: 10px;
+      }
+      
+    </style>
+    <div class="container" id="container">
+      <table class="m-tb2">
+        <tr>
+          <th>命令</th>
+          <th>说明</th>
+        </tr>
+        <tr>
+          <td>十连</td>
+          <td>模拟抽卡，每天一次，凌晨4点刷新</td>
+        </tr>
+        <tr>
+          <td>#角色</td>
+          <td>查询原神角色数，成就，宝箱等信息</td>
+        </tr>
+        <tr>
+          <td>#深渊/#上期深渊</td>
+          <td>数据不是实时更新，打完两小时后再查询</td>
+        </tr>
+        <tr>
+          <td>#神里</td>
+          <td>角色详情数据</td>
+        </tr>
+        <tr>
+          <td>#四星/#五星</td>
+          <td>四星，五星角色列表</td>
+        </tr>
+        <tr>
+          <td>#武器</td>
+          <td>只显示角色已经带上的武器</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript"></script>
+</html>
