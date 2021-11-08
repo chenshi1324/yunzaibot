@@ -2,14 +2,14 @@ const { createClient } = require("oicq");
 const config = require("./config/config.js");
 const { init } = require("./lib/init.js");
 const { dealMsg } = require("./lib/dealMsg.js");
-console.log(config);
+const package = require("./package.json");
 const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 
 //监听上线事件
 Bot.on("system.online", () => {
   logger.mark("----------");
-  logger.mark("Yunzai-Bot 上线成功 版本v1.0.0");
+  logger.mark(`Yunzai-Bot 上线成功 版本v${package.version}`);
   logger.mark("https://github.com/Le-niao/Yunzai-Bot");
   logger.mark("----------");
 });
