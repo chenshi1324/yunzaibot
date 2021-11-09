@@ -222,6 +222,11 @@ body {
     background-size: 100%;
     background-position: 50px 27px;
 }
+.芭芭拉_bg3{
+    background-image: url(../logo/bg/芭芭拉3.png);
+    background-size: 100%;
+    background-position: 65px 10px;
+}
 .班尼特_bg1{
     background-image: url(../logo/bg/班尼特1.png);
     background-size: auto  100%;
@@ -320,7 +325,7 @@ body {
 .诺艾尔_bg2{
     background-image: url(../logo/bg/诺艾尔2.png);
     background-size: 100%;
-    background-position: 25px 0px;
+    background-position: 15px 0px;
 }
 .琴_bg1{
     background-image: url(../logo/bg/琴1.png);
@@ -331,6 +336,11 @@ body {
     background-image: url(../logo/bg/琴2.png);
     background-size: 100%;
     background-position: 50px 0px;
+}
+.琴_bg3{
+    background-image: url(../logo/bg/琴3.png);
+    background-size: 110%;
+    background-position: 80px 0px;
 }
 .砂糖_bg1{
     background-image: url(../logo/bg/砂糖1.png);
