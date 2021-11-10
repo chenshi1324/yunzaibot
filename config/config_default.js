@@ -22,8 +22,7 @@ let config = {
   group:{
     //通用默认配置
     'default':{
-      //每天抽卡次数，限制次数，防止刷屏,4点重置
-      gachaDayNum: 1,
+      gachaDayNum: 1,    //每天抽卡次数，限制次数，防止刷屏,4点重置
       //米游社信息查询
       mysDayLimit: 10,   //每天查询次数
       mysUidLimit: 5,    //每天查询uid个数
