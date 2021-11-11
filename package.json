@@ -1,8 +1,9 @@
 {
   "name": "yunzai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Genshin QQ group Bot",
   "main": "app.js",
+  "type":"module",
   "scripts": {
     "test": "node ./lib/test.js",
     "start": "node ./app.js"

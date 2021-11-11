@@ -63,4 +63,5 @@ let wifeData = [
   
   ['可莉','七七','迪奥娜','早柚'],
 ]
-module.exports = { roleId , wifeData};
+
+export { roleId , wifeData};

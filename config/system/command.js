@@ -1,4 +1,4 @@
-module.exports = {
+let command = {
   gacha: "^#*(十|10|单)(连|抽)$",
   mysInfo: {
     role: "^#(角色)[ |0-9]*$",
@@ -8,7 +8,8 @@ module.exports = {
     wife: "^#(老婆|妻子|媳妇|娘子|女朋友|女友|老公|丈夫|夫君|郎君|男朋友|男友|女儿)$",
     character: "^#(.*)$",
   },
-  other:{
-    help:"^#*(命令|帮助|菜单|help|说明|功能|指令)$",
-  }
+  other: {
+    help: "^#*(命令|帮助|菜单|help|说明|功能|指令)$",
+  },
 };
+export { command };
