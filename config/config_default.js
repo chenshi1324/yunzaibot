@@ -19,16 +19,16 @@ let config = {
   },
 
   //米游社cookies，支持多个
-  //访问米游社原神社区，登录后账户点击 F12 ，
+  //访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
   //选中 Console 或控制台，点击控制台粘贴这一句
   // document.cookie.match(/ltoken[^;]+;[^;]+;/)[0] ，回车即可获取
-  //例如'ltoken=***;ltuid=***';
+  //例如'ltoken=***;ltuid=***;'
   //cookie逻辑：一个号一天只能查30个uid（包括查询失败的），在没超过30的时候，之前查过的uid可以重复查询
   //所有项目限制一个cookie只能查27个，避免超出限制，查询过的可以重复查
   //
   mysCookies: [
-    // 'ltoken=***;ltuid=***',
-    // 'ltoken=***;ltuid=***',
+    // 'ltoken=***;ltuid=***;',
+    // 'ltoken=***;ltuid=***;',
 
   ],
 
