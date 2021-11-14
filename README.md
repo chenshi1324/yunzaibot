@@ -42,7 +42,7 @@ node app
 ### #角色记录/#常驻记录/#武器记录
 ![角色记录](resources/readme/角色记录.jpg)
 
-### #十连
+### #十连、#十连2
 ![十连](resources/readme/十连.png)
 
 ## 致谢
