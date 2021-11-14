@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/gachaLog/gachaLog.css?v=1.0"/>
+    </head>
+    <body id="container" class="body_box">
+        <div class="container">
+            <div class="info_box">
+                <div class="base_info">
+                    <div class="uid">ID: {{uid}} （{{allNum}}抽）<span class="label label_{{type}}">{{typeName}}池</span></div>
+                </div>
+                <div class="info_box_border">
+                    <div class="info_box_data">
+                        {{each line val}}
+                        <div class="info_number">
+                            {{each val v}}
+                            <div class="item">
+                                <div class="big {{v.color}}">{{v.num}}</div>
+                                <div class="small">{{v.lable}}</div>
+                            </div>
+                            {{/each}}
+                        </div>
+                        {{/each}}
+                        <div class="line_box">
+                            <span class="line"></span>
+                            <span class="text">五星历史 {{lastTime}}</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="info_role">
+                        {{each fiveArr val}}
+                            <div class="ritem">
+                                {{if val.item_type=='角色'}}
+                                    <img class="role" src="../../../../resources/genshin/logo/role/{{val.name}}.png">
+                                    <div class="role_text {{if val.num<=30}}red{{else if val.num<=60}}orange{{/if}}">{{val.abbrName}}[{{val.num}}]</div>
+                                {{/if}}
+                                {{if val.item_type=='武器'}}
+                                    <img class="role" src="../../../../resources/genshin/logo/weapon/{{val.name}}.png">
+                                    <div class="role_text {{if val.num<=20}}red{{else if val.num<=50}}orange{{/if}}">{{val.abbrName}}[{{val.num}}]</div>
+                                {{/if}}
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

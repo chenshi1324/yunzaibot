@@ -10,6 +10,7 @@ global.logger = Bot.logger;
 
 //监听上线事件
 Bot.on("system.online", () => {
+  init();
   logger.mark("----------");
   logger.mark(`Yunzai-Bot 上线成功 版本v${packageJson.version}`);
   logger.mark("https://github.com/Le-niao/Yunzai-Bot");
@@ -46,5 +47,3 @@ Bot.on("system.login.slider", function (event) {
     });
   })
   .login(config.account.pwd); //需要填写密码或md5后的密码
-
-init();

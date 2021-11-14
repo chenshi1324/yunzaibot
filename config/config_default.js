@@ -38,7 +38,7 @@ let config = {
     'default':{
       gachaDayNum: 1,    //每天抽卡次数，限制次数，防止刷屏,4点重置
       //米游社信息查询
-      mysDayLimit: 10,   //每天查询次数
+      mysDayLimit: 20,   //每天查询次数
       mysUidLimit: 5,    //每天查询uid个数
 
       disable:[],        //禁用功能 'gacha','mysInfo',
