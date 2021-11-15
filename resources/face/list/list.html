@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <link rel="shortcut icon" href="#" />
+    </head>
+    <body id="body_box">
+        <style>
+            * {
+                margin: 0;;
+                padding: 0;
+                box-sizing: border-box;
+                user-select: none;
+            }
+            body {
+                font-size: 16px;
+                max-width: 715px;
+                color: #1e1f20;
+            }
+            .container{
+                float:left;
+                padding-bottom: 8px;
+                padding-left: 8px;
+                background-color: #ececec;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .img_box{
+                width: 133px;
+                height: 107px;
+                text-align: center;
+                background: white;
+                border:solid 1px #D3D3D3;
+                overflow: hidden;
+                margin-right: 8px;
+                margin-top: 8px;
+                border-radius:5px;
+                /*padding: 5px;*/
+            }
+            .img_box .img_bg{
+                /*width: 100px;*/
+                height: 70px;
+                margin: 5px 5px;
+                overflow: hidden;
+                background: 50% 50% no-repeat;
+                background-size: 100%;
+                border-radius:5px;
+            }
+            .img_box .text{
+                border-top:solid 1px #D3D3D3;
+                /*height: 10px;*/
+            }
+        </style>
+        <div class="container" id='container'>
+            {{each face val}}
+            <div class='img_box'>
+                <div class='img_bg' style="background-image: url('../../../../data/face/{{group_id}}/{{val}}')"></div>
+                <div class='text'>{{val.replace(/.jpg|.gif/, "")}}</div>
+            </div>
+            {{/each}}
+        </div>
+    </body>
+</html>
