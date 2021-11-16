@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="role">
-        <div class="title">出战次数</div>
+        <div class="title">出战角色</div>
         <div class="list">
           {{each list val}}
           <div class="item">
@@ -34,7 +34,7 @@
               src="../../../../resources/genshin/logo/role/{{val.name}}.png"
               onerror="whenError(this,'role')"
             />
-            <div class="desc">{{val.num}}次</div>
+            <div class="desc">Lv.{{val.level}}</div>
             <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
           {{/each}}
