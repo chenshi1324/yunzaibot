@@ -29,6 +29,12 @@ Bot.on("message.private", (event) => {
   dealMsg(event);
 });
 
+//处理好友事件
+Bot.on("request.friend", (event)=>{
+  logger.mark(`添加好友：${event.user_id}`);
+  Bot.setFriendAddRequest(event.flag,true);
+})
+
 /****************************************
  * 密码登录
  * 缺点是需要过滑块，可能会报环境异常
