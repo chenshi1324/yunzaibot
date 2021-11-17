@@ -6,16 +6,16 @@
 let config = {
   //qq账号 密码
   account: {
-    qq:  "",     //账号
-    pwd: "",     //密码
+    qq: "",  //账号
+    pwd: "", //密码
   },
 
   //redis配置
   redis: {
-    host: "127.0.0.1",//redis地址
-    port: 6379,       //redis端口
-    password: '',     //redis密码，没有密码可以为空
-    db: 0,            //redis数据库
+    host: "127.0.0.1", //redis地址
+    port: 6379,        //redis端口
+    password: "",      //redis密码，没有密码可以为空
+    db: 0,             //redis数据库
   },
 
   //米游社cookies，支持多个
@@ -31,29 +31,32 @@ let config = {
   mysCookies: [
     // 'ltoken=***;ltuid=***;',
     // 'ltoken=***;ltuid=***;',
-
   ],
 
-  //群设置 
-  group:{
+  //群设置
+  group: {
     //通用默认配置
-    'default':{
-      gachaDayNum: 1,    //每天抽卡次数，限制次数，防止刷屏,4点重置
+    'default': {
+      gachaDayNum: 1, //每天抽卡次数，限制次数，防止刷屏,4点重置
       //米游社信息查询
-      mysDayLimit: 20,   //每天查询次数
-      mysUidLimit: 5,    //每天查询uid个数
+      mysDayLimit: 20, //每天查询次数
+      mysUidLimit: 5, //每天查询uid个数
 
-      disable:[],        //禁用功能 'gacha','mysInfo','gachaLog','face','other'
+      disable: [], //禁用功能 'gacha','mysInfo','gachaLog','face','other'
     },
 
     //每个群的单独配置(用于覆盖通用配置)
-    // '123456':{
+    // 'q群号':{
     //   //米游社信息查询
     //   mysDayLimit: 5, //每天查询次数
     //   mysUidLimit: 3, //每天查询uid个数
     // }
   },
 
+  //原神体力查询（#体力），配置了才能查
+  dailyNote: {
+    'qq号': { uid: "", cookie: "" },
+  },
 };
 
 export { config };
