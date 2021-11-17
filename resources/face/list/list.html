@@ -55,7 +55,7 @@
             {{each face val}}
             <div class='img_box'>
                 <div class='img_bg' style="background-image: url('../../../../data/face/{{group_id}}/{{val}}')"></div>
-                <div class='text'>{{val.replace(/.jpg|.gif/, "")}}</div>
+                <div class='text'>{{val.replace(/.jpg|.gif/g, "")}}</div>
             </div>
             {{/each}}
         </div>
