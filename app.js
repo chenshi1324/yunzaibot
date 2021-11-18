@@ -9,9 +9,10 @@ const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 
 //监听上线事件
-Bot.on("system.online", () => {
-  init();
+Bot.on("system.online", async () => {
   logger.mark("----------");
+  logger.mark("初始化Yunzai-Bot");
+  await init();
   logger.mark(`Yunzai-Bot 上线成功 版本v${packageJson.version}`);
   logger.mark("https://github.com/Le-niao/Yunzai-Bot");
   logger.mark("----------");
