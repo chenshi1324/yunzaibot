@@ -62,6 +62,7 @@ node app
 <summary>添加表情</summary>
 <img src="resources/readme/添加表情.png" alt="添加表情">
 </details>
+
 ## 致谢
 | Nickname                                                     | Contribution                        |
 | :----------------------------------------------------------: | ----------------------------------- |
