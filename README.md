@@ -27,23 +27,36 @@ node app
 ![神里](resources/readme/神里.png)
 ![早柚](resources/readme/早柚.png)
 
-### #角色
-![角色](resources/readme/角色.png)
+<details>
+<summary>#角色</summary>
+<img src="resources/readme/角色.png" alt="#角色">
+</details>
 
-### #深渊/#上期深渊
-![深渊](resources/readme/深渊.png)
+<details>
+<summary>#深渊</summary>
+<img src="resources/readme/深渊.png" alt="#深渊">
+<img src="resources/readme/深渊12层.png" alt="#深渊12层">
+</details>
 
-### #四星/#五星
-![四星](resources/readme/五星.png)
+<details>
+<summary>#四星/#五星</summary>
+<img src="resources/readme/五星.png" alt="#五星">
+</details>
 
-### #武器
-![武器](resources/readme/武器.png)
+<details>
+<summary>#武器</summary>
+<img src="resources/readme/武器.png" alt="#武器">
+</details>
 
-### #角色记录/#常驻记录/#武器记录
-![角色记录](resources/readme/角色记录.png)
+<details>
+<summary>#角色记录/#常驻记录/#武器记录</summary>
+<img src="resources/readme/角色记录.png" alt="#角色记录">
+</details>
 
-### #十连、#十连2
-![十连](resources/readme/十连.png)
+<details>
+<summary>#十连、#十连2</summary>
+<img src="resources/readme/十连.png" alt="#十连">
+</details>
 
 ## 致谢
 | Nickname                                                     | Contribution                        |
