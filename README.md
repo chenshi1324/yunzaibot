@@ -58,6 +58,10 @@ node app
 <img src="resources/readme/十连.png" alt="#十连">
 </details>
 
+<details>
+<summary>添加表情</summary>
+<img src="resources/readme/添加表情.png" alt="添加表情">
+</details>
 ## 致谢
 | Nickname                                                     | Contribution                        |
 | :----------------------------------------------------------: | ----------------------------------- |
