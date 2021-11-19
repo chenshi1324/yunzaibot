@@ -2,7 +2,7 @@
 云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，生成图片返回
 
 # 使用方法
->环境准备： Window环境，Nodejs，Redis
+>环境准备： Windows or Linux，Nodejs，Redis
 
 ```
 1.安装
