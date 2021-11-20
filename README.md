@@ -1,9 +1,9 @@
 # Yunzai-Bot
-云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，生成图片返回
+云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，Puppeteer截图生成图片返回
 
 # 使用方法
 >环境准备： Windows or Linux，Nodejs，Redis
-
+>[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)
 ```
 1.安装
 git clone https://github.com/Le-niao/Yunzai-Bot.git
