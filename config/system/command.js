@@ -18,6 +18,7 @@ let command = {
   },
   other: {
     help: "^#*(命令|帮助|菜单|help|说明|功能|指令)$",
+    repeat: "noCheck",
   },
   face: {
     get: "noCheck",
