@@ -3,6 +3,7 @@
 
 # 使用方法
 >环境准备： Windows or Linux，Nodejs，Redis
+>
 >[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)
 ```
 1.安装
