@@ -18,7 +18,7 @@ body {
   transform-origin: 0 0;
 }
 .container {
-  width: 480px;
+  width: 470px;
   padding: 10px 15px;
 }
 .base_info {
@@ -56,6 +56,10 @@ body {
   font-family: tttgbnumber;
   font-size: 22px;
 }
+.explor_box .num{
+  font-family: tttgbnumber;
+  font-size: 16px;
+}
 .lable {
   font-size: 14px;
   color: #7f858a;
@@ -63,7 +67,7 @@ body {
   margin-top: 3px;
 }
 .explor_box {
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -74,29 +78,30 @@ body {
   display: flex;
   /*justify-content: center;*/
   align-items: center;
-  width: 220px;
-  height: 100px;
-  padding: 3px 6px;
+  width: 215px;
+  height: 85px;
+  padding: 3px 4px;
   border-radius: 6px;
-  color: rgba(255, 255, 255, 0.85);
+  color: #fff;
   line-height: 1;
   background: #394467 url(./world-exploration-frame.png) center center
     no-repeat;
   background-origin: content-box;
-  background-size: contain;
+  background-size: 100% 97%;
 }
 .explor_box .icon {
   width: 62px;
+  margin-left: 10px;
 }
 .explor_box .content {
-  margin-left: 5px;
+  margin-left: 7px;
   width: 130px;
 }
 .explor_box .content p {
-  margin: 6px 0;
+  margin: 7px 0;
 }
 .explor_box .name {
-  color: #fff;
+  /* color: #fff; */
   font-weight: 500;
 }
 .progress {

@@ -32,17 +32,11 @@
         <div class="item">
           <img class="icon" src="../../../../resources/genshin/role/{{val.name}}.png" />
           <div class="content">
-            <p class="name">{{val.name}}：{{val.exploration_percentage}}%</p>
-            <div class="progress">
-              <div
-                class="bar"
-                style="width: {{val.exploration_percentage}}%;"
-              ></div>
-            </div>
+            <p class="name">{{val.name}}：<span class="num">{{val.exploration_percentage}}%</span></p>
             {{ if val.name!='雪山'}}
-            <p class="prestige">声望：{{val.level}}级</p>
+            <p>声望：<span class="num">{{val.level}}</span>级</p>
             {{/if}} {{ if val.offerings}}
-            <p>{{val.offerings.name}}等级：{{val.offerings.level}}级</p>
+            <p>{{val.offerings.name}}：<span class="num">{{val.offerings.level}}</span>级</p>
             {{/if}}
           </div>
         </div>
