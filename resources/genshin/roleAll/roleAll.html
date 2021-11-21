@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../../resources/genshin/roleAll/roleAll.css?v=1.0"
+    />
+  </head>
+  <body>
+    <style></style>
+    <div class="container" id="container">
+      
+      <div class="tab-avatar-item active">  
+        <div class="tab-avatar-item-left"></div> 
+        <div class="tab-avatar-item-middle"></div>  
+        <div class="tab-avatar-item-text">原神角色数据</div>  
+        <div class="tab-avatar-item-right"></div> 
+        <span class="tab-avatar-item__bar"></span>
+      </div>
+      
+      <div class="base_info">
+        <div class="uid">ID: {{uid}} （{{activeDay}}天）</div>
+      </div>
+      <div class="data_box">
+        {{each line val}}
+        <div class="data_line">
+          {{each val item}}
+          <div class="data_line_item">
+            <div class="num">{{item.num}}</div>
+            <div class="lable">{{item.lable}}</div>
+          </div>
+          {{/each}}
+        </div>
+        {{/each}}
+      </div>
+      
+      <div class="tab-avatar-item active">  
+        <div class="tab-avatar-item-left"></div> 
+        <div class="tab-avatar-item-middle"></div>  
+        <div class="tab-avatar-item-text">常用角色</div>  
+        <div class="tab-avatar-item-right"></div> 
+        <span class="tab-avatar-item__bar"></span>
+      </div>
+      <div class="avatars_box">
+        {{each avatars val}}
+        <div class="item">
+          <div class="role_box">
+            {{ if val.actived_constellation_num>0}}
+            <span class="life life{{val.actived_constellation_num}}">
+              {{val.actived_constellation_num}}命
+            </span>
+            {{/if}}
+            <div class="bg{{val.rarity}}"></div>
+            <img
+              class="role_img"
+              src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+              onerror="whenError(this)"
+            />
+            <div class="desc">Lv.{{val.level}}</div>
+            <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+          </div>
+          <div class="role_name">{{val.name}}</div>
+        </div>
+        {{/each}}
+      </div>
+      {{if abyss.length>0}}
+      <div class="tab-avatar-item active">  
+        <div class="tab-avatar-item-left"></div> 
+        <div class="tab-avatar-item-middle"></div>  
+        <div class="tab-avatar-item-text">深境螺旋</div>  
+        <div class="tab-avatar-item-right"></div> 
+        <span class="tab-avatar-item__bar"></span>
+      </div>
+      
+      <div class="abyss_box">
+        <div class="row">
+          <div class="item">
+            <div>ID：{{uid}}</div>
+            <div>时间：{{abyss.time}}</div>
+          </div>
+          <div class="item">
+            <div>最深抵达：{{abyss.max_floor}}</div>
+            <div>星数：{{abyss.total_star}}</div>
+          </div>
+        </div>
+        <div class="role">
+          <div class="title">出战角色</div>
+          <div class="list">
+            {{each abyss.list val}}
+            <div class="item">
+              {{ if val.life>0}}
+              <span class="life life{{val.life}}">{{val.life}}命</span>
+              {{/if}}
+              <img
+                class="role_img bg{{val.star}}"
+                src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+                onerror="whenError(this,'role')"
+              />
+              <div class="desc">Lv.{{val.level}}</div>
+              <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+            </div>
+            {{/each}}
+          </div>
+        </div>
+        <div class="detail">
+          <div class="title">战斗数据</div>
+          <div class="row">
+            <div class="item">战斗次数：{{abyss.total_battle_times}}次</div>
+            <div class="item">
+              最多击破：{{abyss.defeat.num}}
+              <img
+                src="../../../../resources/genshin/logo/side/{{abyss.defeat.name}}.png"
+                class="line-icon two_img"
+                onerror="whenError(this,'side')"
+              />
+            </div>
+          </div>
+          <div class="row two">
+            <div class="item">
+              承受伤害：{{abyss.take_damage.num}}<img
+                src="../../../../resources/genshin/logo/side/{{abyss.take_damage.name}}.png"
+                class="line-icon"
+                onerror="whenError(this,'side')"
+              />
+            </div>
+            <div class="item">
+              元素战技：{{abyss.normal_skill.num}}<img
+                src="../../../../resources/genshin/logo/side/{{abyss.normal_skill.name}}.png"
+                class="line-icon two_img"
+                onerror="whenError(this,'side')"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              最强一击：{{abyss.damage.num}}<img
+                src="../../../../resources/genshin/logo/side/{{abyss.damage.name}}.png"
+                class="line-icon"
+                onerror="whenError(this,'side')"
+              />
+            </div>
+            <div class="item">
+              元素爆发：{{abyss.energy_skill.num}}<img
+                src="../../../../resources/genshin/logo/side/{{abyss.energy_skill.name}}.png"
+                class="line-icon two_img"
+                onerror="whenError(this,'side')"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </body>
+  <script type="text/javascript"></script>
+</html>
