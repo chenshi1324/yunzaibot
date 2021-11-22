@@ -3,24 +3,19 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../../../resources/genshin/roleAll/roleAll.css?v=1.0"
-    />
+    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/roleAll/roleAll.css?v=1.0" />
   </head>
   <body>
     <style></style>
     <div class="container" id="container">
-      
-      <div class="tab-avatar-item active">  
-        <div class="tab-avatar-item-left"></div> 
-        <div class="tab-avatar-item-middle"></div>  
-        <div class="tab-avatar-item-text">原神角色数据</div>  
-        <div class="tab-avatar-item-right"></div> 
+      <div class="tab-avatar-item active">
+        <div class="tab-avatar-item-left"></div>
+        <div class="tab-avatar-item-middle"></div>
+        <div class="tab-avatar-item-text">原神角色数据</div>
+        <div class="tab-avatar-item-right"></div>
         <span class="tab-avatar-item__bar"></span>
       </div>
-      
+
       <div class="base_info">
         <div class="uid">ID: {{uid}} （{{activeDay}}天）</div>
       </div>
@@ -36,12 +31,12 @@
         </div>
         {{/each}}
       </div>
-      
-      <div class="tab-avatar-item active">  
-        <div class="tab-avatar-item-left"></div> 
-        <div class="tab-avatar-item-middle"></div>  
-        <div class="tab-avatar-item-text">常用角色</div>  
-        <div class="tab-avatar-item-right"></div> 
+
+      <div class="tab-avatar-item active">
+        <div class="tab-avatar-item-left"></div>
+        <div class="tab-avatar-item-middle"></div>
+        <div class="tab-avatar-item-text">常用角色</div>
+        <div class="tab-avatar-item-right"></div>
         <span class="tab-avatar-item__bar"></span>
       </div>
       <div class="avatars_box">
@@ -49,16 +44,10 @@
         <div class="item">
           <div class="role_box">
             {{ if val.actived_constellation_num>0}}
-            <span class="life life{{val.actived_constellation_num}}">
-              {{val.actived_constellation_num}}命
-            </span>
+            <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命 </span>
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
-            <img
-              class="role_img"
-              src="../../../../resources/genshin/logo/role/{{val.name}}.png"
-              onerror="whenError(this)"
-            />
+            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
             <div class="desc">Lv.{{val.level}}</div>
             <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
@@ -66,15 +55,15 @@
         </div>
         {{/each}}
       </div>
-      {{if abyss.length>0}}
-      <div class="tab-avatar-item active">  
-        <div class="tab-avatar-item-left"></div> 
-        <div class="tab-avatar-item-middle"></div>  
-        <div class="tab-avatar-item-text">深境螺旋</div>  
-        <div class="tab-avatar-item-right"></div> 
+      {{if abyss.time}}
+      <div class="tab-avatar-item active">
+        <div class="tab-avatar-item-left"></div>
+        <div class="tab-avatar-item-middle"></div>
+        <div class="tab-avatar-item-text">深境螺旋</div>
+        <div class="tab-avatar-item-right"></div>
         <span class="tab-avatar-item__bar"></span>
       </div>
-      
+
       <div class="abyss_box">
         <div class="row">
           <div class="item">
