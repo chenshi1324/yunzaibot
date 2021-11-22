@@ -35,6 +35,9 @@ body {
   top: 0;
   background: #d3bc8d;
 }
+.uid{
+  font-family: tttgbnumber;
+}
 .data_box {
   border: 1px solid #d3bc8d;
   border-radius: 7px;
