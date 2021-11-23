@@ -2,7 +2,7 @@
 云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，Puppeteer截图生成图片返回
 
 # 使用方法
->环境准备： Windows or Linux，Nodejs，Redis
+>环境准备： Windows or Linux，Node.js，Redis
 >
 >[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)
 ```
@@ -22,7 +22,7 @@ node app
 # 操作指令
 >群昵称加上游戏的uid（仅第一次需要），#号+指令触发
 >
->下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录帮助](resources/logHelp/记录帮助.md)
+>下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
 
 ### #角色名称/#神里/#老婆/#老公
 ![神里](resources/readme/神里.png)
