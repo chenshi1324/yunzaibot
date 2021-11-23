@@ -7,6 +7,7 @@ import { dealMsg } from "./lib/dealMsg.js";
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
 const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
+global.Bot = Bot;
 
 //监听上线事件
 Bot.on("system.online", async () => {
