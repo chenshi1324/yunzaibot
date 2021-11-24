@@ -447,3 +447,9 @@ body {
   position: relative;
   margin: 0 auto;
 }
+.logo{
+  font-size: 12px;
+  font-family: "tttgbnumber";
+  text-align:center;
+  color: #7994a7;
+}

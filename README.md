@@ -4,7 +4,7 @@
 # 使用方法
 >环境准备： Windows or Linux，Node.js（版本至少v14以上），Redis
 >
->[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3),Windows按下面的就行
+>[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行
 ```
 1.安装
 git clone https://github.com/Le-niao/Yunzai-Bot.git
