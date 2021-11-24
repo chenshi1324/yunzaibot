@@ -38,9 +38,8 @@ Bot.on("request.friend", (event) => {
 });
 
 Bot.on("system.login.qrcode", function (e) {
-  this.logger.mark("扫码后按Enter完成登录")
+  this.logger.mark("扫码后按Enter完成登录");
   process.stdin.once("data", () => {
-    this.login()
-  })
-})
-.login(config.account.pwd)
+    this.login();
+  });
+}).login(config.account.pwd);
