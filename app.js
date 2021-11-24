@@ -33,28 +33,14 @@ Bot.on("message.private", (event) => {
 
 //处理好友事件
 Bot.on("request.friend", (event) => {
-  // if(!event.source.includes("QQ群")){
-  //   return;
-  // }
   logger.mark(`添加好友：${event.user_id}`);
   Bot.setFriendAddRequest(event.flag, true);
 });
 
-/****************************************
- * 密码登录
- * 缺点是需要过滑块，可能会报环境异常
- * 优点是一劳永逸
- */
-Bot.on("system.login.slider", function (event) {
-  //监听滑动验证码事件
-  process.stdin.once("data", (input) => {
-    this.sliderLogin(input); //输入ticket
-  });
-})
-  .on("system.login.device", function (event) {
-    //监听登录保护验证事件
-    process.stdin.once("data", () => {
-      this.login(); //验证完成后按回车登录
-    });
+Bot.on("system.login.qrcode", function (e) {
+  this.logger.mark("扫码后按Enter完成登录")
+  process.stdin.once("data", () => {
+    this.login()
   })
-  .login(config.account.pwd); //需要填写密码或md5后的密码
+})
+.login(config.account.pwd)

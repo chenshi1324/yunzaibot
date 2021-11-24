@@ -7,10 +7,10 @@ let config = {
   //qq账号 密码
   account: {
     qq: "",  //账号
-    pwd: "", //密码
+    pwd: "", //密码，可为空则用扫码登录
   },
 
-  //redis配置
+  //redis配置(默认配置就好，一般都不用改)
   redis: {
     host: "127.0.0.1", //redis地址
     port: 6379,        //redis端口
