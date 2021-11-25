@@ -30,11 +30,11 @@
             <span class="life life{{val.life}}">{{val.life}}命</span>
             {{/if}}
             <img
-              class="role_img bg{{val.star}}"
+              class="role_img bg{{val.rarity}}"
               src="../../../../resources/genshin/logo/role/{{val.name}}.png"
               onerror="whenError(this,'role')"
             />
-            <div class="desc">Lv.{{val.level}}</div>
+            <div class="desc">{{val.value}}次</div>
             <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
           {{/each}}

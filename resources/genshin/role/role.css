@@ -24,6 +24,9 @@ body {
   position: relative;
   padding-left: 10px;
 }
+.uid{
+  font-family: tttgbnumber;
+}
 .uid:before {
   content: " ";
   position: absolute;

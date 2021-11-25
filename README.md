@@ -35,9 +35,8 @@ node app
 </details>
 
 <details>
-<summary>#深渊、#深渊12层</summary>
+<summary>#深渊</summary>
 <img src="resources/readme/深渊.png" alt="#深渊">
-<img src="resources/readme/深渊12层.png" alt="#深渊12层">
 </details>
 
 <details>
