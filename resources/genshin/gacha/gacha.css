@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'tttgbnumber';
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +26,7 @@ body {
 .bg-info {
   position: fixed;
   top: 8px;
-  left: 65px;
+  left: 60px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -35,7 +41,7 @@ body {
 .bg-info-more {
   position: fixed;
   top: 85px;
-  left: 65px;
+  left: 60px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -46,7 +52,7 @@ body {
 .bg-upType{
   position: fixed;
   top: 8px;
-  right: 45px;
+  right: 60px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -61,7 +67,7 @@ body {
 }
 
 .gacha-box:first-child {
-  margin-left: 83px;
+  margin-left: 60px;
 }
 
 .element .star-background {
@@ -132,4 +138,13 @@ body {
   padding: 2px 0;
   background-color: rgba(5, 5, 5, 0.5);
   border-radius: 5px;
+}
+
+.logo{
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  color: rgb(157 189 237 / 75%);
+  font-size: 24px;
+  font-family: 'tttgbnumber';
 }
