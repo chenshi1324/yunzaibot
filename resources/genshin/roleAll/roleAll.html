@@ -6,18 +6,23 @@
     <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/roleAll/roleAll.css?v=1.0" />
   </head>
   <body>
-    <style></style>
+    <style>
+      .head_box {
+        background:url(../../../../resources/genshin/roleAll/namecard/{{bg}}.png) #f5f5f5;
+        background-position-x: 30px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        font-family: tttgbnumber;
+        padding: 10px 20px;
+        position: relative;
+        background-size: 100%;
+      }
+    </style>
     <div class="container" id="container">
-      <div class="tab-avatar-item active">
-        <div class="tab-avatar-item-left"></div>
-        <div class="tab-avatar-item-middle"></div>
-        <div class="tab-avatar-item-text">原神角色数据</div>
-        <div class="tab-avatar-item-right"></div>
-        <span class="tab-avatar-item__bar"></span>
-      </div>
-
-      <div class="base_info">
-        <div class="uid">ID: {{uid}} （{{activeDay}}天）</div>
+      <div class="head_box">
+        <div>ID: {{uid}}</div>
+        <div>{{activeDay}}</div>
+        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png">
       </div>
       <div class="data_box">
         {{each line val}}
@@ -32,13 +37,6 @@
         {{/each}}
       </div>
 
-      <div class="tab-avatar-item active">
-        <div class="tab-avatar-item-left"></div>
-        <div class="tab-avatar-item-middle"></div>
-        <div class="tab-avatar-item-text">常用角色</div>
-        <div class="tab-avatar-item-right"></div>
-        <span class="tab-avatar-item__bar"></span>
-      </div>
       <div class="avatars_box">
         {{each avatars val}}
         <div class="item">
@@ -47,7 +45,7 @@
             <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命 </span>
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
-            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
+            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png"/>
             <div class="desc">Lv.{{val.level}}</div>
             <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
@@ -56,14 +54,6 @@
         {{/each}}
       </div>
       {{if abyss.time}}
-      <div class="tab-avatar-item active">
-        <div class="tab-avatar-item-left"></div>
-        <div class="tab-avatar-item-middle"></div>
-        <div class="tab-avatar-item-text">深境螺旋</div>
-        <div class="tab-avatar-item-right"></div>
-        <span class="tab-avatar-item__bar"></span>
-      </div>
-
       <div class="abyss_box">
         <div class="row">
           <div class="item">
@@ -86,7 +76,6 @@
               <img
                 class="role_img bg{{val.star}}"
                 src="../../../../resources/genshin/logo/role/{{val.name}}.png"
-                onerror="whenError(this,'role')"
               />
               <div class="desc">Lv.{{val.level}}</div>
               <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />

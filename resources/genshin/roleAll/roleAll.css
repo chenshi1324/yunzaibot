@@ -18,8 +18,24 @@ body {
   transform-origin: 0 0;
 }
 .container {
-  width: 460px;
-  padding: 10px 10px;
+  width: 465px;
+  padding: 10px 15px;
+  background-color: #ececec;
+}
+.head_box{
+  background-position-x: 30px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  font-family: tttgbnumber;
+  padding: 10px 20px;
+  position: relative;
+  background-size: 100%;
+}
+.head_box .genshin_logo{
+  position: absolute;
+  top: -1px;
+  right: 15px;
+  width: 87px;
 }
 .base_info {
   position: relative;
@@ -39,12 +55,12 @@ body {
   font-family: tttgbnumber;
 }
 .data_box {
-  border: 1px solid #d3bc8d;
-  border-radius: 7px;
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px 15px 0px 15px;
-  background: #f8f8f8;
+  padding:15px 15px 5px 15px;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 10px 0px rgb(218 207 204 / 60%);
 }
 .data_line {
   display: flex;
@@ -60,89 +76,22 @@ body {
   font-family: tttgbnumber;
   font-size: 22px;
 }
-.explor_box .num {
-  font-family: tttgbnumber;
-  font-size: 16px;
-}
-.lable {
+.data_box .lable {
   font-size: 14px;
   color: #7f858a;
   line-height: 1;
   margin-top: 3px;
 }
-.explor_box {
-  font-size: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.explor_box .item {
-  margin-top: 10px;
-  /*margin-right: 10px;*/
-  display: flex;
-  /*justify-content: center;*/
-  align-items: center;
-  width: 215px;
-  height: 85px;
-  padding: 3px 4px;
-  border-radius: 6px;
-  color: #fff;
-  line-height: 1;
-  background: #394467 url(./world-exploration-frame.png) center center no-repeat;
-  background-origin: content-box;
-  background-size: 100% 97%;
-}
-.explor_box .icon {
-  width: 62px;
-  margin-left: 10px;
-}
-.explor_box .content {
-  margin-left: 7px;
-  width: 130px;
-}
-.explor_box .content p {
-  margin: 7px 0;
-}
-.explor_box .name {
-  /* color: #fff; */
-  font-weight: 500;
-}
-.progress {
-  position: relative;
-  width: 120px;
-  height: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.progress .value {
-  position: absolute;
-  right: 0;
-  top: -14px;
-  font-size: 12px;
-}
-.progress .bar {
-  height: 100%;
-  background-color: #d3bc8d;
-}
-.explor_box .prestige {
-  color: #1e1f20;
-  background: #e9e5dc;
-  width: 88px;
-  border-radius: 2px;
-  padding: 3px 7px;
-}
-.homes_hidden {
-  display: none;
-}
 
 .avatars_box {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #d3bc8d;
-  border-radius: 7px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 10px 5px 0px 5px;
-  background: #f8f8f8;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 10px 0px rgb(218 207 204 / 60%);
 }
 .avatars_box .item {
   width: 63px;
@@ -261,7 +210,7 @@ body {
 }
 
 .abyss_box {
-  width: 430px;
+  width: 435px;
   background-image: url(../abyss/bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -269,7 +218,7 @@ body {
   font-family: "tttgbnumber";
   color: #fff;
   margin: 10px auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .row {
   width: 100%;
