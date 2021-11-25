@@ -26,7 +26,7 @@ body {
 .bg-info {
   position: fixed;
   top: 8px;
-  left: 60px;
+  left: 65px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -41,7 +41,7 @@ body {
 .bg-info-more {
   position: fixed;
   top: 85px;
-  left: 60px;
+  left: 65px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -52,7 +52,7 @@ body {
 .bg-upType{
   position: fixed;
   top: 8px;
-  right: 60px;
+  right: 55px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
@@ -67,7 +67,7 @@ body {
 }
 
 .gacha-box:first-child {
-  margin-left: 60px;
+  margin-left: 65px;
 }
 
 .element .star-background {
