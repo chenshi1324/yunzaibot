@@ -19,23 +19,23 @@ body {
 }
 .container {
   width: 465px;
-  padding: 10px 15px;
+  padding: 20px 15px 10px 15px;
   background-color: #ececec;
 }
-.head_box{
-  background-position-x: 30px;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  font-family: tttgbnumber;
-  padding: 10px 20px;
-  position: relative;
-  background-size: 100%;
+.head_box {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
 }
-.head_box .genshin_logo{
+.head_box .id_text{
+  font-size: 24px;
+}
+.head_box .day_text{
+  font-size: 20px;
+}
+.head_box .genshin_logo {
   position: absolute;
-  top: -1px;
+  top: 1px;
   right: 15px;
-  width: 87px;
+  width: 97px;
 }
 .base_info {
   position: relative;
@@ -51,16 +51,28 @@ body {
   top: 0;
   background: #d3bc8d;
 }
-.uid{
+.uid {
   font-family: tttgbnumber;
 }
 .data_box {
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding:15px 15px 5px 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 15px 5px 15px;
   background: #f5f5f5;
-  box-shadow: 0px 0px 10px 0px rgb(218 207 204 / 60%);
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: relative;
+}
+.tab_lable {
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  background: #d4b98c;
+  color:#fff;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 15px 0px 15px 15px;
+  z-index: 20;
 }
 .data_line {
   display: flex;
@@ -86,12 +98,13 @@ body {
 .avatars_box {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 10px 5px 0px 5px;
+  padding: 25px 5px 0px 5px;
   background: #f5f5f5;
-  box-shadow: 0px 0px 10px 0px rgb(218 207 204 / 60%);
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: relative;
 }
 .avatars_box .item {
   width: 63px;
@@ -218,7 +231,9 @@ body {
   font-family: "tttgbnumber";
   color: #fff;
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  overflow: hidden;
 }
 .row {
   width: 100%;
@@ -396,9 +411,9 @@ body {
   position: relative;
   margin: 0 auto;
 }
-.logo{
+.logo {
   font-size: 12px;
   font-family: "tttgbnumber";
-  text-align:center;
+  text-align: center;
   color: #7994a7;
 }
