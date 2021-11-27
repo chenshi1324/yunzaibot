@@ -37,7 +37,7 @@
         </div>
         {{/each}}
       </div>
-
+      {{if avatars.length>0}}
       <div class="avatars_box">
         <div class="tab_lable">我的角色</div>
         {{each avatars val}}
@@ -55,6 +55,7 @@
         </div>
         {{/each}}
       </div>
+      {{/if}}
       {{if abyss.time}}
       <div class="abyss_box">
         <div class="row">
