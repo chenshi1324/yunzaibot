@@ -13,16 +13,32 @@
 body {
   font-size: 18px;
   color: #1e1f20;
-  transform: scale(1.25);
+  transform: scale(1.5);
   transform-origin: 0 0;
 }
 .container {
   width: 470px;
   padding: 10px 15px;
+  background-color: #ececec;
 }
 .base_info {
   position: relative;
   padding-left: 10px;
+}
+.head_box {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+.head_box .id_text{
+  font-size: 24px;
+}
+.head_box .day_text{
+  font-size: 20px;
+}
+.head_box .genshin_logo {
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  width: 97px;
 }
 .uid{
   font-family: tttgbnumber;
@@ -38,11 +54,25 @@ body {
   background: #d3bc8d;
 }
 .data_box {
-  border: 1px solid #d3bc8d;
-  border-radius: 7px;
-  margin-top: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 15px 0px 15px;
-  background: #f8f8f8;
+  background: #f5f5f5;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  padding: 20px 15px 5px 15px;
+  position: relative;
+}
+.tab_lable {
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  background: #d4b98c;
+  color:#fff;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 15px 0px 15px 15px;
+  z-index: 20;
 }
 .data_line {
   display: flex;
@@ -56,7 +86,7 @@ body {
 }
 .num {
   font-family: tttgbnumber;
-  font-size: 22px;
+  font-size: 24px;
 }
 .explor_box .num{
   font-family: tttgbnumber;
@@ -69,10 +99,16 @@ body {
   margin-top: 3px;
 }
 .explor_box {
+  position: relative;
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-radius: 15px;
+  margin-top: 10px;
+  background: #f5f5f5;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  padding: 15px;
 }
 .explor_box .item {
   margin-top: 10px;
@@ -80,7 +116,7 @@ body {
   display: flex;
   /*justify-content: center;*/
   align-items: center;
-  width: 215px;
+  width: 200px;
   height: 85px;
   padding: 3px 4px;
   border-radius: 6px;
@@ -93,10 +129,10 @@ body {
 }
 .explor_box .icon {
   width: 62px;
-  margin-left: 10px;
+  margin-left: 3px;
 }
 .explor_box .content {
-  margin-left: 7px;
+  margin-left: 4px;
   width: 130px;
 }
 .explor_box .content p {
@@ -131,4 +167,10 @@ body {
 }
 .homes_hidden {
   display: none;
+}
+.logo {
+  font-size: 12px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
 }
