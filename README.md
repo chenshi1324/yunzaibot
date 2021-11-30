@@ -66,7 +66,7 @@ node app
 ## 致谢
 | Nickname                                                     | Contribution                        |
 | :----------------------------------------------------------: | ----------------------------------- |
-|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 使用了其抽卡图片资源 |
+|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 部分抽卡素材来源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
 
