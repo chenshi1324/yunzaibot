@@ -2,7 +2,7 @@
 云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，Puppeteer截图生成图片返回
 
 # 使用方法
->环境准备： Windows or Linux，Node.js（版本至少v14以上），Redis
+>环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），Redis
 >
 >[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行
 ```
