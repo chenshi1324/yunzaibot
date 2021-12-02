@@ -8,7 +8,7 @@
   <body>
     <style>
       .head_box {
-        background:url(../../../../resources/genshin/roleAll/namecard/{{bg}}.png) #f5f5f5;
+        background: url(../../../../resources/genshin/roleAll/namecard/{{bg}}.png) #f5f5f5;
         background-position-x: 30px;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -22,7 +22,7 @@
       <div class="head_box">
         <div class="id_text">ID: {{uid}}</div>
         <div class="day_text">{{activeDay}}</div>
-        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png">
+        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png" />
       </div>
       <div class="data_box">
         <div class="tab_lable">数据总览</div>
@@ -47,7 +47,7 @@
             <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命 </span>
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
-            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png"/>
+            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
             <div class="desc">Lv.{{val.level}}</div>
             <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
@@ -55,7 +55,7 @@
         </div>
         {{/each}}
       </div>
-      {{/if}}
+      {{/if}} 
       {{if abyss.time}}
       <div class="abyss_box">
         <div class="row">
@@ -76,10 +76,7 @@
               {{ if val.life>0}}
               <span class="life life{{val.life}}">{{val.life}}命</span>
               {{/if}}
-              <img
-                class="role_img bg{{val.star}}"
-                src="../../../../resources/genshin/logo/role/{{val.name}}.png"
-              />
+              <img class="role_img bg{{val.star}}" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
               <div class="desc">Lv.{{val.level}}</div>
               <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
             </div>
@@ -137,5 +134,10 @@
       <div class="logo">Create By Yunzai-Bot</div>
     </div>
   </body>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    function whenError(a) {
+      a.onerror = null;
+      a.src = "../../../../resources/genshin/logo/role/荧.png";
+    }
+  </script>
 </html>
