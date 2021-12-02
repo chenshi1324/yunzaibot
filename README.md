@@ -1,5 +1,5 @@
 # Yunzai-Bot
-云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，Puppeteer截图生成图片返回
+云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
 
 # 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），Redis
@@ -22,7 +22,7 @@ node app
 # 操作指令
 >群昵称加上游戏的uid（仅第一次需要），#号+指令触发
 >
->下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
+>#帮助 查看命令说明，下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
 
 ### 
 ![示例](resources/readme/示例.png)
