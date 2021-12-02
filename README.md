@@ -24,9 +24,13 @@ node app
 >
 >下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
 
-### #角色名称/#神里/#老婆/#老公
-![神里](resources/readme/神里.png)
-![早柚](resources/readme/早柚.png)
+### 
+![示例](resources/readme/示例.png)
+
+<details>
+<summary>#角色名称/#神里/#老婆/#老公</summary>
+<img src="resources/readme/早柚.png" alt="#早柚">
+</details>
 
 <details>
 <summary>#角色、#角色2</summary>
