@@ -1,4 +1,6 @@
 #!/bin/bash
+# CentOS 8.2 Node.js 14.16.1
+# 2021年12月3日16:26:06
 
 yum -y install redis 
 systemctl start redis.service
