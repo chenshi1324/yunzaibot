@@ -69,5 +69,8 @@ node app
 |[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 部分抽卡素材来源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
+### 其他
+有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
 
+也可以加群 213938015 反馈 ~
 
