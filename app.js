@@ -5,7 +5,7 @@ import { dealMsg } from "./lib/dealMsg.js";
 import { check } from "./lib/check.js";
 
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
-const config = await check();
+await check();
 const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 global.Bot = Bot;
@@ -14,7 +14,7 @@ global.Bot = Bot;
 Bot.on("system.online", async () => {
   logger.mark("----------");
   logger.mark("初始化Yunzai-Bot");
-  await init(config);
+  await init();
   logger.mark(`Yunzai-Bot 上线成功 版本v${packageJson.version}`);
   logger.mark("https://github.com/Le-niao/Yunzai-Bot");
   logger.mark("----------");
