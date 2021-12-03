@@ -14,7 +14,7 @@ global.Bot = Bot;
 Bot.on("system.online", async () => {
   logger.mark("----------");
   logger.mark("初始化Yunzai-Bot");
-  await init();
+  await init(config);
   logger.mark(`Yunzai-Bot 上线成功 版本v${packageJson.version}`);
   logger.mark("https://github.com/Le-niao/Yunzai-Bot");
   logger.mark("----------");
