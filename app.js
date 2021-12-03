@@ -1,10 +1,11 @@
 import fs from "fs";
 import { createClient } from "oicq";
-import { config } from "./config/config.js";
 import { init } from "./lib/init.js";
 import { dealMsg } from "./lib/dealMsg.js";
+import { check } from "./lib/check.js";
 
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
+const config = await check();
 const Bot = createClient(config.account.qq);
 global.logger = Bot.logger;
 global.Bot = Bot;

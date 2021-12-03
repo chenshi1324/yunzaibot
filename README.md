@@ -11,11 +11,7 @@ git clone https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
 npm install （无法连接外网的可以尝试cnpm安装）
 
-2.配置
-打开config文件夹，复制一份 config_default.js 重命名为 config.js
-打开config.js填写好配置
-
-3.运行
+2.运行
 node app
 ```
 

@@ -18,7 +18,7 @@ let config = {
     db: 0,             //redis数据库
   },
 
-  //米游社cookies，支持多个
+  //米游社cookies，支持多个，用逗号隔开
   //访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
   //选中 Console 或控制台，点击控制台粘贴这一句
   //
