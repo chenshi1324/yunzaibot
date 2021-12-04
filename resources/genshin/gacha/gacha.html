@@ -14,7 +14,9 @@
       <div class="background">
         <div class="bg-info">{{name}}</div>
         <div class="bg-info-more">{{info}}</div>
-        <div class="bg-upType">角色池-{{upType}}</div>
+        {{if poolName}}
+        <div class="bg-upType">{{poolName}}</div>
+        {{/if}}
       </div>
       <div class="gacha">
         {{each list}}
