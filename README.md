@@ -18,7 +18,9 @@ node app
 # 操作指令
 >群昵称加上游戏的uid（仅第一次需要），#号+指令触发
 >
->#帮助 查看命令说明，下面详细指令展示，[其他说明](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
+>#帮助 查看命令说明，下面详细指令展示
+>
+>[其他说明](resources/readme/命令说明.md)，[如何获取cookie](resources/readme/命令说明.md)，[抽卡记录说明](resources/logHelp/记录帮助.md)
 
 ### 
 ![示例](resources/readme/示例.png)
