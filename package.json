@@ -20,7 +20,7 @@
     "md5": "^2.3.0",
     "node-fetch": "^3.0.0",
     "node-schedule": "^2.0.0",
-    "oicq": "^2.1.7",
+    "oicq": "^2.1.8",
     "prettier": "^2.4.1",
     "puppeteer": "^10.4.0",
     "redis": "^4.0.0-rc.3"
