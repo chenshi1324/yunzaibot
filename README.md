@@ -4,12 +4,15 @@
 # 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），Redis
 >
->[Linux环境搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行
+>[Linux环境一键搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行
 ```
 1.安装
 git clone https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
-npm install （无法连接外网的可以尝试cnpm安装）
+
+用cnpm安装
+npm install -g cnpm --registry=https://registry.npmmirror.com
+cnpm install
 
 2.运行
 node app
