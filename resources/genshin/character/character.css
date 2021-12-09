@@ -621,3 +621,13 @@ body {
     background-size: 100%;
     background-position: 110px 0px;
 }
+.荒泷一斗_bg1{
+    background-image: url(../logo/bg/荒泷一斗1.png);
+    background-size: auto 100%;
+    background-position: 48% 0%;
+}
+.荒泷一斗_bg2{
+    background-image: url(../logo/bg/荒泷一斗2.png);
+    background-size: 100%;
+    background-position: 150px 0px;
+}
