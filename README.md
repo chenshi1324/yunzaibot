@@ -77,5 +77,5 @@ node app
 ### 其他
 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
 
-也可以加群 213938015 反馈 ~
+也可以加群 213938015 反馈 ，最后再求个star ~~
 
