@@ -33,8 +33,10 @@ Bot.on("message.private", (event) => {
 
 //处理好友事件
 Bot.on("request.friend", (event) => {
-  this.logger.mark(`添加好友：${event.user_id}`);
-  Bot.setFriendAddRequest(event.flag, true);
+  if (event.sub_type == "add") {
+    Bot.logger.mark(`添加好友：${event.user_id}`);
+    event.approve(true);
+  }
 });
 
 Bot.on("system.login.qrcode", function (e) {
