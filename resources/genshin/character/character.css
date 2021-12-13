@@ -172,6 +172,7 @@ body {
     padding: 5px 5px 1px 7px;
     border-radius: 10px;
     background: linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),rgba(114,102,104,.3);
+    margin-left: 5px;
 }
 .equiv_info .text{
     margin-bottom: 5px;
