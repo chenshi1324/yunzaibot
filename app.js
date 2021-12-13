@@ -33,7 +33,7 @@ Bot.on("message.private", (event) => {
 
 //处理好友事件
 Bot.on("request.friend", (event) => {
-  if (event.sub_type == "add") {
+  if (event.sub_type == "add" || event.sub_type == "single") {
     Bot.logger.mark(`添加好友：${event.user_id}`);
     event.approve(true);
   }
