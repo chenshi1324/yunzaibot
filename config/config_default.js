@@ -42,8 +42,8 @@ let config = {
       mysDayLimit: 20, //每天每人查询次数
       mysUidLimit: 5,  //每天每人查询uid个数
 
-      groupCD:  0,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
-      singleCD: 1000,  //群聊中个人操作冷却时间，单位毫秒
+      groupCD:  500,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
+      singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
 
       disable: [],     //禁用功能 'gacha','mysInfo','gachaLog','face','other'
     },

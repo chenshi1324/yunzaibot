@@ -44,19 +44,30 @@
         <div class="item">
           <div class="role_box">
             {{ if val.actived_constellation_num>0}}
-            <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命 </span>
+            <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
             <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
             <div class="desc">Lv.{{val.level}}</div>
-            <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
           </div>
-          <div class="role_name">{{val.name}}</div>
+          <div class="text_box">
+            <div class="weapon_box">
+              <div class="weapon_boder">
+                <img class="weapon_img" src="../../../../resources/genshin/logo/weapon/{{val.weapon.name}}.png" />
+              </div>
+            </div>
+            <div class="weapon_name_box">
+              <div class="weapon_name">{{val.weapon.showName}}</div>
+              <div class="weapon_level">
+                Lv.{{val.weapon.level}}{{ if val.weapon.affix_level>1}}<span class="weapon_affix">{{val.weapon.affix_level}}</span>{{/if}}
+              </div>
+            </div>
+          </div>
         </div>
+
         {{/each}}
       </div>
-      {{/if}} 
-      {{if abyss.time}}
+      {{/if}} {{if abyss.time}}
       <div class="abyss_box">
         <div class="row">
           <div class="item">
@@ -76,8 +87,12 @@
               {{ if val.life>0}}
               <span class="life life{{val.life}}">{{val.life}}命</span>
               {{/if}}
-              <img class="role_img bg{{val.star}}" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
-              <div class="desc">Lv.{{val.level}}</div>
+              <img
+                class="role_img bg{{val.rarity}}"
+                src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+                onerror="whenError(this)"
+              />
+              <div class="desc">{{val.value}}次</div>
               <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
             </div>
             {{/each}}
