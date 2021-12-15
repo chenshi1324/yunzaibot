@@ -13,7 +13,8 @@
 body {
   font-size: 12px;
   color: #1e1f20;
-  max-width: 555px;
+  /* 米哈游干的好事 */
+  max-width: 330px;
   font-family: PingFangSC-Medium, PingFang SC, sans-serif;
   transform: scale(1.8);
   transform-origin: 0 0;
