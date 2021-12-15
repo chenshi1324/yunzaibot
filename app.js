@@ -1,7 +1,7 @@
 import fs from "fs";
 import { createClient } from "oicq";
 import { init } from "./lib/init.js";
-import { dealMsg } from "./lib/dealMsg.js";
+import { dealMsg, dealGroupNotice } from "./lib/dealMsg.js";
 import { check } from "./lib/check.js";
 
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
@@ -37,6 +37,11 @@ Bot.on("request.friend", (event) => {
     Bot.logger.mark(`添加好友：${event.user_id}`);
     event.approve(true);
   }
+});
+
+//接收群通知
+Bot.on("notice.group", (event) => {
+  dealGroupNotice(event);
 });
 
 Bot.on("system.login.qrcode", function (e) {
