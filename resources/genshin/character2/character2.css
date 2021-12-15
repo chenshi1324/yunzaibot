@@ -1,0 +1,195 @@
+@font-face {
+  font-family: HYWenHei-55W;
+  src: url("../../font/HYWenHei-55W.TTF") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  width: 575px;
+  height: 360px;
+  font-family: HYWenHei-55W;
+  font-size: 16px;
+  color: #fff;
+  transform: scale(1.25);
+  transform-origin: 0 0;
+}
+.user-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 575px;
+  height: 360px;
+  background-color: #1234;
+}
+
+.top {
+  display: flex;
+  width: 300px;
+  background-size: 100%;
+  padding-bottom: 10px;
+}
+.user-info {
+  min-width: 180px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px 0px 20px;
+  padding: 10px 10px;
+  border-radius: 9px;
+  z-index: 1;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+.user-info .name-wrap {
+  display: flex;
+}
+
+.name-wrap .name {
+  font-size: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name-wrap .level {
+  margin-top: 16px;
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-info .uid {
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-position: bottom;
+  /* text-shadow: 0px 0px 10px rgba(19, 19, 19, 50%); */
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  margin-left: 20px;
+  padding: 10px 20px 10px 10px;
+  background: rgba(1, 1, 1, 0.5);
+  border-radius: 9px;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+.bottom .section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  line-height: 1;
+  z-index: 1;
+  margin-bottom: 7px;
+}
+
+.bottom .section .val {
+  font-size: 24px;
+  margin-top: 5px;
+  padding-left: 17px;
+  background: url(./点.png) no-repeat left 4px;
+  background-size: 12px;
+  position: relative;
+}
+.bottom .section .val .weapon-level {
+  font-size: 12px;
+  margin-left: 5px;
+  position: absolute;
+  bottom: 0;
+}
+.bottom .section .val .weapon-affix {
+  /* transform: scale(0.8); */
+  font-size: 12px;
+  padding: 3px 3px 2px 3px;
+  border-radius: 5px;
+  position: absolute;
+  right: -18px;
+  top: -6px;
+}
+.bottom .section .relics {
+  font-size: 20px;
+}
+.bottom .section .desc {
+  font-size: 14px;
+  margin-top: 4px;
+  width: 100px;
+  padding: 5px 5px 3px 5px;
+}
+.bottom .section .desc .text {
+  transform: skew(-11deg);
+}
+.bg_风 {
+  background-color: #3adda6;
+}
+.风 {
+  border-left: 5px solid #3adda6;
+  background: linear-gradient(to left, transparent, rgb(68 255 192 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.bg_火 {
+  background-color: #e8683b;
+}
+.火 {
+  border-left: 5px solid #e8683b;
+  background: linear-gradient(to left, transparent, rgb(253 66 0 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.bg_冰 {
+  background-color: #b1ecff;
+}
+.冰 {
+  border-left: 5px solid #b1ecff;
+  background: linear-gradient(to left, transparent, rgb(100 217 255 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.bg_岩 {
+  background-color: #e3b66c;
+}
+.岩 {
+  border-left: 5px solid #e3b66c;
+  background: linear-gradient(to left, transparent, rgb(207 150 56 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.bg_水 {
+  background-color: #43d1fc;
+}
+.水 {
+  border-left: 5px solid #43d1fc;
+  background: linear-gradient(to left, transparent, rgb(52 208 255 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.bg_雷 {
+  background-color: #ca89ff;
+}
+.雷 {
+  border-left: 5px solid #ca89ff;
+  background: linear-gradient(to left, transparent, rgb(176 92 245 / 50%) 70%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 0%, 70% 100%, 0% 100%);
+}
+.user-container.less .bottom .section.world-exploration,
+.user-container.less .chest-list {
+  display: none;
+}
+.user-container.less .bottom .section.spiral-abyss {
+  margin-right: auto;
+}
+/* .cover {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-15%, #111), color-stop(80%, transparent));
+  background: linear-gradient(90deg, #111 -15%, transparent 50%);
+} */
