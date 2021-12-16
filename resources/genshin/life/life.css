@@ -13,8 +13,7 @@
 body {
   font-size: 12px;
   color: #1e1f20;
-  /* 米哈游干的好事 */
-  max-width: 330px;
+  max-width: 450px;
   font-family: PingFangSC-Medium, PingFang SC, sans-serif;
   transform: scale(1.8);
   transform-origin: 0 0;
@@ -33,7 +32,7 @@ body {
 }
 .base_info {
   /*width:  200px;*/
-  margin: 0 0 15px 10px;
+  margin: 0 0 10px 10px;
   font-size: 16px;
   position: relative;
 }
@@ -56,17 +55,19 @@ body {
   flex-wrap: wrap;
 }
 .item {
-  width: 65px;
   margin: 0px 0 10px 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
+  width: 95px;
+  background: #e9e5dc;
 }
 .role_box {
   overflow: hidden;
-  height: 80px;
-  border-radius: 5px;
+  height: 95px;
+  width: 95px;
   position: relative;
-  /*border: 2px solid #d3bc8d;*/
   background: #e9e5dc;
-  box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
 }
 .role_box .role_img {
   width: 100%;
@@ -80,24 +81,70 @@ body {
 .bg105 {
   background-image: url(./bg105.png);
   width: 100%;
-  height: 70px;
+  height: 95px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .bg5 {
   background-image: url(./bg5.png);
   width: 100%;
-  height: 70px;
+  height: 95px;
   /*filter: brightness(1.1);*/
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .bg4 {
   width: 100%;
-  height: 70px;
+  height: 95px;
   background-image: url(./bg4.png);
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.item .text_box{
+  font-size: 12px;
+  background: #e9e5dc;
+  padding: 5px 0px 4px 0px;
+  font-family: tttgbnumber;
+  display: flex;
+  align-items: flex-start;
+}
+.item .text_box .weapon_box{
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  padding: 2px;
+  border-radius: 5px;
+  background: rgba(0,0,0,.6);
+  overflow: hidden;
+  margin-left: 3px;
+}
+.item .text_box .weapon_boder{
+  border: 1px solid #d3bc8d;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.item .text_box .weapon_img{
+  width: 100%;
+  transform: scale(1.2, 1.2);
+  
+}
+.item .text_box .weapon_name_box{
+  margin-left: 3px;
+  white-space: nowrap;
+}
+.item .text_box .weapon_name_box .weapon_level{
+  margin-top: 2px;
+}
+.item .text_box .weapon_affix{
+  border-radius: 2px;
+  background-color: #ff5722;
+  padding: 2px 3px;
+  color:#fff;
+  display: inline-block;
+  transform: scale(0.8);
+  transform-origin: 12px 7px;
 }
 .role_box .fill_img {
   position: absolute;
@@ -111,12 +158,13 @@ body {
   line-height: 18px;
   position: absolute;
   bottom: 0;
-  background: #e9e5dc;
+  /* background: #e9e5dc; */
+  background: rgba(0,0,0,.6);
+  color: #ececec;
   width: 100%;
   height: 18px;
   font-size: 14px;
-  display: flex;
-  justify-content: center;
+  font-family: tttgbnumber;
 }
 .role_name {
   /* overflow: hidden; */
@@ -132,7 +180,7 @@ body {
   top: 0px;
   right: 0px;
   z-index: 9;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   color: #fff;
   border-radius: 2px;

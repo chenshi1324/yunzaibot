@@ -35,7 +35,7 @@ node app
 
 <details>
 <summary>#角色、#角色2</summary>
-<img src="resources/readme/角色2.png" alt="#角色2">
+<img src="resources/readme/角色2.png" alt="#角色">
 </details>
 
 <details>
@@ -46,11 +46,6 @@ node app
 <details>
 <summary>#四星/#五星</summary>
 <img src="resources/readme/五星.png" alt="#五星">
-</details>
-
-<details>
-<summary>#武器</summary>
-<img src="resources/readme/武器.png" alt="#武器">
 </details>
 
 <details>
@@ -78,4 +73,6 @@ node app
 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
 
 也可以加群 213938015 反馈 ，最后再求个star ~~
+
+图片素材来源于网络，仅供交流学习使用
 

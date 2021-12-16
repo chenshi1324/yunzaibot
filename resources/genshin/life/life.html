@@ -20,29 +20,26 @@
           {{each list val}}
           <div class="item">
             <div class="role_box">
-              
               {{ if val.actived_constellation_num>0}}
-              <span class="life life{{val.actived_constellation_num}}">
-                {{val.actived_constellation_num}}命
-              </span>
+              <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
               {{/if}}
               <div class="bg{{val.rarity}}"></div>
-              <img
-                class="role_img"
-                src="../../../../resources/genshin/logo/role/{{val.name}}.png"
-                onerror="whenError(this)"
-              />
-              <div class="desc">
-                <span class="level">Lv.{{val.level}}</span>
-                {{ if val.fetter>=10}}
-                  <span class="heart">
-                    <span class="fetter">{{val.fetter}}</span>
-                  </span>
-                {{/if}}
-              </div>
-              <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+              <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
+              <div class="desc">Lv.{{val.level}}</div>
             </div>
-            <div class="role_name">{{val.name}}</div>
+            <div class="text_box">
+              <div class="weapon_box">
+                <div class="weapon_boder">
+                  <img class="weapon_img" src="../../../../resources/genshin/logo/weapon/{{val.weapon.name}}.png" />
+                </div>
+              </div>
+              <div class="weapon_name_box">
+                <div class="weapon_name">{{val.weapon.showName}}</div>
+                <div class="weapon_level">
+                  Lv.{{val.weapon.level}}{{ if val.weapon.affix_level>1}}<span class="weapon_affix">{{val.weapon.affix_level}}</span>{{/if}}
+                </div>
+              </div>
+            </div>
           </div>
           {{/each}}
         </div>
