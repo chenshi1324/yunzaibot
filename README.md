@@ -35,7 +35,7 @@ node app
 
 <details>
 <summary>#角色、#角色2</summary>
-<img src="resources/readme/角色2.png" alt="#角色">
+<img src="resources/readme/角色.png" alt="#角色">
 </details>
 
 <details>
