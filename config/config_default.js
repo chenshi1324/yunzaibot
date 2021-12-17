@@ -58,6 +58,9 @@ let config = {
     // }
   },
 
+  //黑名单qq
+  balckQQ:['',],
+
   //原神体力查询（#体力），配置了才能查
   dailyNote: {
     'qq号': { uid: "", cookie: "" },
