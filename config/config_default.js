@@ -45,6 +45,8 @@ let config = {
       groupCD:  500,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
       singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
 
+      imgRate:10,      //斗图回复概率0-100 需要配置百度ocr
+      
       disable: [],     //禁用功能 'gacha','mysInfo','gachaLog','face','other'
     },
 
@@ -59,11 +61,18 @@ let config = {
   },
 
   //黑名单qq
-  balckQQ:['',],
+  balckQQ:[2854196310,],
 
   //原神体力查询（#体力），配置了才能查
   dailyNote: {
     'qq号': { uid: "", cookie: "" },
+  },
+
+  //百度ocr https://ai.baidu.com/ai-doc/OCR/dk3iqnq51
+  BaiduOcr:{
+    APP_ID: "",
+    API_KEY: "",
+    SECRET_KEY: "",
   },
 };
 
