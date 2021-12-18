@@ -101,7 +101,7 @@ body {
   border-radius: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 25px 5px 0px 5px;
+  padding: 25px 5px 0px 2px;
   background: #f5f5f5;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   position: relative;
@@ -168,7 +168,7 @@ body {
   border-radius: 5px;
   background: rgba(0,0,0,.6);
   overflow: hidden;
-  margin-left: 3px;
+  margin-left: 4px;
 }
 .item .text_box .weapon_boder{
   border: 1px solid #d3bc8d;
@@ -183,7 +183,7 @@ body {
   
 }
 .item .text_box .weapon_name_box{
-  margin-left: 3px;
+  margin-left: 4px;
   white-space: nowrap;
 }
 .item .text_box .weapon_name_box .weapon_level{
