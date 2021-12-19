@@ -34,6 +34,11 @@ node app
 </details>
 
 <details>
+<summary>戳一戳/#温迪2</summary>
+<img src="resources/readme/温迪2.png" alt="#早柚">
+</details>
+
+<details>
 <summary>#角色、#角色2</summary>
 <img src="resources/readme/角色.png" alt="#角色">
 </details>

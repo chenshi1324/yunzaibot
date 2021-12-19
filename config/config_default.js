@@ -69,6 +69,7 @@ let config = {
   },
 
   //百度ocr https://ai.baidu.com/ai-doc/OCR/dk3iqnq51
+  //智障斗图用
   BaiduOcr:{
     APP_ID: "",
     API_KEY: "",
