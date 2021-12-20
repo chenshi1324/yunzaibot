@@ -45,7 +45,7 @@ let config = {
       groupCD:  500,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
       singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
 
-      imgRate:10,      //斗图回复概率0-100 需要配置百度ocr
+      imgRate:10,      //斗图回复概率0-100 需要配置百度ocr 配置往下滚
       
       disable: [],     //禁用功能 'gacha','mysInfo','gachaLog','face','other'
     },
@@ -54,9 +54,9 @@ let config = {
     // 'q群号':{
     //   //米游社信息查询
     //   mysDayLimit: 15, //每天每人查询次数
-    //   mysUidLimit: 3, //每天每人查询uid个数
-    //   groupCD:  0,    //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
-    //   singleCD: 0,    //群聊中个人操作冷却时间，单位毫秒
+    //   mysUidLimit: 3,  //每天每人查询uid个数
+    //   groupCD:  1000,  //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
+    //   singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
     // }
   },
 
