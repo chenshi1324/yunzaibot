@@ -29,7 +29,8 @@ let command = {
     add: "^(.*)添加(.*)$",
     del: "^#*删除(.*)$",
     list: "^#*表情列表[0-9]*$",
-    random: "noCheck", //斗图
+    random: "noCheck",   //斗图
+    atRandom: "noCheck", //at回复表情
   },
 };
 export { command };
