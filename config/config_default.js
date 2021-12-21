@@ -48,7 +48,9 @@ let config = {
 
       imgRate:10,      //斗图回复概率0-100 需要配置百度ocr 配置往下滚
       
-      disable: [],     //禁用功能 'gacha','mysInfo','gachaLog','face','other'
+      //禁用功能 'poke','gacha','mysInfo','gachaLog','face','other'
+      //默认禁用戳一戳
+      disable: ['poke'],
     },
 
     //每个群的单独配置(用于覆盖通用配置)
