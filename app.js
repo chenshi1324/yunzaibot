@@ -6,7 +6,10 @@ import { check } from "./lib/check.js";
 
 const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
 await check();
-const Bot = createClient(BotConfig.account.qq, { log_level: BotConfig.account.log_level });
+const Bot = createClient(BotConfig.account.qq, { 
+  log_level: BotConfig.account.log_level,
+  platform: BotConfig.account.platform,
+});
 global.Bot = Bot;
 
 //监听上线事件

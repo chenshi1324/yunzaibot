@@ -9,6 +9,7 @@ let config = {
     qq:  "",  //账号
     pwd: "",  //密码，可为空则用扫码登录
     log_level:"info",//日志等级:trace,debug,info,warn,error,fatal,mark,off
+    platform:5,      //1:安卓手机、 2:aPad 、 3:安卓手表、 4:MacOS 、 5:iPad
   },
 
   //redis配置(默认配置就好，一般都不用改)
@@ -37,7 +38,9 @@ let config = {
   group: {
     //通用默认配置
     'default': {
+      delMsg: 60000,   //隔多少毫秒后撤回消息（十连），0不撤回
       gachaDayNum: 1,  //每天抽卡次数，限制次数，防止刷屏,4点重置
+      
       //米游社信息查询
       mysDayLimit: 20, //每天每人查询次数
       mysUidLimit: 5,  //每天每人查询uid个数
