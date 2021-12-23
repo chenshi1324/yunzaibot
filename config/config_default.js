@@ -38,7 +38,7 @@ let config = {
   group: {
     //通用默认配置
     'default': {
-      delMsg: 60000,   //隔多少毫秒后撤回消息（十连），0不撤回
+      delMsg: 115000,  //隔多少毫秒后撤回消息（十连），0不撤回
       gachaDayNum: 1,  //每天抽卡次数，限制次数，防止刷屏,4点重置
       
       //米游社信息查询
@@ -47,13 +47,15 @@ let config = {
 
       groupCD:  500,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
       singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
-      PokeCD: 5000,    //群聊中戳一戳冷却时间，单位毫秒
+      PokeCD:   10000, //群聊中戳一戳冷却时间，单位毫秒
 
       imgRate:10,      //斗图回复概率0-100 需要配置百度ocr 配置往下滚
       
-      //禁用功能 'poke','gacha','mysInfo','gachaLog','face','other'
+      //禁用功能 
+      //'poke','gacha','mysInfo','gachaLog','face','other'
+      // 戳一戳，十连，原神查询，抽卡记录，表情，其他
       //默认禁用戳一戳
-      disable: ['poke'],
+      disable: [],
     },
 
     //每个群的单独配置(用于覆盖通用配置)
