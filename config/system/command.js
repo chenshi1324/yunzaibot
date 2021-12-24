@@ -15,7 +15,7 @@ let command = {
   gachaLog:{
     bing:"(.*)authkey_ver(.*)",
     bingFile:"noCheck",
-    getLog:"^#*(抽卡|角色|武器|常驻|up)(记录|祈愿)$",
+    getLog:"^#*(抽卡|角色|武器|常驻|up)(记录|祈愿|分析)$",
     help:"^#*(记录帮助|抽卡帮助)$",
     helpPort:"^#*(安卓帮助|苹果帮助|电脑帮助)$",
   },
