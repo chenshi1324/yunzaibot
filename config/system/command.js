@@ -26,7 +26,7 @@ let command = {
   //表情
   face: {
     get: "noCheck",
-    add: "^(.*)添加(.*)$",
+    add: "noCheck",
     del: "^#*删除(.*)$",
     list: "^#*表情列表[0-9]*$",
     listFuzzy: "^#*表情(.*)$",
