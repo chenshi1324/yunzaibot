@@ -413,6 +413,11 @@ body {
     background-size: 105%;
     background-position: 87px -15px;
 }
+.刻晴_bg3{
+    background-image: url(../logo/bg/刻晴3.png);
+    background-size: 105%;
+    background-position: 87px 0px;
+}
 .凝光_bg1{
     background-image: url(../logo/bg/凝光1.png);
     background-size: auto 100%;
@@ -422,6 +427,11 @@ body {
     background-image: url(../logo/bg/凝光2.png);
     background-size: 100%;
     background-position: 140px 0px;
+}
+.凝光_bg3{
+    background-image: url(../logo/bg/凝光3.png);
+    background-size: 100%;
+    background-position: 60px 0px;
 }
 .七七_bg1{
     background-image: url(../logo/bg/七七1.png);
