@@ -27,6 +27,7 @@
     "node-fetch": "^3.0.0",
     "node-schedule": "^2.0.0",
     "oicq": "^2.1.8",
+    "pm2": "^5.1.2",
     "prettier": "^2.4.1",
     "puppeteer": "^13.0.0",
     "redis": "^4.0.0-rc.3"
