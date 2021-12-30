@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'tttgbnumber';
+  font-family: "tttgbnumber";
   src: url("../../font/tttgbnumber.ttf");
   font-weight: normal;
   font-style: normal;
@@ -11,7 +11,7 @@
 
 body {
   position: absolute;
-  transform: scale(0.5);
+  transform: scale(0.9);
   transform-origin: 0 0;
 }
 
@@ -22,6 +22,7 @@ body {
   width: 1286px;
   height: 670px;
   background-image: url(./items/background.jpg);
+  background-size: 100% 100%;
 }
 .bg-info {
   position: fixed;
@@ -30,7 +31,7 @@ body {
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.3);
+  background-color: rgba(5, 5, 5, 0.6);
   padding: 8px 10px;
   border-radius: 5px;
   max-width: 400px;
@@ -45,34 +46,37 @@ body {
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.3);
+  background-color: rgba(5, 5, 5, 0.6);
   padding: 8px 10px;
   border-radius: 5px;
 }
-.bg-upType{
+.bg-upType {
   position: fixed;
   top: 8px;
   right: 55px;
   font-size: 46px;
   color: rgb(255, 255, 255);
   z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.3);
+  background-color: rgba(5, 5, 5, 0.6);
   padding: 8px 10px;
   border-radius: 5px;
 }
+.gacha {
+  display: flex;
+}
 .gacha-box {
   position: relative;
-  display: inline-flex;
   top: 24px;
 }
 
 .gacha-box:first-child {
-  margin-left: 65px;
+  margin-left: 80px;
 }
 
 .element .star-background {
   position: relative;
   width: 112px;
+  z-index: 80;
 }
 
 .element .star-image {
@@ -81,7 +85,8 @@ body {
   z-index: 1;
   width: 82px;
   left: 15px;
-  top: -202px;
+  top: -175px;
+  z-index: 101;
 }
 
 .element .weapon-image {
@@ -89,8 +94,11 @@ body {
   width: 112px;
   top: 150px;
   z-index: 101;
+  filter: drop-shadow(4px 10px 0px #333);
 }
-
+.element .weapon-image-4 {
+  top: 48px;
+}
 .element .weapon-image-shadow {
   position: relative;
   width: 112px;
@@ -105,7 +113,7 @@ body {
   position: absolute;
   width: 65px;
   left: 23px;
-  top: 412px;
+  top: 435px;
   z-index: 102;
 }
 
@@ -117,15 +125,51 @@ body {
   text-align: center;
   font-size: 15px;
 }
-
-.element .character-image {
+.element .character-image-box {
+  width: 105px;
+  height: 475px;
   position: absolute;
-  display: inline-block;
-  margin: 0 3px;
-  width: 106px;
-  bottom: 129px;
-}
+  top: 99px;
+  left: 3px;
+  clip-path: url(#wishframe);
+  z-index: 100;
 
+}
+.element .character-image {
+  height: 100%;
+  position: absolute;
+  left: -20%;
+  filter: drop-shadow(4px 10px 0px #333);
+}
+.character-image-border {
+  width: 107px;
+  height: 483px;
+  position: absolute;
+  top: 97px;
+  left: 3px;
+  z-index: 103;
+}
+.border-shadow {
+  filter: drop-shadow(0px 0px 4px rgb(255, 242, 221));
+}
+.element .box-shadow5{
+  width: 106px;
+  height: 471px;
+  position: absolute;
+  top: 100px;
+  border-radius: 100%;
+  z-index: 50;
+  box-shadow: 0 0 7px #fff, 0 0 10px #f9aa02, 0 0 21px #f9aa02, 0 0 35px #f97902;
+}
+.element .box-shadow4{
+  width: 106px;
+  height: 471px;
+  position: absolute;
+  top: 100px;
+  border-radius: 100%;
+  z-index: 50;
+  box-shadow: 0 0 7px #fff, 0 0 10px #9178f6, 0 0 31px #9178f6, 0 0 45px #4e35d4;
+}
 .times {
   position: absolute;
   z-index: 9999;
@@ -140,11 +184,11 @@ body {
   border-radius: 5px;
 }
 
-.logo{
+.logo {
   position: absolute;
   right: 30px;
-  bottom: 15px;
+  bottom: 33px;
   color: rgb(157 189 237 / 75%);
   font-size: 24px;
-  font-family: 'tttgbnumber';
+  font-family: "tttgbnumber";
 }
