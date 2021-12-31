@@ -10,6 +10,7 @@ await check();
 const Bot = createClient(BotConfig.account.qq, {
   log_level: BotConfig.account.log_level,
   platform: BotConfig.account.platform,
+  resend:false,
 });
 global.Bot = Bot;
 

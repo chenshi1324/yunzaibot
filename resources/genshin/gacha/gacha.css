@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "tttgbnumber";
+  font-family: 'tttgbnumber';
   src: url("../../font/tttgbnumber.ttf");
   font-weight: normal;
   font-style: normal;
@@ -7,168 +7,131 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
-  position: absolute;
   transform: scale(0.9);
   transform-origin: 0 0;
-}
-
-.background {
   position: absolute;
 }
+
 .container {
   width: 1286px;
   height: 670px;
   background-image: url(./items/background.jpg);
   background-size: 100% 100%;
+  overflow: hidden;
 }
-.bg-info {
-  position: fixed;
-  top: 8px;
-  left: 65px;
+.info-bg{
+  background-color: rgba(5, 5, 5, 0.6);
   font-size: 46px;
   color: rgb(255, 255, 255);
-  z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.6);
   padding: 8px 10px;
   border-radius: 5px;
-  max-width: 400px;
+
+}
+.info-name{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 400px;
+  position: fixed;
+  top: 8px;
+  left: 65px;
+  z-index: 9999;
 }
-.bg-info-more {
+.info-count{
   position: fixed;
   top: 85px;
   left: 65px;
-  font-size: 46px;
-  color: rgb(255, 255, 255);
   z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.6);
-  padding: 8px 10px;
-  border-radius: 5px;
 }
-.bg-upType {
+.poor-info{
   position: fixed;
   top: 8px;
   right: 55px;
-  font-size: 46px;
-  color: rgb(255, 255, 255);
   z-index: 9999;
-  background-color: rgba(5, 5, 5, 0.6);
-  padding: 8px 10px;
-  border-radius: 5px;
 }
-.gacha {
+.list-box{
   display: flex;
+  padding-top: 130px;
+  padding-left: 85px;
 }
-.gacha-box {
+.list-box .item{
   position: relative;
-  top: 24px;
 }
-
-.gacha-box:first-child {
-  margin-left: 80px;
-}
-
-.element .star-background {
-  position: relative;
+.list-box .item .item-bg-box{
   width: 112px;
-  z-index: 80;
+  height: 450px;
 }
-
-.element .star-image {
-  display: flex;
-  position: relative;
-  z-index: 1;
-  width: 82px;
-  left: 15px;
-  top: -175px;
-  z-index: 101;
-}
-
-.element .weapon-image {
+.list-box .item .item-bg{
   position: absolute;
-  width: 112px;
-  top: 150px;
-  z-index: 101;
-  filter: drop-shadow(4px 10px 0px #333);
-}
-.element .weapon-image-4 {
-  top: 48px;
-}
-.element .weapon-image-shadow {
-  position: relative;
-  width: 112px;
-  top: -553px;
-  left: 3px;
-  filter: brightness(0%);
-  opacity: 0.72;
+  width: 100%;
   z-index: 100;
 }
-
-.type-image {
+.list-box .item .item-shadow{
   position: absolute;
-  width: 65px;
-  left: 23px;
-  top: 435px;
-  z-index: 102;
+  width: 223px;
+  height: 794px;
+  top: -172px;
+  left: -57px;
+  z-index: 50;
 }
-
-.element .weapon-name {
+.list-box .item .item-shadow2{
   position: absolute;
-  color: rgb(242, 242, 242);
-  width: 112px;
-  top: 434px;
-  text-align: center;
-  font-size: 15px;
+  top: 7px;
+  left: 7px;
+  height: 436px;
+  z-index: 110;
+  width: 99px;
 }
-.element .character-image-box {
-  width: 105px;
-  height: 475px;
+.item-img-box{
   position: absolute;
-  top: 99px;
+  top: 1px;
   left: 3px;
+  width: 106px;
+  height: 448px;
   clip-path: url(#wishframe);
   z-index: 100;
-
 }
-.element .character-image {
+.item-character-img{
   height: 100%;
   position: absolute;
   left: -20%;
-  filter: drop-shadow(4px 10px 0px #333);
 }
-.character-image-border {
-  width: 107px;
-  height: 483px;
+.item-weapon-img{
   position: absolute;
-  top: 97px;
-  left: 3px;
-  z-index: 103;
+  width: 112px;
+  top: 55px;
+  z-index: 101;
+  filter: drop-shadow(3px 9px 0px #333);
 }
-.border-shadow {
-  filter: drop-shadow(0px 0px 4px rgb(255, 242, 221));
+.item-weapon-img-4{
+  top: 48px;
 }
-.element .box-shadow5{
-  width: 106px;
-  height: 471px;
+.item-element{
   position: absolute;
-  top: 100px;
-  border-radius: 100%;
-  z-index: 50;
-  box-shadow: 0 0 7px #fff, 0 0 10px #f9aa02, 0 0 21px #f9aa02, 0 0 35px #f97902;
+  width: 65px;
+  left: 23px;
+  top: 320px;
+  z-index: 120;
 }
-.element .box-shadow4{
-  width: 106px;
-  height: 471px;
+.item-star{
   position: absolute;
-  top: 100px;
-  border-radius: 100%;
-  z-index: 50;
-  box-shadow: 0 0 7px #fff, 0 0 10px #9178f6, 0 0 31px #9178f6, 0 0 45px #4e35d4;
+  width: 82px;
+  left: 16px;
+  top: 389px;
+  z-index: 120;
+}
+.logo{
+  position: absolute;
+  right: 55px;
+  bottom: 35px;
+  color: rgb(157 189 237 / 75%);
+  font-size: 24px;
+  font-family: 'tttgbnumber';
 }
 .times {
   position: absolute;
@@ -177,18 +140,9 @@ body {
   text-align: center;
   font-size: 26px;
   left: 2px;
-  top: 380px;
+  top: 275px;
   color: rgb(255, 255, 255);
   padding: 2px 0;
   background-color: rgba(5, 5, 5, 0.5);
   border-radius: 5px;
-}
-
-.logo {
-  position: absolute;
-  right: 30px;
-  bottom: 33px;
-  color: rgb(157 189 237 / 75%);
-  font-size: 24px;
-  font-family: "tttgbnumber";
 }

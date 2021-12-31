@@ -2,7 +2,7 @@
 云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
 
 ## 使用方法
->环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），Redis
+>环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），[Redis](resources/readme/命令说明.md#window安装redis)
 >
 >[Linux环境一键搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行([需要安装redis](resources/readme/命令说明.md#window安装redis))
 ```
@@ -70,7 +70,7 @@ node app
 ## 致谢
 | Nickname                                                     | Contribution                        |
 | :----------------------------------------------------------: | ----------------------------------- |
-|[SilveryStar](https://github.com/SilveryStar/Adachi-BOT) | 部分抽卡素材来源 |
+|[GardenHamster](https://github.com/GardenHamster/GenshinPray) | 模拟抽卡背景素材来源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
 ### 其他

@@ -7,37 +7,31 @@
   </head>
   <body>
     <div class="container" id="container">
-      <div class="background">
-        <div class="bg-info">{{name}}</div>
-        <div class="bg-info-more">{{info}}</div>
-        {{if poolName}}
-        <div class="bg-upType">{{poolName}}</div>
-        {{/if}}
-      </div>
-      <div class="gacha">
+      <div class="info-bg info-name">{{name}}</div>
+      <div class="info-bg info-count">{{info}}</div>
+      {{if poolName}}
+      <div class="info-bg poor-info">{{poolName}}</div>
+      {{/if}}
+      <div class="list-box">
         {{each list}}
-        <div class="gacha-box">
-          <div class="element">
-            <img class="star-background" src="../../../../resources/genshin/gacha/items/bg-{{$value.star}}.png" />
-            <img class="star-image" src="../../../../resources/genshin/gacha/items/s-{{$value.star}}.png" />
-            <div {{if $value.star>3}}class="character-image-box"{{/if}}>
+          <div class="item">
+            <div class="item-bg-box">
+              <img class="item-bg" src="../../../../resources/genshin/gacha/items/bg.png"/>
+            </div>
+            <img class="item-shadow" src="../../../../resources/genshin/gacha/items/shadow-{{$value.star}}.png"/>
+            <img class="item-shadow2" src="../../../../resources/genshin/gacha/items/bg2.png"/>
+            <div {{if $value.star>3}}class="item-img-box"{{/if}}>
               <img
-                class="{{$value.type}}-image {{if $value.star>3 && $value.type=='weapon'}}weapon-image-4{{/if}}"
+                class="item-{{$value.type}}-img {{if $value.star>3 && $value.type=='weapon'}}item-weapon-img-4{{/if}}"
                 src="../../../../resources/genshin/gacha/{{$value.type}}/{{$value.name}}.png"
               />
             </div>
-            <img class="type-image" src="../../../../resources/genshin/gacha/items/{{$value.element}}.png" />
-            <div class="box-shadow{{$value.star}}"></div>
-            <img
-              class="character-image-border {{if $value.star>3}}border-shadow{{/if}}"
-              src="../../../../resources/genshin/gacha/items/border-{{$value.star}}.svg"
-            />
-
             {{if $value.star==5}}
             <div class="times">「{{$value.num}}抽」</div>
             {{/if}}
+            <img class="item-element"  src="../../../../resources/genshin/gacha/items/{{$value.element}}.png"/>
+            <img class="item-star" src="../../../../resources/genshin/gacha/items/s-{{$value.star}}.png"/>
           </div>
-        </div>
         {{/each}}
       </div>
       <div class="logo">Create By Yunzai-Bot</div>
