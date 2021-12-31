@@ -99,7 +99,8 @@ body {
 .item-character-img{
   height: 100%;
   position: absolute;
-  left: -20%;
+  left: -15%;
+  filter: drop-shadow(3px 9px 0px #333);
 }
 .item-weapon-img{
   position: absolute;
