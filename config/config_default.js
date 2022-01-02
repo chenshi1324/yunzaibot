@@ -52,9 +52,9 @@ let config = {
       imgRate:5,       //斗图回复概率0-100 需要配置百度ocr 配置往下滚
       
       //禁用功能 
-      //'poke','gacha','mysInfo','gachaLog','face','other'
-      // 戳一戳，十连，原神查询，抽卡记录，表情，其他
-      disable: [],
+      //'poke','gacha','mysInfo','gachaLog','face','other','face.atRandom'
+      // 戳一戳，十连，原神查询，抽卡记录，添加表情，其他，@回复表情
+      disable: ['face.atRandom'],
     },
 
     //每个群的单独配置(用于覆盖通用配置)
