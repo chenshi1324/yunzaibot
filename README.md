@@ -53,6 +53,11 @@ node app
 </details>
 
 <details>
+<summary>#体力</summary>
+<img src="resources/readme/体力.png" alt="#体力">
+</details>
+
+<details>
 <summary>#角色记录/#常驻记录/#武器记录</summary>
 <img src="resources/readme/角色记录.png" alt="#角色记录">
 </details>
