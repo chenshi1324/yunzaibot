@@ -13,10 +13,13 @@
 body {
   font-size: 12px;
   color: #1e1f20;
-  max-width: 450px;
+  max-width: 660px;
   font-family: PingFangSC-Medium, PingFang SC, sans-serif;
   transform: scale(1.8);
   transform-origin: 0 0;
+}
+.list8{
+  max-width: 450px;
 }
 .container {
   float: left;
