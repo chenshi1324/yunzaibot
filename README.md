@@ -16,6 +16,9 @@ cnpm install
 
 2.运行
 node app
+
+后台运行 or 停止
+npm start / npm stop
 ```
 
 ## 操作指令

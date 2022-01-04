@@ -8,8 +8,10 @@
     "node": ">= v14"
   },
   "scripts": {
+    "app": "node ./app.js",
     "test": "node ./lib/test.js",
-    "start": "node ./app.js"
+    "start": "pm2 start app.js",
+    "stop": "pm2 stop app.js"
   },
   "keywords": [
     "qqBot",
