@@ -12,7 +12,7 @@ let command = {
     character: "^#(.*)$",
     dailyNote: "^#*(体力|树脂)$",
     bingCookie: "noCheck",
-    delCookie: "^#*删除(C|c)ookie$",
+    delCookie: "^#*(删除(C|c)ookie|开启推送|关闭推送)$",
   },
   gachaLog:{
     bing:"(.*)authkey_ver(.*)",
