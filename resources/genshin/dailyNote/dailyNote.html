@@ -21,11 +21,32 @@
           <img class="icon" src="../../../../resources/genshin/dailyNote/items/树脂.png" />
           <div class="info">
             <div class="name">原粹树脂</div>
-            <div class="time">将于{{resinMaxTime}} 全部恢复</div>
+            <div class="time">
+              {{if resinMaxTime}}
+                将于{{resinMaxTime}} 全部恢复
+              {{else}}树脂已完全恢复{{/if}}
+            </div>
           </div>
         </div>
         <div class="right">
           <span>{{current_resin}}/{{max_resin}}</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="main">
+          <div class="bg"></div>
+          <img class="icon" src="../../../../resources/genshin/dailyNote/items/洞天宝钱.png" />
+          <div class="info">
+            <div class="name">洞天宝钱</div>
+            <div class="time">
+              {{if coinTime}}
+                预计{{coinTime}}达到上限
+              {{else}}存储已满{{/if}}
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span>{{current_home_coin}}/{{max_home_coin}}</span>
         </div>
       </div>
       <div class="item">

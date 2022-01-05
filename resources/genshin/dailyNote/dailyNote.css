@@ -21,12 +21,13 @@ body {
   width: 400px;
   height: 310px;
   background: #f0eae3;
-  padding: 11px 16px;
+  padding: 8px 16px;
 }
 .title {
   display: flex;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
+  color: #504c49;
 }
 .title .id {
   flex: 1;
@@ -49,15 +50,15 @@ body {
 .item {
   border: 1px solid #dfd8d1;
   display: flex;
-  height: 58px;
-  margin-top: 8px;
+  height: 49px;
+  margin-top: 5px;
 }
 .item .main {
   display: flex;
   flex: 1;
   background-color: #f5f1eb;
   position: relative;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .item .main .bg {
   width: 100px;
@@ -70,20 +71,20 @@ body {
 .item .main .icon {
   width: 25px;
   height: 25px;
-  margin: 15px 8px 0 8px;
+  margin: 11px 8px 0 8px;
 }
 .item .main .info {
-  padding-top: 8px;
+  padding-top: 7px;
 }
 .item .main .info .name {
-  font-size: 16px;
+  font-size: 14px;
   /* color: #5f5f5d; */
   line-height: 1;
   margin-bottom: 7px;
 }
 .item .main .info .time {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  /* font-weight: 400; */
   color: #5f5f5d;
   line-height: 1;
 }
@@ -91,10 +92,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 88px;
+  width: 96px;
   height: 100%;
   background-color: #ece3d8;
-  font-size: 18px;
-  /* color: #825e40; */
+  font-size: 16px;
+  color: #504c49;
   line-height: 55px;
 }
