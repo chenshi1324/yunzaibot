@@ -56,7 +56,10 @@ npm start / npm stop
 </details>
 
 <details>
-<summary>#体力</summary>
+<summary>#体力/#体力帮助</summary>
+
+需要配置cookie（私聊发送给机器人） [体力查询说明](resources/readme/命令说明.md#体力查询说明)
+
 <img src="resources/readme/体力.png" alt="#体力">
 </details>
 
