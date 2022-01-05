@@ -1,5 +1,5 @@
 # Yunzai-Bot
-云仔，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
+云崽，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
 
 ## 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），[Redis](resources/readme/命令说明.md#window安装redis)
