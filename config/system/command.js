@@ -15,6 +15,7 @@ let command = {
     dailyNote: "^#*(体力|树脂)$",
     bingCookie: "noCheck",
     delCookie: "^#*(删除(C|c)ookie|开启推送|关闭推送)$",
+    resinhelp: "^#*(体力|树脂|cookie)(帮助|说明|功能)$",
   },
   gachaLog:{
     bing:"(.*)authkey_ver(.*)",
@@ -25,7 +26,6 @@ let command = {
   },
   other: {
     help: "^#*(命令|帮助|菜单|help|说明|功能|指令|使用说明)$",
-    resinhelp: "^#*(体力|树脂|cookie)(帮助|说明|功能)$",
     repeat: "noCheck",//复读
   },
   //表情
