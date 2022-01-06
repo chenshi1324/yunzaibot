@@ -48,7 +48,7 @@
           <img class="icon" src="../../../../resources/genshin/role/{{val.name}}.png" />
           <div class="content">
             <p class="name">{{val.name}}：<span class="num">{{val.exploration_percentage}}%</span></p>
-            {{ if val.name!='雪山'}}
+            {{ if !["雪山","渊下宫"].includes(val.name)}}
             <p>声望：<span class="num">{{val.level}}</span>级</p>
             {{/if}} {{ if val.offerings}}
             <p>{{val.offerings.name}}：<span class="num">{{val.offerings.level}}</span>级</p>
