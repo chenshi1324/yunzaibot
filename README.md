@@ -28,7 +28,7 @@ npm start / npm stop
 >[其他说明](resources/readme/命令说明.md)，[如何获取cookie](resources/readme/命令说明.md#如何获取米游社-cookie)，[抽卡记录说明](resources/logHelp/记录帮助.md)
 
 ### 
-![示例](resources/readme/示例.png)
+![示例](https://user-images.githubusercontent.com/12881780/148473565-effe31d9-a0b3-4ebc-852a-45eb198162b5.png)
 
 <details>
 <summary>#角色名称/#神里/#老婆/#老公</summary>
