@@ -32,22 +32,22 @@ npm start / npm stop
 
 <details>
 <summary>#角色名称/#神里/#老婆/#老公</summary>
-<img src="resources/readme/早柚.png" alt="#早柚">
+<img src="https://user-images.githubusercontent.com/12881780/148639092-922533ce-8000-4df2-b390-cf40c8d7c12f.png" alt="#早柚">
 </details>
 
 <details>
 <summary>戳一戳/#温迪2</summary>
-<img src="resources/readme/温迪2.png" alt="#早柚">
+<img src="https://user-images.githubusercontent.com/12881780/148639108-9d39fce4-fca0-4115-80c6-cd7ee8aa5bff.png" alt="#早柚">
 </details>
 
 <details>
 <summary>#角色、#角色2</summary>
-<img src="resources/readme/角色.png" alt="#角色">
+<img src="https://user-images.githubusercontent.com/12881780/148639137-cf773512-d78e-46ec-894c-bbd05f1182a0.png" alt="#角色">
 </details>
 
 <details>
 <summary>#深渊，#上期深渊，#深渊十二层</summary>
-<img src="resources/readme/深渊.png" alt="#深渊">
+<img src="https://user-images.githubusercontent.com/12881780/148639158-7f800191-35b6-4a29-8fb7-72b90aa0424d.png" alt="#深渊">
 </details>
 
 <details>
@@ -60,8 +60,9 @@ npm start / npm stop
 
 需要配置cookie（私聊发送给机器人） [体力查询说明](resources/readme/命令说明.md#体力查询说明)
 
-<img src="resources/readme/体力.png" alt="#体力">
+<img src="https://user-images.githubusercontent.com/12881780/148639174-675bee67-b3e5-41ef-8a3c-89e4fb909610.png" alt="#体力">
 </details>
+
 
 <details>
 <summary>#角色记录/#常驻记录/#武器记录</summary>
@@ -70,12 +71,12 @@ npm start / npm stop
 
 <details>
 <summary>#十连、#十连2</summary>
-<img src="resources/readme/十连.png" alt="#十连">
+<img src="https://user-images.githubusercontent.com/12881780/148639188-830c9554-86ed-49a2-a3f8-9e7b89763c97.png" alt="#十连">
 </details>
 
 <details>
 <summary>添加表情</summary>
-<img src="resources/readme/添加表情.png" alt="添加表情">
+<img src="https://user-images.githubusercontent.com/12881780/148639195-a15c2f86-5616-48b1-9137-cc64caddc8c0.png" alt="添加表情">
 </details>
 
 ## 致谢
