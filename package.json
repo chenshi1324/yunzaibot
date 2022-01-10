@@ -1,6 +1,8 @@
 {
   "name": "yunzai",
   "version": "1.1.0",
+  "homepage": "https://github.com/Le-niao/Yunzai-Bot",
+  "author": "Le-niao",
   "description": "Genshin QQ group Bot",
   "main": "app.js",
   "type": "module",
@@ -17,8 +19,6 @@
     "qqBot",
     "genshin"
   ],
-  "homepage": "https://github.com/Le-niao/Yunzai-Bot",
-  "author": "Le-niao",
   "license": "MIT",
   "dependencies": {
     "art-template": "^4.13.2",
