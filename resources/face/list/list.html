@@ -70,7 +70,9 @@
         </div>
         {{/each}}
       </div>
-      <div class="page">第{{page}}页，共{{total}}页</div>
+      {{if face.length>=12}}
+        <div class="page">第{{page}}页，共{{total}}页</div>
+      {{/if}}
     </div>
   </body>
 </html>
