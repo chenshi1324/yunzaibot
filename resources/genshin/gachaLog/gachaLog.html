@@ -34,11 +34,18 @@
               <div class="ritem">
                 {{if val.item_type=='角色'}}
                   <img class="role" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this,'role')"/>
-                  <div class="role_text {{if val.num<=30}}red{{else if val.num<=60}}orange{{/if}}">{{val.abbrName}}[{{val.num}}]</div>
+                  <div class="role_text {{if val.num<=50}}red{{/if}}"
+                  >
+                    <div class="role_name">{{val.abbrName}}</div>
+                    <div class="role_num">[{{val.num}}]</div>
+                  </div>
                 {{/if}} 
                 {{if val.item_type=='武器'}}
                   <img class="role" src="../../../../resources/genshin/logo/weapon/{{val.name}}.png" onerror="whenError(this,'weapon')"/>
-                  <div class="role_text {{if val.num<=20}}red{{else if val.num<=50}}orange{{/if}}">{{val.abbrName}}[{{val.num}}]</div>
+                  <div class="role_text {{if val.num<=40}}red{{/if}}">
+                    <div class="role_name">{{val.abbrName}}</div>
+                    <div class="role_num">[{{val.num}}]</div>
+                  </div>
                 {{/if}}
               </div>
             {{/each}} 

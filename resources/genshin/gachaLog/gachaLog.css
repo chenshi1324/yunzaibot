@@ -10,14 +10,14 @@
 }
 body {
     font-size: 16px;
-    width: 450px;
+    width: 475px;
     color: #1e1f20;
     transform: scale(1.70);
     transform-origin: 0 0;
 }
 .container{
     font-family: HYWenHei;
-    width: 450px;
+    width: 475px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: #f5f5f5;
@@ -101,7 +101,7 @@ body {
 .info_role{
     display: flex;
     flex-wrap: wrap;
-    padding:0 0px 5px 10px;
+    padding:0 0px 5px 9px;
 }
 .ritem .role{
     width: 20px;
@@ -125,8 +125,17 @@ body {
 
 }
 .ritem .role_text{
-    padding-top: 3px;
-    margin: 0 7px 0 2px;
+    margin: 2px 3px 0 2px;
+    display: flex;
+    align-items: baseline;
+}
+.ritem .role_name{
+    width: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ritem .role_num{
+    width: 24px;
 }
 .line_box {
     height: 32px;
