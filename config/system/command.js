@@ -32,6 +32,7 @@ let command = {
   face: {
     get: "noCheck",
     add: "noCheck",
+    addContext: "noCheck",
     del: "^#*删除(.*)$",
     list: "^#*表情列表[0-9]*$",
     listFuzzy: "^#*表情(.*)$",
