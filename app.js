@@ -22,6 +22,13 @@ Bot.on("system.login.qrcode", function (e) {
   });
 }).login(BotConfig.account.pwd);
 
+//提交滑动验证码
+Bot.on("system.login.slider", () => {
+  process.stdin.once("data", (input) => { 
+    Bot.submitSlider(input) 
+  })
+});
+
 //监听上线事件
 Bot.on("system.online", async () => {
   await init();
