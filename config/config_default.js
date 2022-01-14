@@ -50,10 +50,12 @@ let config = {
       PokeCD:   10000,  //群聊中戳一戳冷却时间，单位毫秒
 
       imgRate:5,       //斗图回复概率0-100 需要配置百度ocr 配置往下滚
+
+      imgMaxSize:1,    //添加表情图片大小限制，默认1m
       
       //禁用功能 
-      //'poke','gacha','mysInfo','gachaLog','face','other','face.atRandom'
-      // 戳一戳，十连，原神查询，抽卡记录，添加表情，其他，@回复表情
+      //'poke','gacha','mysInfo','gachaLog','dailyNote','face','other','face.atRandom'
+      // 戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，@回复表情
       disable: ['face.atRandom'],
     },
 
