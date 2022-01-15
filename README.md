@@ -1,5 +1,7 @@
 # Yunzai-Bot
-云崽，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
+云崽，原神qq群机器人，通过米游社接口，查询原神游戏信息
+
+快速生成图片返回，平均100-300ms，基本秒回
 
 ## 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），[Redis](resources/readme/命令说明.md#window安装redis)
@@ -37,22 +39,35 @@ npm start / npm stop
 
 <details>
 <summary>戳一戳/#温迪2</summary>
-<img src="https://user-images.githubusercontent.com/12881780/148639108-9d39fce4-fca0-4115-80c6-cd7ee8aa5bff.png" alt="#早柚">
+<img src="https://user-images.githubusercontent.com/12881780/148639108-9d39fce4-fca0-4115-80c6-cd7ee8aa5bff.png" alt="#温迪">
 </details>
 
 <details>
-<summary>#角色、#角色2</summary>
+<summary>#角色、#探索度</summary>
+
+>#角色
 <img src="https://user-images.githubusercontent.com/12881780/148639137-cf773512-d78e-46ec-894c-bbd05f1182a0.png" alt="#角色">
+
+>#探索度
+<img src="https://user-images.githubusercontent.com/12881780/149620677-96b28966-9a57-49b1-b3ec-5724287c6722.jpg" alt="#探索度">
 </details>
 
 <details>
 <summary>#深渊，#上期深渊，#深渊十二层</summary>
 <img src="https://user-images.githubusercontent.com/12881780/148639158-7f800191-35b6-4a29-8fb7-72b90aa0424d.png" alt="#深渊">
+  
+>#深渊十二层
+<img src="https://user-images.githubusercontent.com/12881780/149620552-8cfed4e4-8e8c-42f9-b190-703a4433484a.png" alt="#深渊十二层">
 </details>
 
 <details>
 <summary>#四星/#五星</summary>
-<img src="resources/readme/五星.png" alt="#五星">
+<img src="https://user-images.githubusercontent.com/12881780/149619476-c96b5afd-2902-4f95-9be1-8da0908efa50.png" alt="#五星">
+</details>
+
+<details>
+<summary>#武器</summary>
+<img src="https://user-images.githubusercontent.com/12881780/149620853-c35b19e0-2289-4583-b804-6057b48f3f32.jpg" alt="#武器">
 </details>
 
 <details>
@@ -66,17 +81,17 @@ npm start / npm stop
 
 <details>
 <summary>#角色记录/#常驻记录/#武器记录</summary>
-<img src="resources/readme/角色记录.png" alt="#角色记录">
+<img src="https://user-images.githubusercontent.com/12881780/149619451-b847b195-8897-4cd0-a636-068117ce7ce8.png" alt="#角色记录">
 </details>
 
 <details>
-<summary>#十连、#十连2</summary>
+<summary>#十连、#十连2（角色卡池2）</summary>
 <img src="https://user-images.githubusercontent.com/12881780/148639188-830c9554-86ed-49a2-a3f8-9e7b89763c97.png" alt="#十连">
 </details>
 
 <details>
 <summary>添加表情</summary>
-<img src="https://user-images.githubusercontent.com/12881780/148639195-a15c2f86-5616-48b1-9137-cc64caddc8c0.png" alt="添加表情">
+<img src="https://user-images.githubusercontent.com/12881780/149620139-9505a175-40b6-4d8f-894d-f3f308a7eb22.png" alt="添加表情">
 </details>
 
 ## 致谢
@@ -91,4 +106,3 @@ npm start / npm stop
 也可以加群 213938015 反馈 ，最后再求个star ~~
 
 图片素材来源于网络，仅供交流学习使用
-
