@@ -12,7 +12,7 @@ let command = {
     character: "^#(.*)$",
   },
   dailyNote:{
-    dailyNote: "^#*(体力|树脂)$",
+    dailyNote: "^#*(体力|树脂|查询体力)$",
     bingCookie: "noCheck",
     delCookie: "^#*(删除(C|c)ookie|开启推送|关闭推送)$",
     resinhelp: "^#*(体力|树脂|cookie)(帮助|说明|功能)$",
