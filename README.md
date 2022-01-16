@@ -30,16 +30,16 @@ npm start / npm stop
 >[其他说明](resources/readme/命令说明.md)，[如何获取cookie](resources/readme/命令说明.md#如何获取米游社-cookie)，[抽卡记录说明](resources/logHelp/记录帮助.md)，[更新日志](resources/readme/更新日志.md)
 
 ### 
-![示例](https://user-images.githubusercontent.com/12881780/148473565-effe31d9-a0b3-4ebc-852a-45eb198162b5.png)
+![示例](https://user-images.githubusercontent.com/12881780/149643554-ec12f18a-e00c-4cd4-bc89-e651a9812168.png)
 
 <details>
-<summary>#角色名称/#神里/#老婆/#老公</summary>
+<summary>#角色名称/#刻晴/#老婆/#老公</summary>
 <img src="https://user-images.githubusercontent.com/12881780/148639092-922533ce-8000-4df2-b390-cf40c8d7c12f.png" alt="#早柚">
 </details>
 
 <details>
-<summary>戳一戳/#温迪2</summary>
-<img src="https://user-images.githubusercontent.com/12881780/148639108-9d39fce4-fca0-4115-80c6-cd7ee8aa5bff.png" alt="#温迪">
+<summary>#刻晴卡片/戳一戳</summary>
+<img src="https://user-images.githubusercontent.com/12881780/149643684-7aec38db-7fcc-4cfe-b3f2-050ad8640b87.png" alt="#温迪">
 </details>
 
 <details>
