@@ -462,6 +462,11 @@ body {
     background-size: 100%;
     background-position: 30px 0px;
 }
+.魈_bg3{
+    background-image: url(../logo/bg/魈3.png);
+    background-size: 100%;
+    background-position: 40px 0px;
+}
 .辛焱_bg1{
     background-image: url(../logo/bg/辛焱1.png);
     background-size: auto 100%;
