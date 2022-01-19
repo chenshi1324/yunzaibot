@@ -72,12 +72,6 @@ let config = {
   //黑名单qq
   balckQQ:[2854196310,],
 
-  //原神体力查询（#体力），配置了才能查
-  //游戏uid，米游社cookie
-  dailyNote: {
-    'qq号': { uid: "", cookie: "" },
-  },
-
   //百度ocr https://ai.baidu.com/ai-doc/OCR/dk3iqnq51
   //智障斗图用
   BaiduOcr:{
