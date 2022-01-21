@@ -37,7 +37,6 @@ let command = {
     list: "^#*表情列表[0-9]*$",
     listFuzzy: "^#*表情(.*)$",
     random: "noCheck",   //斗图
-    atRandom: "noCheck", //at回复表情
   },
 };
 export { command };

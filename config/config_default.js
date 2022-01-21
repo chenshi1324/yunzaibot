@@ -42,21 +42,22 @@ let config = {
       gachaDayNum: 1,  //每天抽卡次数，限制次数，防止刷屏,4点重置
       
       //米游社信息查询
-      mysDayLimit: 30, //每天每人查询次数
-      mysUidLimit: 5, //每天每人查询uid个数
+      mysDayLimit: 30,  //每天每人查询次数
+      mysUidLimit: 5,   //每天每人查询uid个数
 
-      groupCD:  500,   //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
-      singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
+      groupCD:  500,    //群聊中所有指令操作冷却时间，单位毫秒,0则无限制
+      singleCD: 2000,   //群聊中个人操作冷却时间，单位毫秒
       PokeCD:   10000,  //群聊中戳一戳冷却时间，单位毫秒
 
-      imgRate:5,       //斗图回复概率0-100 需要配置百度ocr 配置往下滚
+      imgAddLimit:false, //添加表情是否限制  false-所有群员都可以添加 true-管理员才能添加
+      imgMaxSize:1,      //添加表情图片大小限制，默认1m
 
-      imgMaxSize:1,    //添加表情图片大小限制，默认1m
-      
+      imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
+
       //禁用功能 
-      //'poke','gacha','mysInfo','gachaLog','dailyNote','face','other','face.atRandom'
-      // 戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，@回复表情
-      disable: ['face.atRandom'],
+      //'poke','gacha','mysInfo','gachaLog','dailyNote','face','other',
+      // 戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，
+      disable: [],
     },
 
     //每个群的单独配置(用于覆盖通用配置)
