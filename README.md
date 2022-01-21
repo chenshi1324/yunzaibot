@@ -8,7 +8,7 @@
 >
 >[Linux环境一键搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，Windows按下面的就行([需要安装redis](resources/readme/命令说明.md#window安装redis))
 ```
-1.安装
+1.克隆项目
 git clone https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
 
@@ -33,7 +33,7 @@ npm start / npm stop
 ![示例](https://user-images.githubusercontent.com/12881780/149643554-ec12f18a-e00c-4cd4-bc89-e651a9812168.png)
 
 <details>
-<summary>#角色名称/#刻晴/#老婆/#老公</summary>
+<summary>#刻晴/#老婆/#老公</summary>
 <img src="https://user-images.githubusercontent.com/12881780/148639092-922533ce-8000-4df2-b390-cf40c8d7c12f.png" alt="#早柚">
 </details>
 
@@ -103,6 +103,6 @@ npm start / npm stop
 ### 其他
 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
 
-也可以加群 213938015 反馈 ，最后再求个star ~~
+也可以加群 213938015 反馈 ，最后再求个star，你的支持是维护本项目的动力~~
 
 图片素材来源于网络，仅供交流学习使用
