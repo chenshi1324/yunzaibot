@@ -49,7 +49,7 @@ let config = {
       singleCD: 2000,   //群聊中个人操作冷却时间，单位毫秒
       PokeCD:   10000,  //群聊中戳一戳冷却时间，单位毫秒
 
-      imgAddLimit:false, //添加表情是否限制  false-所有群员都可以添加 true-管理员才能添加
+      imgAddLimit:false, //添加表情是否限制  false-所有群员都可以添加 true-群管理员才能添加
       imgMaxSize:1,      //添加表情图片大小限制，默认1m
 
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
