@@ -384,6 +384,11 @@ body {
     background-size: 100%;
     background-position: 90px 0px;
 }
+.甘雨_bg3{
+    background-image: url(../logo/bg/甘雨3.png);
+    background-size: 100%;
+    background-position: 20px 0px;
+}
 .行秋_bg1{
     background-image: url(../logo/bg/行秋1.png);
     background-size: auto  100%;
