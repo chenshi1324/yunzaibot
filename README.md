@@ -49,7 +49,7 @@ npm start / npm stop
 <img src="https://user-images.githubusercontent.com/12881780/148639137-cf773512-d78e-46ec-894c-bbd05f1182a0.png" alt="#角色">
 
 >#角色卡片
-<img src="https://user-images.githubusercontent.com/12881780/151120251-d6ea4219-ea4a-4294-82fc-36f2196a09cd.png" alt="#角色卡片">
+<img src="https://user-images.githubusercontent.com/12881780/151143032-1ae13f1f-e1e0-473f-9c9a-635230d07537.png" alt="#角色卡片">
   
 >#探索度
 <img src="https://user-images.githubusercontent.com/12881780/149620677-96b28966-9a57-49b1-b3ec-5724287c6722.jpg" alt="#探索度">
