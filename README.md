@@ -45,12 +45,12 @@ npm start / npm stop
 <details>
 <summary>#角色、#角色卡片、#探索度</summary>
 
->#角色
-<img src="https://user-images.githubusercontent.com/12881780/148639137-cf773512-d78e-46ec-894c-bbd05f1182a0.png" alt="#角色">
-
 >#角色卡片
 <img src="https://user-images.githubusercontent.com/12881780/151143032-1ae13f1f-e1e0-473f-9c9a-635230d07537.png" alt="#角色卡片">
   
+>#角色
+<img src="https://user-images.githubusercontent.com/12881780/148639137-cf773512-d78e-46ec-894c-bbd05f1182a0.png" alt="#角色">
+
 >#探索度
 <img src="https://user-images.githubusercontent.com/12881780/149620677-96b28966-9a57-49b1-b3ec-5724287c6722.jpg" alt="#探索度">
 </details>
@@ -88,8 +88,9 @@ npm start / npm stop
 </details>
 
 <details>
-<summary>#十连、#十连2（角色卡池2）</summary>
+<summary>#十连、#十连2（角色卡池2）、十连武器</summary>
 <img src="https://user-images.githubusercontent.com/12881780/148639188-830c9554-86ed-49a2-a3f8-9e7b89763c97.png" alt="#十连">
+<img src="https://user-images.githubusercontent.com/12881780/151505221-15efaccb-c073-4f7a-8131-6043f0a2bedc.png" alt="#十连武器">
 </details>
 
 <details>
