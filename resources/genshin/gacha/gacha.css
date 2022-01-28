@@ -54,6 +54,12 @@ body {
   right: 55px;
   z-index: 9999;
 }
+.poor-bing{
+  position: fixed;
+  top: 85px;
+  right: 55px;
+  z-index: 9999;
+}
 .list-box{
   display: flex;
   padding-top: 130px;
@@ -102,11 +108,17 @@ body {
   left: -15%;
   filter: drop-shadow(3px 9px 0px #333);
 }
-.item-weapon-img{
+.item-weapon-box{
   position: absolute;
-  width: 112px;
-  top: 55px;
+  width: 106px;
+  height: 366px;
+  top: 45px;
+  left: 2px;
   z-index: 101;
+  overflow: hidden;
+}
+.item-weapon-img{
+  width: 110px;
   filter: drop-shadow(3px 9px 0px #333);
 }
 .item-weapon-img-4{
@@ -137,7 +149,7 @@ body {
 .times {
   position: absolute;
   z-index: 9999;
-  /*width: 85px;*/
+  width: 109px;
   text-align: center;
   font-size: 26px;
   left: 2px;

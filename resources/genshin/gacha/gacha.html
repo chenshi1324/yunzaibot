@@ -9,7 +9,12 @@
     <div class="container" id="container">
       <div class="info-bg info-name">{{name}}</div>
       <div class="info-bg info-count">{{info}}</div>
-      {{if poolName}}
+      {{if isWeapon}}
+        {{if bingWeapon}}
+          <div class="info-bg poor-info">定轨：{{bingWeapon}}</div>
+          <div class="info-bg poor-bing">命定值：{{lifeNum}}</div>
+        {{/if}}
+      {{else if poolName}}
       <div class="info-bg poor-info">{{poolName}}</div>
       {{/if}}
       <div class="list-box">
@@ -20,12 +25,16 @@
             </div>
             <img class="item-shadow" src="../../../../resources/genshin/gacha/items/shadow-{{$value.star}}.png"/>
             <img class="item-shadow2" src="../../../../resources/genshin/gacha/items/bg2.png"/>
-            <div {{if $value.star>3}}class="item-img-box"{{/if}}>
-              <img
-                class="item-{{$value.type}}-img {{if $value.star>3 && $value.type=='weapon'}}item-weapon-img-4{{/if}}"
-                src="../../../../resources/genshin/gacha/{{$value.type}}/{{$value.name}}.png"
-              />
-            </div>
+            {{if $value.type=='weapon'}}
+              <div class="item-weapon-box">
+                <img class="item-weapon-img" src="../../../../resources/genshin/gacha/{{$value.type}}/{{$value.name}}.png"/>
+              </div>
+            {{else}}
+              <div class="item-img-box">
+                <img class="item-character-img" src="../../../../resources/genshin/gacha/character/{{$value.name}}.png"/>
+              </div>
+            {{/if}}
+            
             {{if $value.star==5}}
             <div class="times">「{{$value.num}}抽」</div>
             {{/if}}
