@@ -77,12 +77,20 @@ body {
   width: 100%;
   z-index: 100;
 }
+.list-box .item .item-bg-weapon{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 40px;
+  height: 370px;
+  opacity: 0.7;
+}
 .list-box .item .item-shadow{
   position: absolute;
-  width: 223px;
-  height: 794px;
-  top: -172px;
-  left: -57px;
+  width: 225px;
+  height: 711px;
+  top: -151px;
+  left: -58px;
   z-index: 50;
 }
 .list-box .item .item-shadow2{

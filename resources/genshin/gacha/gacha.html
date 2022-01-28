@@ -22,6 +22,9 @@
           <div class="item">
             <div class="item-bg-box">
               <img class="item-bg" src="../../../../resources/genshin/gacha/items/bg.png"/>
+              {{if $value.type=='weapon' && $value.star==5}}
+              <img class="item-bg-weapon" src="../../../../resources/genshin/gacha/items/bgWeapon.png"/>
+              {{/if}}
             </div>
             <img class="item-shadow" src="../../../../resources/genshin/gacha/items/shadow-{{$value.star}}.png"/>
             <img class="item-shadow2" src="../../../../resources/genshin/gacha/items/bg2.png"/>
