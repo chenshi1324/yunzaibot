@@ -1,6 +1,6 @@
 {
   "name": "yunzai",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "homepage": "https://github.com/Le-niao/Yunzai-Bot",
   "author": "Le-niao",
   "description": "Genshin QQ group Bot",
@@ -25,6 +25,7 @@
     "baidu-aip-sdk": "^4.15.6",
     "image-size": "^1.0.0",
     "lodash": "^4.17.21",
+    "log4js": "^6.4.0",
     "md5": "^2.3.0",
     "node-fetch": "^3.0.0",
     "node-schedule": "^2.0.0",
