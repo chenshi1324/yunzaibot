@@ -6,7 +6,7 @@
 ## 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），[Redis](resources/readme/命令说明.md#window安装redis)
 >
->[Linux环境一键搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，[Windows按下面的就行](https://www.bilibili.com/read/cv15119056)
+>[Linux环境一键搭建](https://github.com/Le-niao/Yunzai-Bot/issues/3)，[Windows按下面的就行](https://www.bilibili.com/read/cv15119056)，[安卓手机搭建](https://www.bilibili.com/read/cv15126105)
 ```
 1.克隆项目
 git clone https://github.com/Le-niao/Yunzai-Bot.git
