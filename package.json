@@ -13,7 +13,8 @@
     "app": "node ./app.js",
     "test": "node ./lib/test.js",
     "start": "pm2 start app.js",
-    "stop": "pm2 stop app.js"
+    "stop": "pm2 stop app.js",
+    "log": "pm2 logs"
   },
   "keywords": [
     "qqBot",
