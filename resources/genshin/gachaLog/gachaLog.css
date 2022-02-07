@@ -1,6 +1,6 @@
 @font-face {
-    font-family: HYWenHei;
-    src: url('../../font/HYWenHei-55W.TTF') format('woff2');
+    font-family: HYWenHei-55W;
+    src: url('../../font/HYWenHei-55W.TTF');
 }
 * {
     margin: 0;;
@@ -16,8 +16,8 @@ body {
     transform-origin: 0 0;
 }
 .container{
-    font-family: HYWenHei;
     width: 475px;
+    font-family: HYWenHei-55W;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: #fff;
