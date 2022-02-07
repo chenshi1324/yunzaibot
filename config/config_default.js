@@ -55,8 +55,8 @@ let config = {
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
 
       //禁用功能 
-      //'poke','gacha','mysInfo','gachaLog','dailyNote','face','other',
-      // 戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，
+      //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other',
+      // 全部，戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，
       disable: [],
     },
 
@@ -69,6 +69,9 @@ let config = {
     //   singleCD: 2000,  //群聊中个人操作冷却时间，单位毫秒
     // }
   },
+
+  //主人qq，查询不受限制
+  masterQQ:[123456,],
 
   //黑名单qq
   balckQQ:[2854196310,],
