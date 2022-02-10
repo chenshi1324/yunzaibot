@@ -29,6 +29,13 @@ Bot.on("system.login.slider", () => {
   })
 });
 
+//设备锁
+Bot.on("system.login.device", (e) => {
+  process.stdin.once("data", () => {
+    this.login();
+  });
+});
+
 //监听上线事件
 Bot.on("system.online", async () => {
   await init();
