@@ -682,3 +682,13 @@ body {
     background-size: 100%;
     background-position: 50px 0px;
 }
+.八重神子_bg1{
+    background-image: url(../logo/bg/八重神子1.png);
+    background-size: auto 100%;
+    background-position: 10% 0%;
+}
+.八重神子_bg2{
+    background-image: url(../logo/bg/八重神子2.png);
+    background-size: 100%;
+    background-position: 40px 0px;
+}
