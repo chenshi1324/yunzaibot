@@ -25,9 +25,10 @@ let config = {
    * 访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
    * 选中 Console 或控制台，点击控制台粘贴这一句
    * document.cookie.match(/ltoken([^;]+;){2}/)[0] ，回车即可获取
-   * 例如'ltoken=***;ltuid=***;'
+   * 例如'ltoken=***;ltuid=***;', 用引号包住，逗号隔开
    * cookie逻辑：一个号一天只能查30个uid（包括查询失败的），在没超过30的时候，之前查过的uid可以重复查询
    * 所以项目限制一个cookie只能查27个，避免超出限制，查询过的可以重复查
+   * 获取完别退出登录否则cookie就会失效，多账号用无痕（隐身）模式获取
    */
   mysCookies: [
     // 'ltoken=***;ltuid=***;',
@@ -70,17 +71,28 @@ let config = {
     // }
   },
 
-  //主人qq，查询不受限制
+  //主人qq，米游社查询，十连不受限制
   masterQQ:[123456,],
 
   //黑名单qq
   balckQQ:[2854196310,],
 
+  //对话ai,配置后@机器人进行聊天对话，推荐配置将你的机器人变成人工智障
+  //腾讯智能对话平台 https://cloud.tencent.com/product/tbp 
+  //自行认证申请免费使用的
+  tencentAI:{
+    secretId:  "",//云产品-管理与审计-访问秘钥获取
+    secretKey: "",//云产品-管理与审计-访问秘钥获取
+    BotId:     "",//腾讯智能对话平台-Bot信息-BotId	
+    BotEnv:    "dev",
+    BotName:   "云崽",//机器人名称
+  },
+
   //百度ocr https://ai.baidu.com/ai-doc/OCR/dk3iqnq51
   //智障斗图用
   BaiduOcr:{
-    APP_ID: "",
-    API_KEY: "",
+    APP_ID:     "",
+    API_KEY:    "",
     SECRET_KEY: "",
   },
 };

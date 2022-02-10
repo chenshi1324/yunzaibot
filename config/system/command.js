@@ -43,5 +43,8 @@ let command = {
     listFuzzy: "^#*表情(.*)$",
     random: "noCheck",   //斗图
   },
+  ai:{
+    tencentAI:"noCheck",
+  }
 };
 export { command };

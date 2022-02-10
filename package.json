@@ -34,6 +34,7 @@
     "pm2": "^5.1.2",
     "prettier": "^2.4.1",
     "puppeteer": "^13.0.0",
-    "redis": "^4.0.2"
+    "redis": "^4.0.2",
+    "tencentcloud-sdk-nodejs": "^4.0.285"
   }
 }
