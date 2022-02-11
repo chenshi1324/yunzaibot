@@ -79,7 +79,7 @@ let config = {
 
   //对话ai,配置后@机器人进行聊天对话，推荐配置将你的机器人变成人工智障
   //腾讯智能对话平台 https://cloud.tencent.com/product/tbp 
-  //自行认证申请免费使用的
+  //目前免费使用的，自行认证申请
   tencentAI:{
     secretId:  "",//云产品-管理与审计-访问秘钥获取
     secretKey: "",//云产品-管理与审计-访问秘钥获取
