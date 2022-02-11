@@ -14,6 +14,7 @@
     "test": "node ./lib/test.js",
     "start": "pm2 start app.js",
     "stop": "pm2 stop app.js",
+    "restart": "pm2 restart app.js",
     "log": "pm2 logs"
   },
   "keywords": [

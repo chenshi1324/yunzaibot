@@ -11,6 +11,7 @@ const Bot = createClient(BotConfig.account.qq, {
   log_level: BotConfig.account.log_level,
   platform: BotConfig.account.platform,
   resend:false,
+  data_dir:process.cwd()+"/data",
 });
 global.Bot = Bot;
 
@@ -32,7 +33,7 @@ Bot.on("system.login.slider", () => {
 //设备锁
 Bot.on("system.login.device", (e) => {
   process.stdin.once("data", () => {
-    this.login();
+    Bot.login();
   });
 });
 
