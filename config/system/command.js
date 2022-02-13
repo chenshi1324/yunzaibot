@@ -14,7 +14,8 @@ let command = {
     wife: "^#(老婆|妻子|媳妇|娘子|女朋友|女友|女神|老公|丈夫|夫君|郎君|男朋友|男友|男神|女儿|儿子)(1|2)*$",
     character2: "^#*(.*)卡片|^#(.*)2$",
     character: "^#(.*)$",
-    checkCookie: "#*检查(ck|cookie)$",
+    checkCookie: "^#*检查(ck|cookie)$",
+    setCookie: "^#*配置(.*)$",
   },
   dailyNote:{
     dailyNote: "^#*(体力|树脂|查询体力)$",
