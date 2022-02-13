@@ -1,6 +1,6 @@
 import { createClient } from "oicq";
 import { init } from "./lib/init.js";
-import { dealMsg, dealGroupNotice, dealFriend } from "./lib/dealMsg.js";
+import { dealMsg, dealGroupNotice, dealFriend, dealGroupRequest } from "./lib/dealMsg.js";
 import { check } from "./lib/check.js";
 
 //检查配置文件
@@ -10,8 +10,8 @@ await check();
 const Bot = createClient(BotConfig.account.qq, {
   log_level: BotConfig.account.log_level,
   platform: BotConfig.account.platform,
-  resend:false,
-  data_dir:process.cwd()+"/data",
+  resend: false,
+  data_dir: process.cwd() + "/data",
 });
 global.Bot = Bot;
 
@@ -25,8 +25,8 @@ Bot.on("system.login.qrcode", function (e) {
 
 //提交滑动验证码
 Bot.on("system.login.slider", () => {
-  process.stdin.once("data", (input) => { 
-    Bot.submitSlider(input) 
+  process.stdin.once("data", (input) => {
+    Bot.submitSlider(input)
   })
 });
 
@@ -64,3 +64,7 @@ Bot.on("notice.group", (event) => {
   dealGroupNotice(event);
 });
 
+//监听群事件
+Bot.on("request.group", (event) => {
+  dealGroupRequest(event);
+});

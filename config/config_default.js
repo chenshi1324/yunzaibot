@@ -25,7 +25,8 @@ let config = {
    * 访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
    * 选中 Console 或控制台，点击控制台粘贴这一句
    * document.cookie.match(/ltoken([^;]+;){2}/)[0] ，回车即可获取
-   * 例如'ltoken=***;ltuid=***;', 用引号包住，逗号隔开
+   * 例如 用引号包住，多个用逗号隔开
+   * 'ltoken=***;ltuid=***;','ltoken=***;ltuid=***;',
    * cookie逻辑：一个号一天只能查30个uid（包括查询失败的），在没超过30的时候，之前查过的uid可以重复查询
    * 所以项目限制一个cookie只能查27个，避免超出限制，查询过的可以重复查
    * 获取完别退出登录否则cookie就会失效，多账号用无痕（隐身）模式获取
@@ -56,8 +57,8 @@ let config = {
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
 
       //禁用功能 
-      //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other',
-      // 全部，戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，
+      //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other','ai'
+      // 全部，戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，腾讯智障ai
       disable: [],
     },
 
