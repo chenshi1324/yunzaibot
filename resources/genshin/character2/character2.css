@@ -1,6 +1,7 @@
 @font-face {
   font-family: HYWenHei-55W;
   src: url("../../font/HYWenHei-55W.ttf");
+  font-display: swap;
 }
 * {
   margin: 0;
