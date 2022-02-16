@@ -24,16 +24,16 @@ Bot.on("system.login.qrcode", function (e) {
 }).login(BotConfig.account.pwd);
 
 //提交滑动验证码
-Bot.on("system.login.slider", () => {
+Bot.on("system.login.slider", function (e) {
   process.stdin.once("data", (input) => {
-    Bot.submitSlider(input)
-  })
+    this.submitSlider(input);
+  });
 });
 
 //设备锁
-Bot.on("system.login.device", (e) => {
+Bot.on("system.login.device", function (e) {
   process.stdin.once("data", () => {
-    Bot.login();
+    this.login();
   });
 });
 
@@ -45,13 +45,17 @@ Bot.on("system.online", async () => {
 //监听群聊消息事件
 Bot.on("message.group", (event) => {
   event.isGroup = true;
-  dealMsg(event);
+  dealMsg(event).catch((error) => {
+    Bot.logger.error(error);
+  });
 });
 
 //监听私聊消息事件
 Bot.on("message.private", (event) => {
   event.isPrivate = true;
-  dealMsg(event);
+  dealMsg(event).catch((error) => {
+    Bot.logger.error(error);
+  });
 });
 
 //监听好友事件
@@ -61,7 +65,9 @@ Bot.on("request.friend", (event) => {
 
 //监听群通知
 Bot.on("notice.group", (event) => {
-  dealGroupNotice(event);
+  dealGroupNotice(event).catch((error) => {
+    Bot.logger.error(error);
+  });
 });
 
 //监听群事件

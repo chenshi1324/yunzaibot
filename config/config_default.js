@@ -25,6 +25,7 @@ let config = {
    * 访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
    * 选中 Console 或控制台，点击控制台粘贴这一句
    * document.cookie.match(/ltoken([^;]+;){2}/)[0] ，回车即可获取
+   * 不行的用 document.cookie 试下
    * 例如 用引号包住，多个用逗号隔开
    * 'ltoken=***;ltuid=***;','ltoken=***;ltuid=***;',
    * cookie逻辑：一个号一天只能查30个uid（包括查询失败的），在没超过30的时候，之前查过的uid可以重复查询

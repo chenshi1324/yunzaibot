@@ -115,3 +115,4 @@ dist
 /data
 
 /config/config.js
+/config/command.json
