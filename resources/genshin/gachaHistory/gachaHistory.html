@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/gachaHistory/gachaHistory.css?v=1.0" />
+  </head>
+  <body id="container" class="body_box">
+    <div class="container">
+      <div class="head_box">
+        <div class="id_text">ID: {{uid}}</div>
+        <h2 class="day_text">抽卡统计</h2>
+        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png" />
+      </div>
+      {{each pool val}}
+      <div class="pool_box">
+        <div class="title_box">
+          <div class="name_box">
+            <div class="title"><h2>「{{val.five}}」</h2></div>
+            <span class="label label_301">{{val.count}}抽</span>
+          </div>
+          <span class="date">{{val.start}} - {{val.end}}</span>
+        </div>
+        <div class="list_box">
+          {{each val.role v}}
+          <div class="item">
+            <div class="bg{{v.rank_type}}"></div>
+            <span class="num {{if v.count>=5 && v.rank_type ==5}}life5{{/if}}">{{v.count}}</span>
+            {{if v.item_type=='角色'}}
+            <img class="role_img" src="../../../../resources/genshin/logo/role/{{v.name}}.png" onerror="whenError(this,'role')" />
+            {{/if}} {{if v.item_type=='武器'}}
+            <img class="role_img" src="../../../../resources/genshin/logo/weapon/{{v.name}}.png" onerror="whenError(this)" />
+            {{/if}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+      <div class="logo">Create By Yunzai-Bot</div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function whenError(a, type) {
+      a.onerror = null;
+      if (type == "role") {
+        a.src = "../../../../resources/genshin/logo/role/荧.png";
+      } else {
+        a.src = "../../../../resources/genshin/logo/weapon/旅行剑.png";
+      }
+    }
+  </script>
+</html>
