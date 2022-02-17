@@ -89,7 +89,7 @@ npm start / npm stop
 
 <details>
 <summary>#十连、#十连2（角色卡池2）、十连武器</summary>
-<img src="https://user-images.githubusercontent.com/12881780/148639188-830c9554-86ed-49a2-a3f8-9e7b89763c97.png" alt="#十连">
+<img src="https://user-images.githubusercontent.com/12881780/154387499-55086c06-791b-4308-b7a1-3b4c9ec956ae.png" alt="#十连">
 <img src="https://user-images.githubusercontent.com/12881780/151505221-15efaccb-c073-4f7a-8131-6043f0a2bedc.png" alt="#十连武器">
 </details>
 
