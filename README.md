@@ -86,7 +86,13 @@ npm start / npm stop
 <summary>#角色记录/#常驻记录/#武器记录</summary>
 <img src="https://user-images.githubusercontent.com/12881780/149619451-b847b195-8897-4cd0-a636-068117ce7ce8.png" alt="#角色记录">
 </details>
+<details>
+<summary>#角色统计/#武器统计</summary>
+  
+按卡池统计抽卡记录
 
+<img src="https://user-images.githubusercontent.com/12881780/154597893-795b4e00-7c56-48b3-aaff-ef0fce68b321.png" alt="#角色统计">
+</details>
 <details>
 <summary>#十连、#十连2（角色卡池2）、十连武器</summary>
 <img src="https://user-images.githubusercontent.com/12881780/154387499-55086c06-791b-4308-b7a1-3b4c9ec956ae.png" alt="#十连">
