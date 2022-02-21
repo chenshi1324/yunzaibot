@@ -37,6 +37,12 @@ Bot.on("system.login.device", function (e) {
   });
 });
 
+//登录错误
+Bot.on("system.login.error", function (e) {
+  if (e.code == 1) this.logger.error("请打开config.js，修改输入正确的密码");
+  process.exit();
+});
+
 //监听上线事件
 Bot.on("system.online", async () => {
   await init();
