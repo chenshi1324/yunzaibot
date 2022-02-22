@@ -80,3 +80,7 @@ Bot.on("notice.group", (event) => {
 Bot.on("request.group", (event) => {
   dealGroupRequest(event);
 });
+
+process.on('unhandledRejection', (err, promise) => {
+  Bot.logger.error(err);
+});
