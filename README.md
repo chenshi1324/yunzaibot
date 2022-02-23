@@ -84,7 +84,7 @@ npm start / npm stop
 
 <details>
 <summary>#角色记录/#常驻记录/#武器记录</summary>
-<img src="https://user-images.githubusercontent.com/12881780/149619451-b847b195-8897-4cd0-a636-068117ce7ce8.png" alt="#角色记录">
+<img src="https://user-images.githubusercontent.com/12881780/155257884-4aa214e3-3a70-4bdf-893a-91c4ea33a59f.png" alt="#角色记录">
 </details>
 <details>
 <summary>#角色统计/#武器统计</summary>
