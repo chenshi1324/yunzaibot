@@ -116,3 +116,7 @@ dist
 
 /config/config.js
 /config/command.json
+
+/lib/example/*
+!/lib/example/examples.js
+!/lib/example/README.md
