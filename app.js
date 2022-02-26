@@ -1,7 +1,7 @@
-import { createClient } from "oicq";
-import { init } from "./lib/init.js";
-import { dealMsg, dealGroupNotice, dealFriend, dealGroupRequest } from "./lib/dealMsg.js";
 import { check } from "./lib/check.js";
+import { init } from "./lib/init.js";
+import { createClient } from "oicq";
+import { dealMsg, dealGroupNotice, dealFriend, dealGroupRequest } from "./lib/dealMsg.js";
 
 //检查配置文件
 await check();
