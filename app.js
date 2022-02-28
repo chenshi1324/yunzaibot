@@ -10,7 +10,7 @@ await check();
 const Bot = createClient(BotConfig.account.qq, {
   log_level: BotConfig.account.log_level,
   platform: BotConfig.account.platform,
-  // resend: false,
+  resend: false,
   data_dir: process.cwd() + "/data",
 });
 global.Bot = Bot;
@@ -25,6 +25,8 @@ Bot.on("system.login.qrcode", function (e) {
 
 //提交滑动验证码
 Bot.on("system.login.slider", function (e) {
+  this.logger.mark("手机用户可以使用【滑动验证码助手】https://txhelper.glitch.me  完成验证时自动返回ticket,");
+  this.logger.mark("请输入ticket后按回车完成【滑动验证】");
   process.stdin.once("data", (input) => {
     this.submitSlider(input);
   });
