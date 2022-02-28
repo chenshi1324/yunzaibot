@@ -16,11 +16,11 @@ cd Yunzai-Bot
 npm install -g cnpm --registry=https://registry.npmmirror.com
 cnpm install
 
-2.运行
+2.首次运行，按提示输入完成配置登录
 node app
 
-后台运行 or 停止
-npm start / npm stop
+3.需要后台运行的，停止现在的输入下面命令
+npm start
 ```
 
 ## 操作指令
@@ -110,9 +110,8 @@ npm start / npm stop
 |[GardenHamster](https://github.com/GardenHamster/GenshinPray) | 模拟抽卡背景素材来源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 
-### 其他
-有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
-
-也可以加群 213938015 反馈 ，最后再求个star，你的支持是维护本项目的动力~~
-
-图片素材来源于网络，仅供交流学习使用
+## 其他
+- 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
+- 也可以加群 [213938015](https://qm.qq.com/cgi-bin/qm/qr?k=HN2YuYXT-Ks3eFhXmuk94OhkDood4sBy&jump_from=webapi) 反馈 ，最后再求个star，你的支持是维护本项目的动力~~
+- 图片素材来源于网络，仅供交流学习使用
+- [爱发电](https://afdian.net/@Le-niao)
