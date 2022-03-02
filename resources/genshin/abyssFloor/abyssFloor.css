@@ -16,7 +16,7 @@ body {
   font-family: PingFangSC-Medium, PingFang SC, sans-serif;
   width: 400px;
   /*height: 265px;*/
-  transform: scale(1.5);
+  transform: scale(2.0);
   transform-origin: 0 0;
 }
 .container {
@@ -119,11 +119,11 @@ body {
   bottom: 0;
 }
 .roles .item .role_img {
-  width: 100%;
+  width: 52px;
+  height: 53px;
   overflow: hidden;
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-top: 3px;
 }
 .roles .item .desc {
   font-weight: 500;
