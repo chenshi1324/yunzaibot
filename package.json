@@ -11,6 +11,7 @@
   },
   "scripts": {
     "app": "node ./app.js",
+    "debug": "node ./app.js debug",
     "test": "node ./lib/test.js",
     "start": "pm2 start app.js",
     "stop": "pm2 stop app.js",
@@ -34,7 +35,7 @@
     "oicq": "^2.2.0",
     "pm2": "^5.1.2",
     "prettier": "^2.4.1",
-    "puppeteer": "^13.0.0",
+    "puppeteer": "^13.4.1",
     "redis": "^4.0.2",
     "tencentcloud-sdk-nodejs": "^4.0.285"
   }
