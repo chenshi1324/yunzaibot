@@ -27,14 +27,11 @@ body {
   background-color: #f5f6fb;
 }
 .head_box {
-  background: url(./bg.png) #fff;
-  background-position-x: 42px;
-  background-repeat: no-repeat;
+  
   border-radius: 15px;
   font-family: tttgbnumber;
   padding: 10px 20px;
   position: relative;
-  background-size: auto 101%;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
 
 }
