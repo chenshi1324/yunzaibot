@@ -66,6 +66,9 @@ body {
     margin-bottom: 2px;
     margin-left: 15px;
 }
+.text_box{
+    position: relative;
+}
 .detail{
     margin-left: 5px;
     width: 300px;
@@ -74,7 +77,15 @@ body {
     display: flex;
     position: relative;
 }
-.detail::before{
+
+.skill{
+    margin-left: 5px;
+    width: 300px;
+    padding-bottom: 6px;
+    display: flex;
+    position: relative;
+}
+.text_box::before{
     content: "";
     display: block;
     position: absolute;
@@ -87,7 +98,7 @@ body {
     opacity: 1;
     transition: width 0.3s 0.1s, opacity 0.3s 0.1s;
 }
-.detail::after{
+.text_box::after{
     content: "";
     display: block;
     position: absolute;
@@ -100,9 +111,13 @@ body {
     opacity: 1;
     transition: width 0.3s 0.1s, opacity 0.3s 0.1s;
 }
-.detail p{
-    margin-right:10px;
-    line-height: 20px;
+.detail p,.skill p{
+    margin-right:4px;
+    line-height: 16px;
+    width: 93px;
+}
+.no_skill{
+    padding: 10px 0;
 }
 .star{
     width: 16px;
