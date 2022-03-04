@@ -120,3 +120,5 @@ dist
 /lib/example/*
 !/lib/example/examples.js
 !/lib/example/README.md
+
+dump.rdb
