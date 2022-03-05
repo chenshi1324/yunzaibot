@@ -80,10 +80,11 @@ body {
 .item .item-bg .role-lv .text {
   position: relative;
   z-index: 2;
+  height: 23px;
 }
 .item .item-bg .role-lv .text-bg {
   width: 40px;
-  height: 21px;
+  height: 23px;
   top: 0px;
   background-color: #fff;
   position: absolute;
