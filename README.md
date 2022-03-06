@@ -81,6 +81,10 @@ npm start
 <img src="https://user-images.githubusercontent.com/12881780/148639174-675bee67-b3e5-41ef-8a3c-89e4fb909610.png" alt="#体力">
 </details>
 
+<details>
+<summary>#原石、#札记二月</summary>
+<img src="https://user-images.githubusercontent.com/12881780/156923947-3fc32dff-d442-434e-b2ff-116ee81daec0.png" alt="#原石">
+</details>
 
 <details>
 <summary>#角色记录/#常驻记录/#武器记录</summary>
