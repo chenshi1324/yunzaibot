@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/ledger/ledger.css?v=1.0" />
+    <link rel="preload" href="../../../../resources/font/tttgbnumber.ttf" as="font">
+    <link rel="preload" href="../../../../resources/genshin/ledger/bg.webp" as="image">
+    <link rel="preload" href="../../../../resources/genshin/ledger/chart.png" as="image">
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="title-box">
+        <div class="info">
+          <div class="uid">ID：{{uid}}</div>
+          <div class="month">{{day}}札记</div>
+        </div>
+        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png" />
+      </div>
+      <div class="data-box">
+        <div class="month">
+          <div class="head">当月获取：</div>
+          <div class="primogems">
+            <div class="icon-ys"></div>
+            <div class="text">原石：{{month_data.current_primogems}} | {{month_data.gacha}} 抽</div>
+          </div>
+          <div class="primogems">
+            <div class="icon-mola"></div>
+            <div class="text">摩拉：{{month_data.current_mora}}</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="head">今天获取：</div>
+          <div class="primogems">
+            <div class="icon-ys"></div>
+            <div class="text">原石：{{day_data.current_primogems}}</div>
+          </div>
+          <div class="primogems">
+            <div class="icon-mola"></div>
+            <div class="text">摩拉：{{day_data.current_mora}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-box">
+        <div class="head">原石收入组成：</div>
+        <div class="chart-info">
+          <div id="chartContainer"></div>
+          <ul class="tooltip">
+            {{each month_data.group_by val}}
+            <li>
+              <i style="background: {{val.color}}"></i>
+              <span class="action">{{val.action}}</span> <em>{{val.percent}}%</em><span class="num">{{val.num}}</span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="../../../../resources/genshin/ledger/g2.min.js"></script>
+  <script>
+    const data = JSON.parse(`{{@ group_by}}`);
+    const chart = new G2.Chart({
+      container: "chartContainer",
+      autoFit: true,
+      renderer: "svg",
+    });
+    
+    chart.data(data);
+    chart.legend(false);
+    chart.coordinate("theta", {
+      radius: 0.86,
+      innerRadius: 0.78,
+    });
+    chart.animate(false);
+    chart
+      .interval()
+      .adjust("stack")
+      .position("percent")
+      .color("color", (v) => {
+        return v;
+      })
+      .tooltip("action*percent", (action, percent) => {
+        percent = percent + "%";
+        return {
+          name: action,
+          value: percent,
+        };
+      });
+
+    chart.render();
+  </script>
+</html>
