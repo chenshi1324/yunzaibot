@@ -13,10 +13,10 @@
     "app": "node ./app.js",
     "debug": "node ./app.js debug",
     "test": "node ./lib/test.js",
-    "start": "pm2 start app.js",
-    "stop": "pm2 stop app.js",
-    "restart": "pm2 restart app.js",
-    "log": "pm2 logs"
+    "start": "pm2 start ./config/pm2/pm2.json",
+    "stop": "pm2 stop Yunzai",
+    "restart": "pm2 restart Yunzai",
+    "log": "pm2 logs --lines 200 Yunzai"
   },
   "keywords": [
     "qqBot",
