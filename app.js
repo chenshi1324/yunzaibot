@@ -73,6 +73,7 @@ Bot.on("request.friend", (event) => {
 
 //监听群通知
 Bot.on("notice.group", (event) => {
+  event.isGroup = true;
   dealGroupNotice(event).catch((error) => {
     Bot.logger.error(error);
   });
