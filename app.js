@@ -26,7 +26,7 @@ Bot.on("system.login.qrcode", function (e) {
 //提交滑动验证码
 Bot.on("system.login.slider", function (e) {
   this.logger.mark("手机用户可以使用【滑动验证码助手】https://txhelper.glitch.me  完成验证时自动返回ticket,");
-  this.logger.mark("请输入ticket后按回车完成【滑动验证】");
+  this.logger.mark("请输入获取的ticket后按回车完成【滑动验证】");
   process.stdin.once("data", (input) => {
     this.submitSlider(input);
   });
@@ -81,8 +81,4 @@ Bot.on("notice.group", (event) => {
 //监听群事件
 Bot.on("request.group", (event) => {
   dealGroupRequest(event);
-});
-
-process.on('unhandledRejection', (err, promise) => {
-  Bot.logger.error(err);
 });
