@@ -1,7 +1,7 @@
 import { check } from "./lib/check.js";
 import { init } from "./lib/init.js";
 import { createClient } from "oicq";
-import { dealMsg, dealGroupNotice, dealFriend, dealGroupRequest } from "./lib/dealMsg.js";
+import solve from "./lib/dealMsg.js";
 
 //检查配置文件
 await check();
@@ -17,7 +17,7 @@ global.Bot = Bot;
 
 //扫码登录 or 密码登录
 Bot.on("system.login.qrcode", function (e) {
-  this.logger.mark("扫码后按Enter完成登录");
+  this.logger.mark("扫码后按Enter回车完成登录");
   process.stdin.once("data", () => {
     this.login();
   });
@@ -25,8 +25,7 @@ Bot.on("system.login.qrcode", function (e) {
 
 //提交滑动验证码
 Bot.on("system.login.slider", function (e) {
-  this.logger.mark("手机用户可以使用【滑动验证码助手】https://txhelper.glitch.me  完成验证时自动返回ticket,");
-  this.logger.mark("请输入获取的ticket后按回车完成【滑动验证】");
+  this.logger.mark("请输入获取的ticket，按回车完成【滑动验证】");
   process.stdin.once("data", (input) => {
     this.submitSlider(input);
   });
@@ -53,7 +52,7 @@ Bot.on("system.online", async () => {
 //监听群聊消息事件
 Bot.on("message.group", (event) => {
   event.isGroup = true;
-  dealMsg(event).catch((error) => {
+  solve.dealMsg(event).catch((error) => {
     Bot.logger.error(error);
   });
 });
@@ -61,25 +60,25 @@ Bot.on("message.group", (event) => {
 //监听私聊消息事件
 Bot.on("message.private", (event) => {
   event.isPrivate = true;
-  dealMsg(event).catch((error) => {
+  solve.dealMsg(event).catch((error) => {
     Bot.logger.error(error);
   });
 });
 
 //监听好友事件
 Bot.on("request.friend", (event) => {
-  dealFriend(event);
+  solve.dealFriend(event);
 });
 
 //监听群通知
 Bot.on("notice.group", (event) => {
   event.isGroup = true;
-  dealGroupNotice(event).catch((error) => {
+  solve.dealGroupNotice(event).catch((error) => {
     Bot.logger.error(error);
   });
 });
 
 //监听群事件
 Bot.on("request.group", (event) => {
-  dealGroupRequest(event);
+  solve.dealGroupRequest(event);
 });
