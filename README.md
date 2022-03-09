@@ -30,16 +30,16 @@ npm start
 >[其他说明](resources/readme/命令说明.md)，[如何获取cookie](resources/readme/命令说明.md#如何获取米游社-cookie)，[抽卡记录说明](resources/logHelp/记录帮助.md)，[更新日志](resources/readme/更新日志.md)
 
 ### 
-![示例](https://user-images.githubusercontent.com/12881780/149643554-ec12f18a-e00c-4cd4-bc89-e651a9812168.png)
+![示例](https://user-images.githubusercontent.com/12881780/157281209-cfd22cd1-1860-4486-acb8-f3af0180658a.png)
 
 <details>
 <summary>#刻晴/#老婆/#老公</summary>
-<img src="https://user-images.githubusercontent.com/12881780/148639092-922533ce-8000-4df2-b390-cf40c8d7c12f.png" alt="#早柚">
+<img src="https://user-images.githubusercontent.com/12881780/157281841-67a58452-4156-4172-b8c2-b9caf0226227.jpg" alt="#神里">
 </details>
 
 <details>
 <summary>#刻晴卡片/戳一戳</summary>
-<img src="https://user-images.githubusercontent.com/12881780/149643684-7aec38db-7fcc-4cfe-b3f2-050ad8640b87.png" alt="#温迪">
+<img src="https://user-images.githubusercontent.com/12881780/149643684-7aec38db-7fcc-4cfe-b3f2-050ad8640b87.png" alt="#刻晴">
 </details>
 
 <details>
