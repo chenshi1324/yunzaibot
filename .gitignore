@@ -117,9 +117,14 @@ dist
 /config/config.js
 /config/command.json
 
+dump.rdb
+
 /lib/example/*
 !/lib/example/examples.js
 !/lib/example/README.md
 !/lib/example/newcomers.js
-
-dump.rdb
+!/lib/example/global.js
+/resources/全局表情/*
+/resources/全局语音/*
+!/resources/全局表情/胡桃-胡桃摇.gif
+!/resources/全局语音/诶嘿-唉嘿.amr
