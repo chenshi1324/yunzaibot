@@ -28,7 +28,8 @@ let config = {
    * document.cookie ，回车即可获取
    * 获取教程：https://docs.qq.com/doc/DUWNVQVFTU3liTVlO
    * 例如 用引号包住，多个用逗号隔开
-   * 'ltoken=***;ltuid=***;','ltoken=***;ltuid=***;',
+   * 'ltoken=***;ltuid=***;',
+   * 'ltoken=***;ltuid=***;',
    * cookie逻辑：一个号一天只能查30个uid（包括查询失败的），在没超过30的时候，之前查过的uid可以重复查询
    * 所以项目限制一个cookie只能查27个，避免超出限制，查询过的可以重复查
    * 获取完别退出登录否则cookie就会失效，多账号用无痕（隐身）模式获取
@@ -54,7 +55,7 @@ let config = {
       singleCD: 2000,   //群聊中个人操作冷却时间，单位毫秒
       PokeCD:   10000,  //群聊中戳一戳冷却时间，单位毫秒
 
-      imgAddLimit:0,     //添加表情是否限制  0-所有群员都可以添加 1-群管理员才能添加
+      imgAddLimit:0,     //添加表情是否限制  0-所有群员都可以添加 1-群管理员才能添加 2-主人才能添加
       imgMaxSize:1,      //添加表情图片大小限制，默认1m
 
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
@@ -85,7 +86,7 @@ let config = {
     secretId:  "",//云产品-管理与审计-访问秘钥获取
     secretKey: "",//云产品-管理与审计-访问秘钥获取
     BotId:     "",//腾讯智能对话平台-Bot信息-BotId	
-    BotEnv:    "dev",
+    BotEnv:    "dev",//不用管就填dev
     BotName:   "云崽",//机器人名称
   },
 
