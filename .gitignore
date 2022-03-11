@@ -124,7 +124,7 @@ dump.rdb
 !/lib/example/README.md
 !/lib/example/newcomers.js
 !/lib/example/global.js
-/resources/全局表情/*
-/resources/全局语音/*
-!/resources/全局表情/胡桃-胡桃摇.gif
-!/resources/全局语音/诶嘿-唉嘿.amr
+/resources/global_img/*
+/resources/global_record/*
+!/resources/global_img/胡桃-胡桃摇.gif
+!/resources/global_record/诶嘿-唉嘿.amr
