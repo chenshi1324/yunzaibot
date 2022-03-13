@@ -61,8 +61,8 @@ let config = {
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
 
       //禁用功能 
-      //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other','ai'
-      // 全部，戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，腾讯智障ai
+      //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other','ai','reliquaries','strategy_xf'
+      // 全部，戳一戳，十连，原神查询，抽卡记录，体力，添加表情，其他，腾讯智障ai，圣遗物评分，西风角色攻略
       disable: [],
     },
 

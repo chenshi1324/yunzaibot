@@ -113,6 +113,8 @@ npm start
 | :----------------------------------------------------------: | ----------------------------------- |
 |[GardenHamster](https://github.com/GardenHamster/GenshinPray) | 模拟抽卡背景素材来源 |
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
+|[西风驿站](https://bbs.mihoyo.com/ys/collection/307224) | 角色攻略来源 |
+|[可莉特调](https://genshin.pub/daily) | 调用其圣遗物评分接口 |
 
 ## 其他
 - 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
