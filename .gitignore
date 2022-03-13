@@ -128,3 +128,6 @@ dump.rdb
 /resources/global_record/*
 !/resources/global_img/胡桃-胡桃摇.gif
 !/resources/global_record/诶嘿-唉嘿.amr
+
+/resources/strategy_xf/*
+!/resources/strategy_xf/README.md
