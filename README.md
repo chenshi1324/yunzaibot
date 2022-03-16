@@ -74,6 +74,11 @@ npm start
 </details>
 
 <details>
+<summary>#刻晴图鉴、#刻晴命座</summary>
+<img src="https://user-images.githubusercontent.com/12881780/158540489-390cdfe6-d9e2-401b-b271-7dc7a702c388.png" alt="#刻晴图鉴">
+</details>
+
+<details>
 <summary>#体力/#体力帮助</summary>
 
 需要配置cookie（私聊发送给机器人） [体力查询说明](resources/readme/命令说明.md#体力查询说明)
@@ -115,6 +120,7 @@ npm start
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 |[西风驿站](https://bbs.mihoyo.com/ys/collection/307224) | 角色攻略来源 |
 |[可莉特调](https://genshin.pub/daily) | 调用其圣遗物评分接口 |
+|@逍遥_xiaoyao | 提供角色图鉴图片 |
 
 ## 其他
 - 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
