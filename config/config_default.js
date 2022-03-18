@@ -82,13 +82,22 @@ let config = {
       PokeCD:   10000,  //群聊中戳一戳冷却时间，单位毫秒
       disable: ['all'],//禁用所有功能
     },
+    'qq群号':{
+      disable: ['all'],//禁用所有功能
+    }
   },
 
   //主人qq，米游社查询，十连不受限制
   masterQQ:[123456,],
 
   //黑名单qq
-  balckQQ:[2854196310,],
+  balckQQ:[
+    2854196310,
+  ],
+  //黑名单q群
+  balckGroup:[
+    213938015,123456,
+  ],
 
   //对话ai,配置后@机器人进行聊天对话，推荐配置将你的机器人变成人工智障
   //腾讯智能对话平台 https://cloud.tencent.com/product/tbp 
