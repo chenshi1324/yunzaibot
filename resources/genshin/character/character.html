@@ -16,6 +16,7 @@
   </head>
   <body>
     <div class="container {{name}}_bg1" id="container">
+      <div class="drag"></div>
       <div class="role_box {{name}}_bg{{bg}}">
         <div class="title_box">
           <div>
@@ -44,7 +45,7 @@
           <div class="skill">
             <p>
               <img class="star" src="../../../../resources/genshin/character/星星.png"/>
-              普攻：<span>{{ skill.a.level_current}}</span>
+              爆发：<span>{{ skill.q.level_current}}</span>
             </p>
             <p>
               <img class="star" src="../../../../resources/genshin/character/星星.png"/>
@@ -52,7 +53,7 @@
             </p>
             <p>
               <img class="star" src="../../../../resources/genshin/character/星星.png"/>
-              爆发：<span>{{ skill.q.level_current}}</span>
+              普攻：<span>{{ skill.a.level_current}}</span>
             </p>
           </div>
           {{/if}}
