@@ -17,6 +17,7 @@ let command = {
     character: "^#(.*)$",
     checkCookie: "^#*检查(ck|cookie)$",
     setCookie: "^#*配置(.*)$",
+    todayQuery: "^#(今日素材|素材|今日材料|材料)[角色]*[信息]*[ |0-9]*$",
   },
   dailyNote:{
     dailyNote: "^#*(体力|树脂|查询体力)$",
