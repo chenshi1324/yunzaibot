@@ -3,27 +3,45 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../../../resources/genshin/life/life.css?v=1.0"
-    />
+    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/today/today.css?v=1.0" />
   </head>
   <body>
     <style></style>
     <div class="container" id="container">
       <div class="main_box">
         <div class="base_info">
-          <div class="uid">根据你所拥有的角色查询</div>
-          <div class="uid">ID: {{uid}}</div>
-        </div>
-
-        {{each mainList temp}}
-        <div class="item">
-          <div class="uid">{{temp.name}}</div>
-          <div class="role_box">
-            <img class="role_img" src="../../../../resources/genshin/logo/talent/{{temp.name}}.png"/>
+          <div class="id">
+            <span>ID：{{uid}}</span>
           </div>
+          <div class="day">
+            <span>{{day}}</span>
+          </div>
+        </div>
+        {{each mainList temp}}
+        {{ if temp.list.length>0}}
+        <div class="ele_info">
+          <div class="area">
+            <img class="tab-item-icon" src="../../../../resources/genshin/role/{{temp.area}}.png" />
+            <div class="tab-item-left"></div>
+            <div class="tab-item-middle"></div>
+            <div class="tab-item-text">{{temp.area}}</div>
+            <div class="tab-item-right"></div>
+          </div>
+          <div class="ele_box">
+            <div class="ele_name">{{temp.name}}</div>
+            <div class="ele_img">
+              <div class="img_item">
+                <img src="../../../../resources/genshin/logo/talent/{{temp.name}}_4.png" />
+              </div>
+              <div class="img_item">
+                <img src="../../../../resources/genshin/logo/talent/{{temp.name}}_3.png" />
+              </div>
+              <div class="img_item">
+                <img src="../../../../resources/genshin/logo/talent/{{temp.name}}_2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-line"></div>
         </div>
         <div class="item_box">
           {{each temp.list val}}
@@ -35,13 +53,15 @@
               <div class="bg{{val.rarity}}"></div>
               <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
               <div class="desc">Lv.{{val.level}}</div>
+              <div class="role_name">{{val.name}}</div>
             </div>
           </div>
-          {{/each}} 
+          {{/each}}
         </div>
-        {{/each}} 
-        
+        {{/if}}
+        {{/each}}
       </div>
+      <div class="explain">*根据你所拥有的角色查询今天可升天赋角色</div>
     </div>
   </body>
   <script type="text/javascript">
