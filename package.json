@@ -16,7 +16,8 @@
     "start": "pm2 start ./config/pm2/pm2.json",
     "stop": "pm2 stop Yunzai",
     "restart": "pm2 restart Yunzai",
-    "log": "pm2 logs --lines 200 Yunzai"
+    "log": "pm2 logs --lines 200 Yunzai",
+    "web": "node ./tools/web.js"
   },
   "keywords": [
     "qqBot",
@@ -38,5 +39,9 @@
     "puppeteer": "^13.5.1",
     "redis": "^4.0.2",
     "tencentcloud-sdk-nodejs": "^4.0.285"
+  },
+  "devDependencies": {
+    "express": "^4.17.3",
+    "express-art-template": "^1.0.1"
   }
 }
