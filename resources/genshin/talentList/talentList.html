@@ -44,18 +44,23 @@
         </div>
         {{each avatars avatar idx}}
         <div class="avatar">
-          <div class="index">{{idx+1}}</div>
-          <div class="name star{{avatar.rarity}}">
-            <div class="avatar_img">
-              <img src="{{_res_path}}genshin/logo/side/{{avatar.name}}.png" onerror="whenError(this)"/>
-            </div>
-            <div class="avatar_name">
-              {{abbr[avatar.name] || avatar.name}}
+          <div class="index star{{avatar.rarity}}">{{idx+1}}</div>
+          <div class="name_cont star{{avatar.rarity}}">
+            <div class="name">
+              <div class="avatar_img">
+                <img src="{{_res_path}}genshin/logo/side/{{avatar.name}}.png" onerror="whenError(this)"/>
+              </div>
+              <div class="avatar_name">
+                {{abbr[avatar.name] || avatar.name}}
+              </div>
             </div>
           </div>
           <div class="lvl">{{avatar.level}}</div>
           <div class="fetter">{{avatar.fetter}}</div>
           <div class="cons"><span class="life{{avatar.cons}}">{{avatar.cons}}</span></div>
+          <div class="talent lv{{avatar.a_lvl}}">{{avatar.a}}</div>
+          <div class="talent lv{{avatar.e_lvl}} {{avatar.e_plus ? 'talent_plus':''}}">{{avatar.e}}</div>
+          <div class="talent lv{{avatar.q_lvl}} {{avatar.q_plus ? 'talent_plus':''}}">{{avatar.q}}</div>
           <div class="weapon for_weapon">
             {{if avatar.weapon_name}}
             <div class="weapon_box">
@@ -66,7 +71,7 @@
             </div>
             {{/if}}
           </div>
-          <div class="talent_res for_talent">
+          <div class="talent_res for_talent {{avatar.talentWeek === week ? 'today_talent':''}}">
             {{if avatar.talent}}
             <img src="{{_res_path}}genshin/logo/talent/{{avatar.talent}}_4.png"/>
             {{avatar.talent}}({{avatar.talentWeek}},{{avatar.talentWeek+3}})
