@@ -167,6 +167,9 @@ body {
   display: table-row;
 }
 
+.talent_list .avatar > div {
+  box-shadow: 0 0 .5px 0 #555 inset;
+}
 
 .talent_list .avatar:nth-child(odd) {
   background: #e0e0e0;
@@ -191,7 +194,7 @@ body {
 
 .talent_list .avatar .index {
   color: #888;
-  width: 40px;
+  width: 30px;
   padding-left: 5px;
 
 }
@@ -228,6 +231,10 @@ body {
   border-radius: 4px;
 }
 
+.talent_list .life0 {
+  color: #666;
+}
+
 .talent_list .life1 {
   background-color: #62a8ea;
 }
@@ -256,6 +263,10 @@ body {
   text-align: left;
 }
 
+.talent_list .avatar.th>div {
+  box-shadow: none;
+}
+.talent_list .avatar.th .name,
 .talent_list .avatar.th .weapon {
   text-align: center;
 }
@@ -266,6 +277,7 @@ body {
   height: 20px;
   position: relative;
   display: inline-block;
+
 }
 
 .talent_list .avatar .weapon_icon span {
@@ -280,19 +292,28 @@ body {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+  margin-left:5px;
 }
 
 .talent_list .talent_res {
   color: #333;
 }
 
+.talent_list .talent {
+  color: #333;
+}
+
 .talent_list .talent_plus {
   color: #006cc7;
   font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 0 1px 0 #f00 inset;
+  position: relative;
+  text-shadow:0px 0px 1px #fff;
 }
 
 .talent_list .lv1 {
-  background: rgba(60, 63, 65, .5)
+  background: rgba(60, 63, 65, .3)
 }
 
 .talent_list .lv2 {
@@ -304,7 +325,8 @@ body {
 }
 
 .talent_list .lv4 {
-  background: rgba(196, 158, 39, .55)
+  background: rgba(122,93,179, .55);
+  coolor:rgb(122,93,179);
 }
 
 .talent_list .lv5 {
@@ -312,10 +334,6 @@ body {
 }
 
 
-.talent_list .avatar > *:last-child {
-  width: 40px;
-  padding-right: 10px;
-}
 
 .talent_notice {
   color: #888;
