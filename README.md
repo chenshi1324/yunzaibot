@@ -13,8 +13,7 @@ git clone https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
 
 用cnpm安装
-npm install -g cnpm --registry=https://registry.npmmirror.com
-cnpm install
+npm install --registry=https://registry.npm.taobao.org
 
 2.首次运行，按提示输入完成配置登录
 node app
