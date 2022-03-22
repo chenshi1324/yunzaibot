@@ -53,7 +53,7 @@
           <div class="weapon for_weapon">
             {{if avatar.weapon}}
               <img src="{{_res_path}}genshin/logo/weapon/{{avatar.weapon.name}}.png"/>
-            Lv{{avatar.weapon.level}}精{{avatar.weapon.rarity}} {{abbr[avatar.weapon.name] || avatar.weapon.name}}
+            Lv{{avatar.weapon.level}}精{{avatar.weapon.affix_level}} {{abbr[avatar.weapon.name] || avatar.weapon.name}}
             {{/if}}
           </div>
           <div class="talent_res for_talent">
