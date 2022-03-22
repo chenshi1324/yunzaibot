@@ -4,6 +4,7 @@
   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
   <link rel="shortcut icon" href="#"/>
   <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/talentList/talentList.css?v=1.0"/>
+  <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font">
   <script type="text/javascript">
     function whenError(a, type) {
       a.onerror = null;
@@ -70,7 +71,7 @@
         </div>
         {{/each}}
       </div>
-      <p class="talent_notice">技能列表每2小时更新一次</p>
+      <p class="talent_notice">技能列表每{{cacheCd}}小时更新一次</p>
     </div>
     <div class="logo"> Create By Yuanzai-Bot</div>
   </div>
