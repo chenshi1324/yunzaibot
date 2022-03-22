@@ -12,7 +12,7 @@
 git clone https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
 
-用cnpm安装
+npm安装
 npm install --registry=https://registry.npm.taobao.org
 
 2.首次运行，按提示输入完成配置登录
@@ -63,12 +63,8 @@ npm start
 </details>
 
 <details>
-<summary>#四星/#五星</summary>
+<summary>#四星、#五星、#武器</summary>
 <img src="https://user-images.githubusercontent.com/12881780/149619476-c96b5afd-2902-4f95-9be1-8da0908efa50.png" alt="#五星">
-</details>
-
-<details>
-<summary>#武器</summary>
 <img src="https://user-images.githubusercontent.com/12881780/149620853-c35b19e0-2289-4583-b804-6057b48f3f32.jpg" alt="#武器">
 </details>
 
@@ -88,6 +84,11 @@ npm start
 <details>
 <summary>#原石、#札记二月</summary>
 <img src="https://user-images.githubusercontent.com/12881780/156923947-3fc32dff-d442-434e-b2ff-116ee81daec0.png" alt="#原石">
+</details>
+
+<details>
+<summary>练度统计、技能列表</summary>
+<img src="https://user-images.githubusercontent.com/12881780/159514486-0a05ffb9-f3c6-4796-ae01-94e0b72f23a6.jpg" alt="#练度统计">
 </details>
 
 <details>
@@ -119,7 +120,7 @@ npm start
 |[lulu666lulu](https://github.com/lulu666lulu) | 提供了最新的DS算法 |
 |[西风驿站](https://bbs.mihoyo.com/ys/collection/307224) | 角色攻略来源 |
 |[可莉特调](https://genshin.pub/daily) | 调用其圣遗物评分接口 |
-|@逍遥_xiaoyao | 提供角色图鉴图片 |
+|@逍遥_xiaoyao | 提供角色，武器图鉴图片 |
 
 ## 其他
 - 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
