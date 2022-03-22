@@ -154,7 +154,7 @@ body {
   width: calc(100% + 30px);
   margin: 0 -15px -5px;
   font-size: 12px;
-  border-radius: 0 0 15px 15px;
+  /* border-radius: 0 0 15px 15px; */
   overflow: hidden;
 }
 
@@ -200,12 +200,28 @@ body {
   text-align: left;
   color: #333;
   width: 80px;
+  display: flex;
 }
-
-.talent_list .avatar .name img {
+.talent_list .th .name{
+  justify-content: center;
+}
+.talent_list .avatar .name .avatar_img {
   width: 26px;
   height: 26px;
-  vertical-align: top;
+  position: relative;
+  margin-right: 3px;
+}
+.talent_list .avatar .name img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:-3px;
+}
+
+.talent_list .avatar .name .avatar_name {
+  white-space:nowrap;
+  overflow: hidden;
+  width: 48px;
 }
 
 .talent_list .avatar .res {
@@ -226,30 +242,37 @@ body {
   line-height: 18px;
   vertical-align: middle;
   border-radius: 4px;
+  margin-bottom: 2px;
 }
 
 .talent_list .life1 {
   background-color: #62a8ea;
+  color: #fff;
 }
 
 .talent_list .life2 {
   background-color: #62a8ea;
+  color: #fff;
 }
 
 .talent_list .life3 {
   background-color: #45b97c;
+  color: #fff;
 }
 
 .talent_list .life4 {
   background-color: #45b97c;
+  color: #fff;
 }
 
 .talent_list .life5 {
   background-color: #ff5722;
+  color: #fff;
 }
 
 .talent_list .life6 {
   background-color: #ff5722;
+  color: #fff;
 }
 
 .talent_list .avatar .weapon {
@@ -280,6 +303,31 @@ body {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.talent_list .weapon .weapon_box {
+  display: flex;
+  align-items: center;
+}
+.talent_list .weapon .weapon_box span{
+  
+}
+.talent_list .weapon .weapon_lv{
+  width: 30px;
+}
+
+.talent_list .weapon .weapon_alv{
+  width: 20px;
+  text-align: center;
+}
+
+.talent_list .weapon .weapon_name{
+  flex-grow: 1;
+  max-width: 60px;
+  overflow: hidden;
+  white-space:nowrap;
+  padding-left: 2px;
 }
 
 .talent_list .talent_res {
@@ -313,8 +361,8 @@ body {
 
 
 .talent_list .avatar > *:last-child {
-  width: 40px;
-  padding-right: 10px;
+  width: 30px;
+  /* padding-right: 10px; */
 }
 
 .talent_notice {
