@@ -1,6 +1,6 @@
 global.BotConfig = (await import(`../config/config.js`)).config;
-import solve  from "./dealMsg.js";
-import { init } from "./init.js";
+import solve  from "../lib/dealMsg.js";
+import { init } from "../lib/init.js";
 import log4js from "log4js";
 
 global.Bot = {};
@@ -10,9 +10,9 @@ global.initFinish = true;
 global.Bot.logger.level = "debug";
 
 /**
- * 模拟测试
+ * 模拟测试命令
  * npm test 角色 
- * node ./lib/test.js 角色
+ * node ./tool/test.js 角色
  */ 
  
 //模拟命令
