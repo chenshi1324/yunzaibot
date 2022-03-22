@@ -17,8 +17,8 @@
             <span>{{day}}</span>
           </div>
         </div>
-        {{each mainList temp}}
-        {{ if temp.list.length>0}}
+        {{each mainList temp}} 
+        <!-- {{ if temp.list.length>0}}  -->
         <div class="ele_info">
           <div class="area">
             <img class="tab-item-icon" src="../../../../resources/genshin/role/{{temp.area}}.png" />
@@ -43,22 +43,55 @@
           </div>
           <div class="tab-line"></div>
         </div>
-        <div class="item_box">
-          {{each temp.list val}}
-          <div class="item">
-            <div class="role_box">
-              {{ if val.actived_constellation_num>0}}
-              <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
-              {{/if}}
-              <div class="bg{{val.rarity}}"></div>
-              <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
-              <div class="desc">Lv.{{val.level}}</div>
-              <div class="role_name">{{val.name}}</div>
+          {{ if temp.isTalent}}
+          <div class="item_box">
+            {{each temp.list val}}
+            <div class="item">
+              <div class="role_box">
+                {{ if val.actived_constellation_num>0}}
+                <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
+                {{/if}}
+                <div class="bg{{val.rarity}}"></div>
+                <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this)" />
+                <div class="desc">Lv.{{val.level}}</div>
+                <div class="role_name">{{val.name}}</div>
+              </div>
             </div>
+            {{/each}}
           </div>
-          {{/each}}
-        </div>
-        {{/if}}
+          {{/if}}
+          {{ if !temp.isTalent}}
+          <div class="weapon_box">
+            {{each temp.list val}}
+            <div class="item">
+              <span class="user">
+                <img
+                  class="user_img"
+                  src="../../../../resources/genshin/logo/side/{{val.role_name}}.png"
+                  onerror="whenErrorRole(this)"
+                />
+              </span>
+              <div class="role_box">
+                <!-- {{ if val.affix_level>1}}
+                <span class="life life{{val.affix_level}}">
+                    {{val.affix_level}}
+                </span>
+                {{/if}} -->
+                <div class="bg{{val.rarity}}"></div>
+                <img
+                  class="role_img"
+                  src="../../../../resources/genshin/logo/weapon/{{val.name}}.png"
+                  onerror="whenError(this)"
+                />
+                <div class="desc_1">Lv.{{val.level}}</div>
+                <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+              </div>
+              <div class="role_name">{{val.showName}}</div>
+            </div>
+            {{/each}}
+          </div>
+          {{/if}}
+        <!-- {{/if}} -->
         {{/each}}
       </div>
       <div class="explain">*根据你所拥有的角色查询今天可升天赋角色</div>

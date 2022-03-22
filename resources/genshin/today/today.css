@@ -343,3 +343,139 @@ body {
   left: 30px;
   bottom: 10px;
 }
+
+
+.weapon_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weapon_box .item {
+  width: 65px;
+  margin: 0px 0 10px 12px;
+  position: relative;
+}
+.weapon_box .role_box {
+  overflow: hidden;
+  height: 80px;
+  border-radius: 5px;
+  position: relative;
+  /*border: 2px solid #d3bc8d;*/
+  background: #e9e5dc;
+  box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
+}
+.weapon_box .role_box .role_img {
+  width: 100%;
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  /*filter: contrast(95%);*/
+}
+.weapon_box .bg5 {
+  background-image: url(../life/bg5.png);
+  width: 100%;
+  height: 70px;
+  /*filter: brightness(1.1);*/
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.weapon_box .bg4 {
+  width: 100%;
+  height: 70px;
+  background-image: url(../life/bg4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.weapon_box .bg3 {
+  width: 100%;
+  height: 70px;
+  background-image: url(../life/bg3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.weapon_box .bg2 {
+  width: 100%;
+  height: 70px;
+  background-image: url(../life/bg3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.weapon_box .bg1 {
+  width: 100%;
+  height: 70px;
+  background-image: url(../life/bg3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.weapon_box .role_box .desc_1 {
+  font-weight: 500;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  bottom: 0;
+  background: #e9e5dc;
+  width: 100%;
+  height: 18px;
+  font-size: 14px;
+}
+.weapon_box .role_name {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 5px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  /*margin-top: 5px;*/
+}
+.weapon_box .role_box .life {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: "tttgbnumber";
+}
+.weapon_box .life1 {
+  background-color: #62a8ea;
+}
+.weapon_box .life2 {
+  background-color: #62a8ea;
+}
+.weapon_box .life3 {
+  background-color: #62a8ea;
+}
+.weapon_box .life4 {
+  background-color: #ff5722;
+}
+.weapon_box .life5 {
+  background-color: #ff5722;
+}
+.weapon_box .user {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 9;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  padding: 1px 3px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  width: 24px;
+  height: 24px;
+  background-color: #4e5362;
+}
+.weapon_box .user_img {
+  width: 32px;
+  position: absolute;
+  top: -12px;
+  right: -5px;
+}
