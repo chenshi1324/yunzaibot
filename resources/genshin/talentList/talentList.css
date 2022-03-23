@@ -167,6 +167,9 @@ body {
   display: table-row;
 }
 
+.talent_list .avatar > div {
+  box-shadow: 0 0 0.5px 0 #555 inset;
+}
 
 .talent_list .avatar:nth-child(odd) {
   background: #e0e0e0;
@@ -190,36 +193,56 @@ body {
 }
 
 .talent_list .avatar .index {
-  color: #888;
-  width: 40px;
+  color: #333;
+  width: 30px;
   padding-left: 5px;
 
 }
 
+.talent_list .avatar .name_cont {
+  width: 80px;
+}
+
+
+.talent_list .avatar .star4 {
+  background: rgba(137, 189, 233, .6);
+}
+
+.talent_list .avatar .star5 {
+  background: rgba(239, 214, 137, .6);
+}
+
+.talent_list .avatar .name_cont {
+  width: 80px;
+}
+
 .talent_list .avatar .name {
   text-align: left;
-  color: #333;
-  width: 80px;
   display: flex;
+  width: 80px;
 }
-.talent_list .th .name{
+
+.talent_list .th .name {
   justify-content: center;
 }
+
 .talent_list .avatar .name .avatar_img {
   width: 26px;
   height: 26px;
   position: relative;
   margin-right: 3px;
 }
+
 .talent_list .avatar .name img {
   width: 100%;
   height: 100%;
   position: absolute;
-  top:-3px;
+  top: -3px;
+  margin-left: 3px;
 }
 
 .talent_list .avatar .name .avatar_name {
-  white-space:nowrap;
+  white-space: nowrap;
   overflow: hidden;
   width: 48px;
 }
@@ -243,6 +266,10 @@ body {
   vertical-align: middle;
   border-radius: 4px;
   margin-bottom: 2px;
+}
+
+.talent_list .life0 {
+  color: #666;
 }
 
 .talent_list .life1 {
@@ -279,6 +306,11 @@ body {
   text-align: left;
 }
 
+.talent_list .avatar.th > div {
+  box-shadow: none;
+}
+
+.talent_list .avatar.th .name,
 .talent_list .avatar.th .weapon {
   text-align: center;
 }
@@ -289,6 +321,7 @@ body {
   height: 20px;
   position: relative;
   display: inline-block;
+
 }
 
 .talent_list .avatar .weapon_icon span {
@@ -306,45 +339,74 @@ body {
   margin-bottom: 2px;
 }
 
+.talent_list .weapon img{
+  margin-left:5px;
+}
+
 .talent_list .weapon .weapon_box {
   display: flex;
   align-items: center;
 }
-.talent_list .weapon .weapon_box span{
-  
+
+.talent_list .weapon .weapon_box span {
+
 }
-.talent_list .weapon .weapon_lv{
+
+.talent_list .weapon .weapon_lv {
   width: 30px;
 }
 
-.talent_list .weapon .weapon_alv{
+.talent_list .weapon .weapon_alv {
   width: 20px;
   text-align: center;
 }
 
-.talent_list .weapon .weapon_name{
+.talent_list .weapon .weapon_name {
   flex-grow: 1;
   max-width: 60px;
   overflow: hidden;
-  white-space:nowrap;
+  white-space: nowrap;
   padding-left: 2px;
+  margin-left: 5px;
 }
 
 .talent_list .talent_res {
   color: #333;
 }
 
+.talent_list .talent_res.today_talent {
+  box-shadow: 0 0 4px 0 #deaf39 inset;
+  background: #fff6dd;
+}
+
+
+.talent_list .talent {
+  color: #333;
+}
+
+.talent_list .avatar > div.talent_plus {
+
+}
+
 .talent_list .talent_plus {
   color: #006cc7;
   font-weight: bold;
+  font-size: 13px;
+  position: relative;
+  text-shadow: 0px 0px 1px #fff;
+
 }
 
 .talent_list .lv1 {
-  background: rgba(60, 63, 65, .5)
+  background: rgba(60, 63, 65, .3)
 }
 
 .talent_list .lv2 {
   background: rgba(23, 184, 58, .5)
+}
+
+.talent_list .lv2.talent_plus {
+  color: #005800;
 }
 
 .talent_list .lv3 {
@@ -352,17 +414,19 @@ body {
 }
 
 .talent_list .lv4 {
-  background: rgba(196, 158, 39, .55)
+  background: rgba(146, 90, 255, .55);
+}
+
+.talent_list .lv4.talent_plus {
+  color: #720465;
 }
 
 .talent_list .lv5 {
-  background: rgba(190, 47, 40, .55)
+  background: rgba(255, 36, 26, .55)
 }
 
-
-.talent_list .avatar > *:last-child {
-  width: 30px;
-  /* padding-right: 10px; */
+.talent_list .lv5.talent_plus {
+  color: #b70000;
 }
 
 .talent_notice {

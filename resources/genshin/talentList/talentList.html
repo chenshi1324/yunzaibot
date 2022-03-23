@@ -35,51 +35,55 @@
           <div class="lvl">等级</div>
           <div class="fetter">好感</div>
           <div class="cons">命座</div>
-          <div class="weapon for_weapon">武器</div>
-          <div class="talent_res for_talent">天赋素材(周)</div>
+
           <div class="talent">普攻</div>
           <div class="talent">技能</div>
           <div class="talent">爆发</div>
+          <div class="weapon for_weapon">武器</div>
+          <div class="talent_res for_talent">天赋素材(周)</div>
         </div>
         {{each avatars avatar idx}}
         <div class="avatar">
-          <div class="index">{{idx}}</div>
-          <div class="name">
-            <div class="avatar_img">
-              <img src="{{_res_path}}genshin/logo/side/{{avatar.name}}.png" onerror="whenError(this)"/>
-            </div>
-            <div class="avatar_name">
-              {{abbr[avatar.name] || avatar.name}}
+          <div class="index star{{avatar.rarity}}">{{idx+1}}</div>
+          <div class="name_cont star{{avatar.rarity}}">
+            <div class="name">
+              <div class="avatar_img">
+                <img src="{{_res_path}}genshin/logo/side/{{avatar.name}}.png" onerror="whenError(this)"/>
+              </div>
+              <div class="avatar_name">
+                {{abbr[avatar.name] || avatar.name}}
+              </div>
             </div>
           </div>
           <div class="lvl">{{avatar.level}}</div>
           <div class="fetter">{{avatar.fetter}}</div>
           <div class="cons"><span class="life{{avatar.cons}}">{{avatar.cons}}</span></div>
+          <div class="talent lv{{avatar.a_lvl}}">{{avatar.a}}</div>
+          <div class="talent lv{{avatar.e_lvl}} {{avatar.e_plus ? 'talent_plus':''}}">{{avatar.e}}</div>
+          <div class="talent lv{{avatar.q_lvl}} {{avatar.q_plus ? 'talent_plus':''}}">{{avatar.q}}</div>
           <div class="weapon for_weapon">
-            {{if avatar.weapon}}
+            {{if avatar.weapon_name}}
             <div class="weapon_box">
-              <img src="{{_res_path}}genshin/logo/weapon/{{avatar.weapon.name}}.png"/>
-              <span class="weapon_lv">Lv{{avatar.weapon.level}}</span>
-              <span class="weapon_alv">精{{avatar.weapon.affix_level}}</span>
-              <span class="weapon_name">{{abbr[avatar.weapon.name] || avatar.weapon.name}}</span>
+              <img src="{{_res_path}}genshin/logo/weapon/{{avatar.weapon_name}}.png"/>
+              <span class="weapon_lv">Lv{{avatar.weapon_level}}</span>
+              <span class="weapon_alv">精{{avatar.weapon_affix_level}}</span>
+              <span class="weapon_name">{{abbr[avatar.weapon_name] || avatar.weapon_name}}</span>
             </div>
             {{/if}}
           </div>
-          <div class="talent_res for_talent">
+          <div class="talent_res for_talent {{avatar.talentWeek === week ? 'today_talent':''}}">
             {{if avatar.talent}}
             <img src="{{_res_path}}genshin/logo/talent/{{avatar.talent}}_4.png"/>
-            {{avatar.talent}}({{avatar.talentWeek}})
+            {{avatar.talent}}({{avatar.talentWeek}},{{avatar.talentWeek+3}})
             {{else}}
             -
             {{/if}}
           </div>
-          <div class="talent lv{{avatar.a_lvl}}">{{avatar.a}}</div>
-          <div class="talent lv{{avatar.e_lvl}} {{avatar.e_plus ? 'talent_plus':''}}">{{avatar.e}}</div>
-          <div class="talent lv{{avatar.q_lvl}} {{avatar.q_plus ? 'talent_plus':''}}">{{avatar.q}}</div>
+
         </div>
         {{/each}}
       </div>
-      <p class="talent_notice">技能列表每{{cacheCd}}小时更新一次</p>
+      <p class="talent_notice">{{talentNotice}}</p>
     </div>
     <div class="logo"> Create By Yuanzai-Bot</div>
   </div>
