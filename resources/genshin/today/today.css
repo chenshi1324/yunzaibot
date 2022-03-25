@@ -349,13 +349,12 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-.weapon_box .item {
+.weapon_item {
   width: 65px;
   margin: 0px 0 10px 12px;
   position: relative;
 }
-.weapon_box .role_box {
+.weapon_role_box {
   overflow: hidden;
   height: 80px;
   border-radius: 5px;
@@ -364,7 +363,7 @@ body {
   background: #e9e5dc;
   box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
 }
-.weapon_box .role_box .role_img {
+.weapon_role_box .weapon_role_img {
   width: 100%;
   overflow: hidden;
   background-size: 100%;
@@ -373,7 +372,7 @@ body {
   top: 0;
   /*filter: contrast(95%);*/
 }
-.weapon_box .bg5 {
+.weapon_bg5 {
   background-image: url(../life/bg5.png);
   width: 100%;
   height: 70px;
@@ -381,36 +380,41 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.weapon_box .bg4 {
+.weapon_bg4 {
   width: 100%;
   height: 70px;
   background-image: url(../life/bg4.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.weapon_box .bg3 {
+.weapon_bg3 {
   width: 100%;
   height: 70px;
   background-image: url(../life/bg3.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.weapon_box .bg2 {
+.weapon_bg2 {
   width: 100%;
   height: 70px;
   background-image: url(../life/bg3.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.weapon_box .bg1 {
+.weapon_bg1 {
   width: 100%;
   height: 70px;
   background-image: url(../life/bg3.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-.weapon_box .role_box .desc_1 {
+.weapon_role_box .fill_img {
+  position: absolute;
+  width: 15px;
+  right: 0;
+  bottom: 17px;
+}
+.weapon_role_box .desc_1 {
   font-weight: 500;
   text-align: center;
   line-height: 18px;
@@ -420,8 +424,9 @@ body {
   width: 100%;
   height: 18px;
   font-size: 14px;
+  font-family: "tttgbnumber";
 }
-.weapon_box .role_name {
+.role_name {
   overflow: hidden;
   white-space: nowrap;
   margin-top: 5px;
@@ -430,7 +435,7 @@ body {
   font-size: 14px;
   /*margin-top: 5px;*/
 }
-.weapon_box .role_box .life {
+.weapon_role_box .life {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -443,22 +448,22 @@ body {
   border-radius: 3px;
   font-family: "tttgbnumber";
 }
-.weapon_box .life1 {
+.life1 {
   background-color: #62a8ea;
 }
-.weapon_box .life2 {
+.life2 {
   background-color: #62a8ea;
 }
-.weapon_box .life3 {
+.life3 {
   background-color: #62a8ea;
 }
-.weapon_box .life4 {
+.life4 {
   background-color: #ff5722;
 }
-.weapon_box .life5 {
+.life5 {
   background-color: #ff5722;
 }
-.weapon_box .user {
+.weapon_user {
   position: absolute;
   top: -5px;
   right: -5px;
@@ -473,7 +478,7 @@ body {
   height: 24px;
   background-color: #4e5362;
 }
-.weapon_box .user_img {
+.user_img {
   width: 32px;
   position: absolute;
   top: -12px;
