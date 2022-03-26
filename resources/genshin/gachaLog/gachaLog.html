@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/gachaLog/gachaLog.css?v=1.0" />
-  </head>
-  <body id="container" class="body_box">
-    <div class="container">
-      <div class="info_box">
-        <div class="base_info">
-          <div class="uid">ID: {{uid}} （{{allNum}}抽）<span class="label label_{{type}}">{{typeName}}池</span></div>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <link rel="shortcut icon" href="#"/>
+  <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/common.css?v=1.0"/>
+  <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/data-box.css?v=1.0"/>
+  <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/gachaLog/gachaLog.css?v=1.0"/>
+  <style>
+    .head_box {
+      background: url({{_res_path}}/genshin/logo/namecard/雷电将军.png) #fff;
+      background-position-x: 42px;
+      background-repeat: no-repeat;
+      background-size: auto 101%;
+    }
+  </style>
+</head>
+<body id="container" class="body_box">
+<div class="container">
+  <div class="info_box">
+
+    <div class="head_box">
+      <div class="id_text">
+        ID: {{uid}}
+      </div>
+      <h2 class="day_text">
+        {{allNum}}抽
+        <span class="label label_{{type}}">{{typeName}}池</span>
+      </h2>
+      <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png"/>
+    </div>
+
+    <div class="data_box">
+      <div class="tab_lable">数据总览</div>
+      {{each line val}}
+      <div class="data_line">
+        {{each val item}}
+        <div class="data_line_item">
+          <div class="num">{{item.num}}<span class="unit">{{item.unit}}</span></div>
+          <div class="lable">{{item.lable}}</div>
         </div>
-        <div class="info_box_border">
-          <div class="info_box_data">
-            {{each line val}}
-            <div class="info_number">
-              {{each val v}}
-              <div class="item">
-                <div class="big {{v.color}}">{{v.num}}</div>
-                <div class="small">{{v.lable}}</div>
-              </div>
-              {{/each}}
-            </div>
-            {{/each}}
-            <div class="line_box">
-              <span class="line"></span>
-              <span class="text">五星历史 {{lastTime}}</span>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div class="info_role">
-            {{each fiveArr val}}
-              <div class="ritem">
-                {{if val.item_type=='角色'}}
-                  <img class="role" src="../../../../resources/genshin/logo/role/{{val.name}}.png" onerror="whenError(this,'role')"/>
-                  <div class="role_text {{if val.num<=50}}red{{/if}}"
-                  >
-                    <div class="role_name">{{val.abbrName}}</div>
-                    <div class="role_num">[{{val.num}}]</div>
-                  </div>
-                {{/if}} 
-                {{if val.item_type=='武器'}}
-                  <img class="role" src="../../../../resources/genshin/logo/weapon/{{val.name}}.png" onerror="whenError(this,'weapon')"/>
-                  <div class="role_text {{if val.num<=40}}red{{/if}}">
-                    <div class="role_name">{{val.abbrName}}</div>
-                    <div class="role_num">[{{val.num}}]</div>
-                  </div>
-                {{/if}}
-              </div>
-            {{/each}} 
-              {{if hasMore }}...
-            {{/if}}
-          </div>
+        {{/each}}
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="info_box_border">
+      <div class="line_box">
+        <span class="line"></span>
+        <span class="text">五星历史 {{firstTime}} ~ {{lastTime}}</span>
+        <span class="line"></span>
+      </div>
+
+
+      <div class="card_list">
+        {{each fiveArr val}}
+        <div class="item star5">
+          <img class="role"
+               src="{{_res_path}}/genshin/logo/{{val.item_type=='角色'?'role':'weapon'}}/{{val.name}}.png"
+               onerror="whenError(this,'{{val.item_type=='角色'?'role':'weapon'}}')"/>
+          <!-- <div class="num">{{val.num}}</div>-->
+          <div class="num_name">{{val.num}}</div>
         </div>
+        {{/each}}
+        {{if hasMore }}...
+        {{/if}}
       </div>
     </div>
-  </body>
-  <script type="text/javascript">
-    function whenError(a, type) {
-      a.onerror = null;
-      if(type=="role"){
-        a.src = "../../../../resources/genshin/logo/role/荧.png";
-      }else{
-        a.src = "../../../../resources/genshin/logo/weapon/旅行剑.png";
-      }
+    <div class="logo"> Create By Yunzai-Bot & Miao-Plugin</div>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  function whenError(a, type) {
+    a.onerror = null;
+    if (type == "role") {
+      a.src = "{{_res_path}}/genshin/logo/role/荧.png";
+    } else {
+      a.src = "{{_res_path}}/genshin/logo/weapon/旅行剑.png";
     }
-  </script>
+  }
+</script>
 </html>
