@@ -3,12 +3,12 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/roleAll/roleAll.css?v=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}resources/genshin/roleAll/roleAll.css?v=1.0" />
   </head>
   <body>
     <style>
       .head_box {
-        background: url(../../../../resources/genshin/roleAll/namecard/{{bg}}.png) #f5f5f5;
+        background: url({{_res_path}}resources/genshin/roleAll/namecard/{{bg}}.png) #f5f5f5;
         background-position-x: 30px;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -22,7 +22,7 @@
       <div class="head_box">
         <div class="id_text">ID: {{uid}}</div>
         <div class="day_text">{{activeDay}}</div>
-        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png" />
+        <img class="genshin_logo" src="{{_res_path}}resources/genshin/roleAll/原神.png" />
       </div>
       <div class="data_box">
         <div class="tab_lable">数据总览</div>
@@ -47,13 +47,13 @@
             <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
-            <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}{{val.costumesLogo}}.png" onerror="whenError(this)" />
+            <img class="role_img" src="{{_res_path}}resources/genshin/logo/role/{{val.name}}{{val.costumesLogo}}.png" onerror="whenError(this)" />
             <div class="desc">Lv.{{val.level}}</div>
           </div>
           <div class="text_box">
             <div class="weapon_box">
               <div class="weapon_boder">
-                <img class="weapon_img" src="../../../../resources/genshin/logo/weapon/{{val.weapon.name}}.png" />
+                <img class="weapon_img" src="{{_res_path}}resources/genshin/logo/weapon/{{val.weapon.name}}.png" />
               </div>
             </div>
             <div class="weapon_name_box">
@@ -89,11 +89,11 @@
               {{/if}}
               <img
                 class="role_img bg{{val.rarity}}"
-                src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/role/{{val.name}}.png"
                 onerror="whenError(this)"
               />
               <div class="desc">{{val.value}}次</div>
-              <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+              <img class="fill_img" src="{{_res_path}}resources/genshin/life/fill.png" />
             </div>
             {{/each}}
           </div>
@@ -105,7 +105,7 @@
             <div class="item">
               最多击破：{{abyss.defeat.num}}
               <img
-                src="../../../../resources/genshin/logo/side/{{abyss.defeat.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/side/{{abyss.defeat.name}}.png"
                 class="line-icon two_img"
                 onerror="whenError(this,'side')"
               />
@@ -114,14 +114,14 @@
           <div class="row two">
             <div class="item">
               承受伤害：{{abyss.take_damage.num}}<img
-                src="../../../../resources/genshin/logo/side/{{abyss.take_damage.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/side/{{abyss.take_damage.name}}.png"
                 class="line-icon"
                 onerror="whenError(this,'side')"
               />
             </div>
             <div class="item">
               元素战技：{{abyss.normal_skill.num}}<img
-                src="../../../../resources/genshin/logo/side/{{abyss.normal_skill.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/side/{{abyss.normal_skill.name}}.png"
                 class="line-icon two_img"
                 onerror="whenError(this,'side')"
               />
@@ -130,14 +130,14 @@
           <div class="row">
             <div class="item">
               最强一击：{{abyss.damage.num}}<img
-                src="../../../../resources/genshin/logo/side/{{abyss.damage.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/side/{{abyss.damage.name}}.png"
                 class="line-icon"
                 onerror="whenError(this,'side')"
               />
             </div>
             <div class="item">
               元素爆发：{{abyss.energy_skill.num}}<img
-                src="../../../../resources/genshin/logo/side/{{abyss.energy_skill.name}}.png"
+                src="{{_res_path}}resources/genshin/logo/side/{{abyss.energy_skill.name}}.png"
                 class="line-icon two_img"
                 onerror="whenError(this,'side')"
               />
@@ -155,7 +155,7 @@
         type = "role"
       }
       a.onerror = null;
-      a.src = "../../../../resources/genshin/logo/"+type+"/荧.png";
+      a.src = "{{_res_path}}resources/genshin/logo/"+type+"/荧.png";
     }
   </script>
 </html>

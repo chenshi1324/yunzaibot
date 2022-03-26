@@ -6,13 +6,12 @@ import fs from "fs";
 /*
 * npm run dev开启Bot后
 * 可另外通过 npm run web 开启浏览器调试
-* 访问 http://localhost:8080/${type} 即可看到对应页面
+* 访问 http://localhost:8000/${type} 即可看到对应页面
 * 页面内的资源需使用 {{_res_path}}来作为resources目录的根目录
 * 可编辑模板与页面查看效果
-* todo：hotreload
+* todo: 预览页面的热更
 *
 * */
-
 
 
 var app = express();
@@ -20,20 +19,51 @@ var app = express();
 var _path = process.cwd();
 
 app.engine('html', template);
-app.set('views', _path + '/resources/genshin');
+app.set('views', _path + '/resources/');
 app.set('view engine', 'art');
 app.use(express.static(_path + "/resources"));
+app.use('/plugins', express.static('plugins'))
 
 app.get('/', function (req, res) {
-  res.send("页面服务已启动，触发消息图片后访问 http://localhost:8080/${type} 调试页面")
+  let fileList = fs.readdirSync(_path + "/data/ViewData/") || [];
+  console.log(fileList);
+  let html = [
+    '在npm run web-dev模式下触发截图消息后，可在下方选择页面进行调试',
+    '如果页面内资源路径不正确请使用{{_res_path}}作为根路径，对应之前的../../../../',
+    '可直接修改模板html或css刷新查看效果'
+  ];
+  let li = [];
+  for (let idx in fileList) {
+    let ret = /(.+)\.json$/.exec(fileList[idx]);
+    if (ret && ret[1]) {
+      li.push(`<li><a href="/${ret[1]}">${ret[1]}</a></li>`);
+    }
+  }
+  res.send(html.join('</br>') + '<ul>' + li.join('') + '</ul>');
 });
-app.get('/:type', function(req,res){
-   let page = req.params.type;
+
+app.get('/:type', function (req, res) {
+  let page = req.params.type;
+  if (page == "favicon.ico") {
+    return res.send("");
+  }
   let data = JSON.parse(fs.readFileSync(_path + "/data/ViewData/" + page + ".json", "utf8"));
   data = data || {};
   data._res_path = "";
-  res.render(`${page}/${page}.html`, data)
+  data._app_res_path = data._res_path;
+  let app = data._app || "genshin";
+  if (data._plugin) {
+    data._app_res_path = `/plugins/${app}/resources/`;
+  }
+  let tplPath = `${app}/${page}/${page}.html`;
+  if (data._plugin) {
+    tplPath = `../plugins/${app}/resources/${page}/${page}.html`
+  }
+
+  console.log(data);
+  
+  res.render(tplPath, data)
 });
 
-app.listen(8080);
-console.log('页面服务已启动，触发消息图片后访问 http://localhost:8080/${type} 调试页面')
+app.listen(8000);
+console.log('页面服务已启动，触发消息图片后访问 http://localhost:8000/ 调试页面')
