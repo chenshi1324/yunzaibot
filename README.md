@@ -82,13 +82,14 @@ npm start
 </details>
 
 <details>
-<summary>#原石、#札记二月</summary>
+<summary>#原石、#札记二月、#原石统计</summary>
 <img src="https://user-images.githubusercontent.com/12881780/156923947-3fc32dff-d442-434e-b2ff-116ee81daec0.png" alt="#原石">
+<img src="https://user-images.githubusercontent.com/12881780/160279127-76cc6dec-2d70-438e-84bb-5ef75e5fc8bb.jpg" alt="#原石统计">
 </details>
 
 <details>
 <summary>练度统计、技能列表</summary>
-<img src="https://user-images.githubusercontent.com/12881780/159514486-0a05ffb9-f3c6-4796-ae01-94e0b72f23a6.jpg" alt="#练度统计">
+<img src="https://user-images.githubusercontent.com/12881780/160279149-84aebf73-e682-4b8f-a709-614c10ccde56.jpg" alt="#练度统计">
 </details>
 
 <details>
