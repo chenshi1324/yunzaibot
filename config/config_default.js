@@ -26,7 +26,7 @@ let config = {
    * 访问米游社原神社区(https://bbs.mihoyo.com/ys/)，登录后账户点击 F12 ，
    * 选中 Console 或控制台，点击控制台粘贴这一句
    * document.cookie ，回车即可获取
-   * 获取教程：https://docs.qq.com/doc/DY1V3RU91Q2pwdHB2
+   * 获取教程：https://docs.qq.com/doc/DUWNVQVFTU3liTVlO
    * 例如 用引号包住，多个用逗号隔开
    * 'ltoken=***;ltuid=***;',
    * 'ltoken=***;ltuid=***;',
