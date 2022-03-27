@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "tttgbnumber";
+  src: url("../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-size: 16px;
+  width: 530px;
+  color: #1e1f20;
+  transform: scale(1.5);
+  transform-origin: 0 0;
+}
+.container {
+  width: 530px;
+  padding: 20px 15px 10px 15px;
+  background-color: #f5f6fb;
+}
+.head_box {
+  border-radius: 15px;
+  font-family: tttgbnumber;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  background: url(../genshin/logo/namecard/神里绫人.png) #fff;
+  background-position-x: 54px;
+  background-repeat: no-repeat;
+  background-size: auto 101%;
+}
+.head_box .id_text {
+  font-size: 24px;
+}
+.head_box .day_text {
+  font-size: 20px;
+}
+.head_box .genshin_logo {
+  position: absolute;
+  top: -1px;
+  right: 15px;
+  width: 97px;
+}
+.base_info {
+  position: relative;
+  padding-left: 10px;
+}
+.uid {
+  font-family: tttgbnumber;
+}
+
+.data_box {
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 8px 5px 8px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: relative;
+}
+.tab_lable {
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  background: #d4b98c;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 15px 0px 15px 15px;
+  z-index: 20;
+}
+.data_line {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 14px;
+}
+.data_line_item {
+  width: 100px;
+  text-align: center;
+  /*margin: 0 20px;*/
+}
+.num {
+  font-family: tttgbnumber;
+  font-size: 24px;
+}
+.data_box .lable {
+  font-size: 14px;
+  color: #7f858a;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list .item {
+  width: calc((100% - 16px) / 2);
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 8px 6px 8px 6px;
+  border-radius: 8px;
+  margin: 0 0px 10px 0;
+}
+.list .item .icon{
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.list .item .title{
+  font-size: 16px;
+  margin-left: 6px;
+  line-height: 20px;
+}
+.list .item .title .dec{
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+.logo {
+  font-size: 14px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+}
+.icon-role{
+  background-image:url("./icon/role.png");
+}
+.icon-abyss{
+  background-image:url("./icon/abyss.png");
+}
+.icon-paimon{
+  background-image:url("./icon/paimon.png");
+}
+.icon-weapon{
+  background-image:url("./icon/weapon.png");
+}
+.icon-team{
+  background-image:url("./icon/team.png");
+}
+.icon-ledger{
+  background-image:url("./icon/ledger.png");
+}
+.icon-树脂{
+  background-image:url("./icon/树脂.png");
+}
+.icon-sign{
+  background-image:url("./icon/sign.png");
+}
+.icon-史莱姆{
+  background-image:url("./icon/史莱姆.png");
+}
+.icon-问号{
+  background-image:url("./icon/问号.png");
+}
+.icon-记录{
+  background-image:url("./icon/记录.png");
+}
+.icon-统计{
+  background-image:url("./icon/统计.png");
+}
+.icon-wiki{
+  background-image:url("./icon/wiki.png");
+}
+.icon-攻略{
+  background-image:url("./icon/攻略.png");
+}
+.icon-纠缠之缘{
+  background-image:url("./icon/纠缠之缘.webp");
+}
+.icon-moster{
+  background-image:url("./icon/moster.png");
+}
