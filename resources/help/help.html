@@ -2,140 +2,142 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="help.css" />
     <link rel="shortcut icon" href="#" />
   </head>
   <style type="text/css">
-    /* reset */
-    html,
-    body,
-    div {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 18px;
-      color: #232323;
-      vertical-align: baseline;
-      line-height: 1;
-    }
-    table {
-      border-spacing: 0;
-      border: 1px solid #666;
-      border-radius: 5px;
-      /* 消除单元格之间的空隙 */
-      border-collapse: collapse;
-      /* 消除掉外边框 */
-      border-style:hidden;  
-      /* hack一下加个假边框 */
-      box-shadow: 0 0 0 1px #666;
-      overflow: hidden;
-    }
-    th,td {
-      border: 1px solid #666;
-    }
-    /* m-tb */
-    .m-tb2 {
-      width: 100%;
-    }
-
-    .m-tb2 th {
-      background-color: #dedede;
-      background-clip: padding-box;
-      padding: 8px;
-    }
-
-    .m-tb2 td {
-      background-color: #ffffff;
-      background-clip: padding-box;
-      padding: 8px;
-      text-align: center;
-    }
-    .container {
-      width: 670px;
-      padding: 10px;
-    }
-    @font-face {
-      font-family: "tttgbnumber";
-      src: url("../font/tttgbnumber.ttf");
-      font-weight: normal;
-      font-style: normal;
-    }
-    .logo{
-      font-family: tttgbnumber;
-    }
   </style>
   <body>
     <div class="container" id="container">
-      <table class="m-tb2">
-        <tr>
-          <th>原神机器人命令</th>
-          <th>说明</th>
-        </tr>
-        <tr>
-          <td>#十连、#十连2、十连武器、定轨</td>
-          <td>模拟角色抽卡，每天一次，凌晨四点更新</td>
-        </tr>
-        <tr>
-          <td>#角色、#角色卡片、#探险度</td>
-          <td>查看你的角色数据</td>
-        </tr>
-        <tr>
-          <td>#刻晴、#刻晴卡片、戳一戳</td>
-          <td>查看角色详情，米游社展示的八个角色</td>
-        </tr>
-        <tr>
-          <td>#五星、#今日素材</td>
-          <td>四星，五星角色列表</td>
-        </tr>
-        <tr>
-          <td>#深渊、#上期深渊、#深渊12层</td>
-          <td>数据不是实时更新，打完两小时后再查询</td>
-        </tr>
-        <tr>
-          <td>体力、体力帮助、删除cookie</td>
-          <td>查询体力，签到，需要配置cookie</td>
-        </tr>
-        <tr>
-          <td>#签到、#原石、札记2月</td>
-          <td>签到，原石札记，需要配置完整cookie</td>
-        </tr>
-        <tr>
-          <td>角色列表五星、天赋列表</td>
-          <td>角色练度列表，需要配置完整cookie</td>
-        </tr>
-        <tr>
-          <td>角色记录、常驻记录、武器记录</td>
-          <td>统计游戏里抽卡数据</td>
-        </tr>
-        <tr>
-          <td>角色统计、武器统计</td>
-          <td>按卡池统计抽卡数据</td>
-        </tr>
-        <tr>
-          <td>记录帮助、安卓帮助</td>
-          <td>抽卡记录数据统计使用说明</td>
-        </tr>
-        <tr>
-          <td>刻晴图鉴、刻晴命座、雾切图鉴</td>
-          <td>角色武器天赋突破等信息，感谢逍遥提供图片</td>
-        </tr>
-        <tr>
-          <td>刻晴攻略、圣遗物评分</td>
-          <td>西风驿站攻略，可莉特调评分</td>
-        </tr>
-        <tr>
-          <td>添加哈哈，删除哈哈</td>
-          <td>添加表情、文字，回复哈哈触发</td>
-        </tr>
-        <tr>
-          <td>表情列表、表情哈</td>
-          <td>查看、搜索添加的表情</td>
-        </tr>
-        <tr>
-          <td class="logo">Yunzai-Bot</td>
-          <td class="logo">v2.1.0</td>
-        </tr>
-      </table>
+      <div class="head_box">
+        <div class="id_text">Yunzai-Bot</div>
+        <h2 class="day_text">使用说明-v2.1.1</h2>
+        <img class="genshin_logo" src="../genshin/roleAll/原神.png" />
+      </div>
+      <div class="data_box">
+        <div class="tab_lable">原神查询指令</div>
+        <div class="list">
+          <div class="item">
+            <div class="icon icon-role"></div>
+            <div class="title">
+              <div class="text">#角色、#角色卡片、#探索</div>
+              <div class="dec">你的原神角色数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-paimon"></div>
+            <div class="title">
+              <div class="text">#刻晴、刻晴卡片、戳一戳</div>
+              <div class="dec">你的原神角色详情数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-abyss"></div>
+            <div class="title">
+              <div class="text">#深渊、深渊12层</div>
+              <div class="dec">深渊数据，打完请2小时后查询</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-weapon"></div>
+            <div class="title">
+              <div class="text">#五星、#武器、#今日素材</div>
+              <div class="dec">你的原神角色详情数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-team"></div>
+            <div class="title">
+              <div class="text">五星角色列表、天赋列表</div>
+              <div class="dec">角色列表数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-树脂"></div>
+            <div class="title">
+              <div class="text">体力、体力帮助</div>
+              <div class="dec">查询体力，需要绑定cookie</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-ledger"></div>
+            <div class="title">
+              <div class="text">#原石、#原石统计</div>
+              <div class="dec">札记数据，需要绑定cookie</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-sign"></div>
+            <div class="title">
+              <div class="text">#签到，#删除cookie</div>
+              <div class="dec">米游社原神签到</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="data_box">
+        <div class="tab_lable">其他查询指令</div>
+        <div class="list">
+          <div class="item">
+            <div class="icon icon-记录"></div>
+            <div class="title">
+              <div class="text">抽卡记录、记录帮助</div>
+              <div class="dec">统计游戏抽卡数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-统计"></div>
+            <div class="title">
+              <div class="text">角色统计、武器统计</div>
+              <div class="dec">按卡池统计抽卡数据</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-纠缠之缘"></div>
+            <div class="title">
+              <div class="text">十连，十连2，定轨</div>
+              <div class="dec">真实模拟抽卡</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-wiki"></div>
+            <div class="title">
+              <div class="text">#刻晴图鉴、#护摩</div>
+              <div class="dec">角色、武器信息图鉴</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-攻略"></div>
+            <div class="title">
+              <div class="text">刻晴攻略，圣遗物评分</div>
+              <div class="dec">西风驿站攻略，可莉特调评分</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-史莱姆"></div>
+            <div class="title">
+              <div class="text">添加哈哈，删除哈哈</div>
+              <div class="dec">添加表情，回复哈哈触发</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-问号"></div>
+            <div class="title">
+              <div class="text">表情列表，表情哈哈</div>
+              <div class="dec">查看，搜索添加的表情</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon icon-moster"></div>
+            <div class="title">
+              <div class="text">#帮助，#版本</div>
+              <div class="dec">其他命令</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo">Create By Yunzai-Bot</div>
     </div>
   </body>
-  <script type="text/javascript"></script>
 </html>
