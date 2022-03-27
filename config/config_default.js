@@ -39,6 +39,11 @@ let config = {
     // 'ltoken=***;ltuid=***;',
   ],
 
+  /* 严格Cookie模式，若设置为true，则群内成员需绑定cookie后才可查询角色等信息
+  *
+  * */
+  strictCookieMode: false,
+
   //推送任务
   pushTask:{
     signTime: "0 2 0 * * ?", //签到任务执行时间，Cron表达式，默认00:02开始执行，每10s签到一个
