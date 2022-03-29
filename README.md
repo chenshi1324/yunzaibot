@@ -1,7 +1,7 @@
 # Yunzai-Bot
-云崽，原神qq群机器人，通过米游社接口，查询原神游戏信息
+云崽，原神qq群机器人，通过米游社接口，查询原神游戏信息，快速生成图片返回
 
-快速生成图片返回，平均100-300ms，基本秒回
+项目仅供学习交流使用，严禁用于任何商业用途和非法行为
 
 ## 使用方法
 >环境准备： Windows or Linux，Node.js（[版本至少v14以上](http://nodejs.cn/download/)），[Redis](resources/readme/命令说明.md#window安装redis)
@@ -127,4 +127,5 @@ npm start
 - 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
 - 也可以加群 [213938015](https://qm.qq.com/cgi-bin/qm/qr?k=HN2YuYXT-Ks3eFhXmuk94OhkDood4sBy&jump_from=webapi) 反馈 ，最后再求个star，你的支持是维护本项目的动力~~
 - 图片素材来源于网络，仅供交流学习使用
+- 严禁用于任何商业用途和非法行为
 - [爱发电](https://afdian.net/@Le-niao)
