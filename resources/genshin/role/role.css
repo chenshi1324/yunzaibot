@@ -106,6 +106,7 @@ body {
   justify-content: space-between;
   border-radius: 15px;
   margin-top: 10px;
+  margin-bottom: 12px;
   background: #f5f5f5;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   padding: 15px;
@@ -141,6 +142,7 @@ body {
 .explor_box .name {
   /* color: #fff; */
   font-weight: 500;
+  white-space: nowrap;
 }
 .progress {
   position: relative;
