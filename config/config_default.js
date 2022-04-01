@@ -39,11 +39,7 @@ let config = {
     // 'ltoken=***;ltuid=***;',
     // 'ltoken=***;ltuid=***;',
   ],
-
-  /* 严格Cookie模式，若设置为true，则群内成员需绑定cookie后才可查询角色等信息
-  *
-  * */
-  strictCookieMode: false,
+  allowUseNoteCookie: false, // 是否允许Bot使用NoteCookie中的记录进行查询
 
   //推送任务
   pushTask:{
@@ -71,6 +67,9 @@ let config = {
       imgMaxSize:1,      //添加表情图片大小限制，默认1m
 
       imgRate:5,         //随机表情回复概率0-100 需要配置百度ocr 配置往下滚
+
+      onlyReplyAt: false, // 只关注主动at bot的信息
+      botAlias: "云仔",  // 在此群bot的名字，如果以此前缀开头，则也认为是at
 
       //禁用功能 
       //'all','poke','gacha','mysInfo','gachaLog','dailyNote','face','other','ai','reliquaries','strategy_xf'
