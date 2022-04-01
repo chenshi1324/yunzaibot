@@ -467,3 +467,12 @@ body {
   text-align: center;
   color: #7994a7;
 }
+.bottom-msg {
+  font-size: 12px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+  margin-bottom:5px;
+  margin-top:-5px;
+}
+
