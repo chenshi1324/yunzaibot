@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-  <link rel="shortcut icon" href="#"/>
-  <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/gachaHistory/gachaHistory.css?v=1.0"/>
-  <style>
-    .head_box {
-      background: url({{_res_path}}/genshin/logo/namecard/雷电将军.png) #fff;
-      background-position-x: 42px;
-      background-repeat: no-repeat;
-      background-size: auto 101%;
-    }
-  </style>
-</head>
-<body id="container" class="body_box">
-<div class="container">
-  <div class="head_box">
-    <div class="id_text">ID: {{uid}}</div>
-    <h2 class="day_text">抽卡统计-{{typeName}}</h2>
-    <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png"/>
-  </div>
-  {{each pool val}}
-  {{if val.roleNum > 0}}
-  <div class="pool_box">
-    <div class="title_box">
-      <div class="name_box">
-        <div class="title"><h2>「{{val.five}}」</h2></div>
-        <span class="label label_301">{{val.count}}抽</span>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/gachaHistory/gachaHistory.css?v=1.0"/>
+    <style>
+      .head_box {
+        background: url({{_res_path}}/genshin/logo/namecard/神里绫人.png) #fff;
+        background-position-x: 42px;
+        background-repeat: no-repeat;
+        background-size: auto 101%;
+      }
+    </style>
+  </head>
+  <body id="container" class="body_box">
+    <div class="container">
+      <div class="head_box">
+        <div class="id_text">ID: {{uid}}</div>
+        <h2 class="day_text">抽卡统计-{{typeName}}</h2>
+        <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png"/>
       </div>
-      {{if typeName != "常驻"}}
-      <span class="date">{{val.start}} - {{val.end}}</span>
+      {{each pool val}}
+      {{if val.roleNum > 0}}
+      <div class="pool_box">
+        <div class="title_box">
+          <div class="name_box">
+            <div class="title"><h2>「{{val.five}}」</h2></div>
+            <span class="label label_301">{{val.count}}抽</span>
+          </div>
+          {{if typeName != "常驻"}}
+          <span class="date">{{val.start}} - {{val.end}}</span>
+          {{/if}}
+        </div>
+        <div class="list_box">
+          {{each val.role v}}
+          <div class="item">
+            <div class="bg{{v.rank_type}}"></div>
+            <span class="num {{if v.count>=5 && v.rank_type ==5}}life5{{/if}}">{{v.count}}</span>
+            {{if v.item_type=='角色'}}
+            <img class="role_img" src="{{_res_path}}/genshin/logo/role/{{v.name}}.png" onerror="whenError(this,'role')"/>
+            {{/if}} 
+            {{if v.item_type=='武器'}}
+            <img class="role_img" src="{{_res_path}}/genshin/logo/weapon/{{v.name}}.png" onerror="whenError(this)"/>
+            {{/if}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
       {{/if}}
-    </div>
-    <div class="list_box">
-      {{each val.role v}}
-      <div class="item">
-        <div class="bg{{v.rank_type}}"></div>
-        <span class="num {{if v.count>=5 && v.rank_type ==5}}life5{{/if}}">{{v.count}}</span>
-        {{if v.item_type=='角色'}}
-        <img class="role_img" src="{{_res_path}}/genshin/logo/role/{{v.name}}.png" onerror="whenError(this,'role')"/>
-        {{/if}}
-        {{if v.item_type=='武器'}}
-        <img class="role_img" src="{{_res_path}}/genshin/logo/weapon/{{v.name}}.png" onerror="whenError(this)"/>
-        {{/if}}
-      </div>
       {{/each}}
+      <div class="logo">Create By Yunzai-Bot</div>
     </div>
-  </div>
-  {{/if}}
-  {{/each}}
-  <div class="logo">Create By Yunzai-Bot</div>
-</div>
-</body>
-<script type="text/javascript">
-  function whenError(a, type) {
+  </body>
+  <script type="text/javascript">
+    function whenError(a, type) {
       // a.onerror = null;
       // if (type == "role") {
       //   a.src = "{{_res_path}}/genshin/logo/role/荧.png";

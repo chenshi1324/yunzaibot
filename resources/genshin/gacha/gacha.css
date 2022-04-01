@@ -153,6 +153,7 @@ body {
   color: rgb(157 189 237 / 75%);
   font-size: 24px;
   font-family: 'tttgbnumber';
+  z-index: 1000;
 }
 .times {
   position: absolute;

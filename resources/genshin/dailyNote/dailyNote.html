@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/dailyNote/dailyNote.css?v=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/dailyNote/dailyNote.css?v=1.0" />
   </head>
   <body>
     <div class="container" id="container">
@@ -18,7 +18,7 @@
       <div class="item">
         <div class="main">
           <div class="bg"></div>
-          <img class="icon" src="../../../../resources/genshin/dailyNote/items/树脂.png" />
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/树脂.png" />
           <div class="info">
             <div class="name">原粹树脂</div>
             <div class="time">
@@ -35,7 +35,7 @@
       <div class="item">
         <div class="main">
           <div class="bg"></div>
-          <img class="icon" src="../../../../resources/genshin/dailyNote/items/洞天宝钱.png" />
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/洞天宝钱.png" />
           <div class="info">
             <div class="name">洞天宝钱</div>
             <div class="time">
@@ -52,7 +52,7 @@
       <div class="item">
         <div class="main">
           <div class="bg"></div>
-          <img class="icon" src="../../../../resources/genshin/dailyNote/items/委托.png" />
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/委托.png" />
           <div class="info">
             <div class="name">每日委托任务</div>
             <div class="time">今日委托奖励{{if is_extra_task_reward_received==1}}已{{else}}未{{/if}}领取</div>
@@ -65,7 +65,7 @@
       <div class="item">
         <div class="main">
           <div class="bg"></div>
-          <img class="icon" src="../../../../resources/genshin/dailyNote/items/派遣.png" />
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/派遣.png" />
           <div class="info">
             <div class="name">探索派遣</div>
             <div class="time">
@@ -82,7 +82,7 @@
       <div class="item">
         <div class="main">
           <div class="bg"></div>
-          <img class="icon" src="../../../../resources/genshin/dailyNote/items/周本.png" />
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/周本.png" />
           <div class="info">
             <div class="name">值得铭记的强敌</div>
             <div class="time">
@@ -93,6 +93,26 @@
         </div>
         <div class="right">
           <span>{{3-remain_resin_discount_num}}/{{resin_discount_num_limit}}</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="main">
+          <div class="bg"></div>
+          <img class="icon" src="{{_res_path}}/genshin/dailyNote/items/参量质变仪.png" />
+          <div class="info">
+            <div class="name">参量质变仪</div>
+            <div class="time">
+              {{if transformer.obtained }}
+                {{if transformer.reached}}已准备完成
+                {{else}}{{transformer.recovery_time}}后可使用{{/if}}
+              {{else}}
+                尚未获得
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span>{{if transformer.obtained }}{{if transformer.reached}}可使用{{else}}冷却中{{/if}}{{else}}尚未获得{{/if}}</span>
         </div>
       </div>
     </div>

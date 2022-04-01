@@ -19,7 +19,7 @@ body {
 }
 .container {
   width: 840px;
-  height: 460px;
+  height: 470px;
   display: flex;
   position: relative;
 }
@@ -40,7 +40,7 @@ body {
 .list-box .list .item {
   width: 90px;
   height: 180px;
-  margin: 15px 7px 15px 7px;
+  margin: 20px 7px 15px 7px;
 }
 .item .item-bg {
   background-color: #fff;
@@ -245,15 +245,15 @@ body {
 .data-box {
   width: 365px;
   color: #fff;
-  margin: 16px 5px 0px 5px;
-  padding-top: 24px;
+  margin: 10px 5px 0px 5px;
+  padding-top: 20px;
   border-radius: 10px;
   border: 1px solid #ffffff;
 } 
 .data-line {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 .data-line-item {
   width: 100px;
@@ -285,6 +285,6 @@ body {
   z-index: 1;
   font-size: 12px;
   right: 22px;
-  bottom: 10px;
+  bottom: 8px;
   color: #ffffff;
 }
