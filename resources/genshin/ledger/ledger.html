@@ -63,6 +63,9 @@
   <script>
     const { Pie } = G2Plot;
     const data = JSON.parse(`{{@ group_by}}`);
+    if(!data || data.length<=0){
+      return;
+    }
     const piePlot = new Pie("chartContainer", {
       renderer: "svg",
       animation: false,
