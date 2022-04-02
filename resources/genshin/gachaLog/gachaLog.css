@@ -1,169 +1,327 @@
 @font-face {
-    font-family: HYWenHei-55W;
-    src: url('../../font/HYWenHei-55W.ttf');
+  font-family: "tttgbnumber";
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: HYWenHei-55W;
+  src: url('../../font/HYWenHei-55W.ttf');
+}
+
 * {
-    margin: 0;;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
 }
+
 body {
-    font-size: 16px;
-    width: 475px;
-    color: #1e1f20;
-    transform: scale(1.70);
-    transform-origin: 0 0;
-}
-.container{
-    width: 475px;
-    font-family: HYWenHei-55W;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    overflow: hidden;
-
-}
-.base_info{
-    position: relative;
-    padding-left: 10px;
-    margin: 5px 10px;
-}
-.uid:before{
-    content: " ";
-    position: absolute;
-    width: 5px;
-    height: 24px;
-    border-radius: 1px;
-    left: 0;
-    top: 0;
-    background: #d3bc8d;
-}
-.label_301{
-    background-color: rgb(235 106 75);
-}
-.label_302{
-    background-color: #E69449;
-}
-.label_200{
-    background-color: #757CC8;
+  font-size: 18px;
+  color: #1e1f20;
+  font-family: PingFangSC-Medium, PingFang SC, sans-serif;
+  transform: scale(2);
+  transform-origin: 0 0;
+  width: 465px;
 }
 
-.label{
-    color: #fff;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 2px 7px;
-    vertical-align: 2px;
+.container {
+  width: 465px;
+  padding: 20px 15px 10px 15px;
+  background-color: #ececec;
 }
-.info_box{
-    padding-top: 3px;
-    /*padding: 5px;*/
-    /*background-color: #f5f5f5;*/
+
+.head_box {
+  border-radius: 15px;
+  font-family: tttgbnumber;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
 }
-.info_box_border{
-   
-    margin: 10px;
-    border: 1px solid #d3bc8d;
-    border-radius: 7px;
+
+.head_box .id_text {
+  font-size: 24px;
 }
-.info_box_data{
-     padding:0 15px;
+
+.head_box .day_text {
+  font-size: 20px;
 }
-.info_box .info_number{
-    display: flex;
-    justify-content:center;
-    margin-top: 8px;
+
+.head_box .genshin_logo {
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  width: 97px;
 }
-.info_box .info_number .item{
-    width: 100px;
-    text-align: center;
-    font-size: 18px;
+
+.logo {
+  font-size: 12px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+  position: relative;
+  padding-left: 10px;
 }
-.info_box .info_number .big{
-    white-space: nowrap;
+
+
+.data_box {
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 15px 5px 15px;
+  background: #f5f5f5;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: relative;
 }
-.info_box .info_number .small{
-    color: #9f9f9f;
-    font-size: 12px;
+
+.tab_lable {
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  background: #d4b98c;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 15px 0px 15px 15px;
+  z-index: 20;
 }
-.info_box .info_number .five{
-    color: #ff8d00;
+
+.data_line {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 14px;
 }
-.info_box .info_number .four{
-    color: #FF00FF;
+
+.data_line_item {
+  width: 100px;
+  text-align: center;
+  /*margin: 0 20px;*/
 }
-.ritem{
-    display: flex;
-    font-size: 12px;
-    margin-bottom: 5px;
+
+.num {
+  font-family: tttgbnumber;
+  font-size: 24px;
 }
-.info_role{
-    display: flex;
-    flex-wrap: wrap;
-    padding:0 0px 5px 9px;
+
+.num .unit {
+  font-size: 12px;
 }
-.ritem .role{
-    width: 20px;
-    height: 20px;
-    background-color: #ffb285;
-    border-radius: 100%;
+
+.data_box .lable {
+  font-size: 14px;
+  color: #7f858a;
+  line-height: 1;
+  margin-top: 3px;
 }
-.ritem .weapon_box{
-    overflow: hidden;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
+
+body {
+  width: 510px;
 }
-.ritem .weapon{
-    width: 20px;
-    height: 20px;
-    background-color: #ffb285;
-    border-radius: 100%;
-    transform:scale(1.5);
-    -webkit-transform:scale(1.5);
+
+.container {
+  width: 510px;
+}
+
+.data_box {
+  margin-bottom: 10px;
+}
+
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_list .item {
+  margin: 0px 0 10px 10px;
+  border-radius: 7px;
+  box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
+  height: 88px;
+  position: relative;
+  overflow: hidden;
+  background: #e7e5d9;
+}
+
+.card_list .item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 7px 7px 20px 0;
+}
+
+.card_list .item.star5 img {
+  background-image: url(../life/bg5.png);
+  width: 100%;
+  height: 70px;
+  /*filter: brightness(1.1);*/
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card_list .item.star4 img {
+  width: 100%;
+  height: 70px;
+  background-image: url(../life/bg4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card_list .item .num {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgb(0 0 0 / 50%);
+  font-family: "tttgbnumber";
+}
+
+.card_list .item .name,
+.card_list .item .num_name {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  z-index: 9;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 16px;
+  line-height: 18px;
+}
+
+.card_list .item .num_name {
+  font-family: "tttgbnumber";
+  font-size: 18px;
+}
+
+.base_info {
+  position: relative;
+  padding-left: 10px;
+  margin: 5px 10px;
+}
+
+.uid:before {
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 24px;
+  border-radius: 1px;
+  left: 0;
+  top: 0;
+  background: #d3bc8d;
+}
+
+.label_301 {
+  background-color: rgb(235 106 75);
+}
+
+.label_302 {
+  background-color: #E69449;
+}
+
+.label_200 {
+  background-color: #757CC8;
+}
+
+.label {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 2px 7px;
+  vertical-align: 2px;
+}
+
+.ritem {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.info_role {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px 5px 9px;
+}
+
+.ritem .role {
+  width: 20px;
+  height: 20px;
+  background-color: #ffb285;
+  border-radius: 100%;
+}
+
+.ritem .weapon_box {
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.ritem .weapon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffb285;
+  border-radius: 100%;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
 
 }
-.ritem .role_text{
-    margin: 2px 3px 0 2px;
-    display: flex;
-    align-items: baseline;
+
+.ritem .role_text {
+  margin: 2px 3px 0 2px;
+  display: flex;
+  align-items: baseline;
 }
-.ritem .role_name{
-    width: 24px;
-    white-space: nowrap;
-    overflow: hidden;
+
+.ritem .role_name {
+  width: 24px;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.ritem .role_num{
-    width: 24px;
+
+.ritem .role_num {
+  width: 24px;
 }
+
 .line_box {
-    height: 32px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: #7d7d7d;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #7d7d7d;
+  padding-bottom: 5px;
 }
+
 .line_box .line {
-    height: 2px;
-    flex-grow: 1;
-    background-color: #ebebeb;
-    margin: 0px 10px;
-} 
-.red{
-    color: #f21000;
+  height: 2px;
+  flex-grow: 1;
+  background-color: #ebebeb;
+  margin: 0px 10px;
 }
-.orange{
-    color: #ff8d00;
+
+.red {
+  color: #f21000;
 }
-.green{
-    color: #12d88c;
+
+.orange {
+  color: #ff8d00;
 }
-.blue{
-    color: #4169E1;
+
+.green {
+  color: #12d88c;
 }
-.purple{
-    color: #7500ff;
+
+.blue {
+  color: #4169E1;
+}
+
+.purple {
+  color: #7500ff;
 }

@@ -48,7 +48,7 @@
             {{/if}}
             <div class="bg{{val.rarity}}"></div>
             <img class="role_img" src="{{_res_path}}/genshin/logo/role/{{val.name}}{{val.costumesLogo}}.png" onerror="whenError(this)" />
-            <div class="desc">Lv.{{val.level}}</div>
+            <div class="desc">Lv.{{val.level}} ❤{{val.fetter}}</div>
           </div>
           <div class="text_box">
             <div class="weapon_box">
@@ -145,6 +145,9 @@
           </div>
         </div>
       </div>
+      {{/if}}
+      {{if msg}}
+      <div class="bottom-msg">{{msg}}</div>
       {{/if}}
       <div class="logo">Create By Yunzai-Bot</div>
     </div>

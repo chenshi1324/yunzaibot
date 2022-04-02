@@ -3,10 +3,10 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/gachaHistory/gachaHistory.css?v=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/gachaHistory/gachaHistory.css?v=1.0"/>
     <style>
       .head_box {
-        background: url(../../../../resources/genshin/logo/namecard/神里绫人.png) #fff;
+        background: url({{_res_path}}/genshin/logo/namecard/神里绫人.png) #fff;
         background-position-x: 42px;
         background-repeat: no-repeat;
         background-size: auto 101%;
@@ -18,7 +18,7 @@
       <div class="head_box">
         <div class="id_text">ID: {{uid}}</div>
         <h2 class="day_text">抽卡统计-{{typeName}}</h2>
-        <img class="genshin_logo" src="../../../../resources/genshin/roleAll/原神.png" />
+        <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png"/>
       </div>
       {{each pool val}}
       {{if val.roleNum > 0}}
@@ -38,10 +38,10 @@
             <div class="bg{{v.rank_type}}"></div>
             <span class="num {{if v.count>=5 && v.rank_type ==5}}life5{{/if}}">{{v.count}}</span>
             {{if v.item_type=='角色'}}
-            <img class="role_img" src="../../../../resources/genshin/logo/role/{{v.name}}.png" onerror="whenError(this,'role')" />
+            <img class="role_img" src="{{_res_path}}/genshin/logo/role/{{v.name}}.png" onerror="whenError(this,'role')"/>
             {{/if}} 
             {{if v.item_type=='武器'}}
-            <img class="role_img" src="../../../../resources/genshin/logo/weapon/{{v.name}}.png" onerror="whenError(this)" />
+            <img class="role_img" src="{{_res_path}}/genshin/logo/weapon/{{v.name}}.png" onerror="whenError(this)"/>
             {{/if}}
           </div>
           {{/each}}
@@ -56,10 +56,10 @@
     function whenError(a, type) {
       // a.onerror = null;
       // if (type == "role") {
-      //   a.src = "../../../../resources/genshin/logo/role/荧.png";
+      //   a.src = "{{_res_path}}/genshin/logo/role/荧.png";
       // } else {
-      //   a.src = "../../../../resources/genshin/logo/weapon/旅行剑.png";
+      //   a.src = "{{_res_path}}/genshin/logo/weapon/旅行剑.png";
       // }
-    }
-  </script>
+  }
+</script>
 </html>
