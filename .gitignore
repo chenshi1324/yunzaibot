@@ -133,4 +133,5 @@ dump.rdb
 !/resources/strategy_xf/README.md
 /plugins/
 !/plugins/目录说明.txt
+!/plugins/demo/*
 *.psd

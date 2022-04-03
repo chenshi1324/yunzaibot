@@ -4,9 +4,9 @@ import fs from "fs";
 
 
 /*
-* npm run dev开启Bot后
+* npm run app web-debug开启Bot后
 * 可另外通过 npm run web 开启浏览器调试
-* 访问 http://localhost:8000/${type} 即可看到对应页面
+* 访问 http://localhost:8000/ 即可看到对应页面
 * 页面内的资源需使用 {{_res_path}}来作为resources目录的根目录
 * 可编辑模板与页面查看效果
 * todo: 预览页面的热更
