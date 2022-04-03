@@ -6,13 +6,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../../../resources/genshin/character/character.css?v=1.0"
+      href="{{_res_path}}/genshin/character/character.css?v=1.0"
     />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/character/character.css?v=1.0" />
-    <link rel="preload" href="../../../../resources/font/tttgbnumber.ttf" as="font">
-    <link rel="preload" href="../../../../resources/font/华文中宋.TTF" as="font">
-    <link rel="preload" href="../../../../resources/genshin/logo/bg/{{name}}1.png" as="image">
-    <link rel="preload" href="../../../../resources/genshin/logo/bg/{{name}}2.png" as="image">
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/character/character.css?v=1.0" />
+    <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font">
+    <link rel="preload" href="{{_res_path}}/font/华文中宋.TTF" as="font">
+    <link rel="preload" href="{{_res_path}}/genshin/logo/bg/{{name}}1.png" as="image">
+    <link rel="preload" href="{{_res_path}}/genshin/logo/bg/{{name}}2.png" as="image">
   </head>
   <body>
     <div class="container {{name}}_bg1" id="container">
@@ -29,30 +29,30 @@
         <div class="text_box">
           <div class="detail {{ if !skill.a }}no_skill{{/if}}">
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               等级：<span>{{level}}</span>
             </p>
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               命座：<span>{{actived_constellation_num}}</span>
             </p>
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               好感：<span>{{fetter}}</span>
             </p>
           </div>
           {{ if skill.a }}
           <div class="skill">
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               爆发：<span>{{ skill.q.level_current}}</span>
             </p>
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               战技：<span>{{ skill.e.level_current}}</span>
             </p>
             <p>
-              <img class="star" src="../../../../resources/genshin/character/星星.png"/>
+              <img class="star" src="{{_res_path}}/genshin/character/星星.png"/>
               普攻：<span>{{ skill.a.level_current}}</span>
             </p>
           </div>
@@ -64,7 +64,7 @@
             <div class="item">
               <div class="img_box">
                 <img
-                  src="../../../../resources/genshin/logo/{{val.type}}/{{val.name}}.png"
+                  src="{{_res_path}}/genshin/logo/{{val.type}}/{{val.name}}.png"
                 />
               </div>
               {{ if val.type =='weapon'}}

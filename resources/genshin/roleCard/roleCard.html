@@ -3,15 +3,15 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/roleCard/roleCard.css?v=1.0" />
-    <link rel="preload" href="../../../../resources/font/tttgbnumber.ttf" as="font">
-    <link rel="preload" href="../../../../resources/genshin/roleCard/bg{{bg}}.jpg" as="image">
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/roleCard/roleCard.css?v=1.0" />
+    <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font">
+    <link rel="preload" href="{{_res_path}}/genshin/roleCard/bg{{bg}}.jpg" as="image">
     <link rel="preload" href="https://q1.qlogo.cn/g?b=qq&s=0&nk={{user_id}}" as="image">
   </head>
   <body>
     <style>
       .container {
-        background: url(../../../../resources/genshin/roleCard/bg{{bg}}.jpg);
+        background: url('{{_res_path}}/genshin/roleCard/bg{{bg}}.jpg');
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
@@ -19,14 +19,14 @@
     <div class="container" id="container">
       <div class="info-box">
         <div class="head-box">
-          <!-- <div class="name-card"><img src="../../../../resources/genshin/logo/bg/{{avatars[0].name}}1.png" /></div> -->
+          <!-- <div class="name-card"><img src="{{_res_path}}/genshin/logo/bg/{{avatars[0].name}}1.png" /></div> -->
           <div class="avatar">
             <img src="https://q1.qlogo.cn/g?b=qq&s=0&nk={{user_id}}" onerror="whenError(this)" />
           </div>
           <div class="name"><div>{{name}}</div></div>
           <div class="uid"><div>UID：{{uid}}</div></div>
           <div class="genshin">
-            <img class="genshin-img" src="../../../../resources/genshin/roleAll/原神.png" />
+            <img class="genshin-img" src="{{_res_path}}/genshin/roleAll/原神.png" />
           </div>
         </div>
         <div class="tab">数据总览</div>
@@ -49,7 +49,7 @@
           <div class="item">
             <div class="item-bg">
               <div class="role-box {{val.element}}">
-                <img class="role" src="../../../../resources/genshin/gacha/character/{{val.name}}.png" />
+                <img class="role" src="{{_res_path}}/genshin/gacha/character/{{val.name}}.png" />
               </div>
               {{ if val.actived_constellation_num>0}}
               <div class="role-life life{{val.actived_constellation_num}}">{{val.actived_constellation_num}}命</div>
@@ -69,7 +69,7 @@
   <script type="text/javascript">
     function whenError(a) {
       // a.onerror = null;
-      // a.src = "../../../../resources/genshin/logo/role/荧.png";
+      // a.src = "{{_res_path}}/genshin/logo/role/荧.png";
     }
   </script>
 </html>

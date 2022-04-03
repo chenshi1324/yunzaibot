@@ -50,18 +50,17 @@ app.get('/:type', function (req, res) {
   let data = JSON.parse(fs.readFileSync(_path + "/data/ViewData/" + page + ".json", "utf8"));
   data = data || {};
   data._res_path = "";
-  data._app_res_path = data._res_path;
+  data._sys_res_path = data._res_path;
+
   let app = data._app || "genshin";
   if (data._plugin) {
-    data._app_res_path = `/plugins/${app}/resources/`;
+    console.log(data._plugin);
+    data._res_path = `/plugins/${data._plugin}/resources/`;
   }
   let tplPath = `${app}/${page}/${page}.html`;
   if (data._plugin) {
-    tplPath = `../plugins/${app}/resources/${page}/${page}.html`
+    tplPath = `../plugins/${data._plugin}/resources/${app}/${page}.html`
   }
-
-  console.log(data);
-  
   res.render(tplPath, data)
 });
 
