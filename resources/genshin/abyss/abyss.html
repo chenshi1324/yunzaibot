@@ -6,7 +6,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../../../resources/genshin/abyss/abyss.css?v=1.0"
+      href="{{_res_path}}/genshin/abyss/abyss.css?v=1.0"
     />
   </head>
   <body>
@@ -31,11 +31,11 @@
             {{/if}}
             <img
               class="role_img bg{{val.rarity}}"
-              src="../../../../resources/genshin/logo/role/{{val.name}}.png"
+              src="{{_res_path}}/genshin/logo/role/{{val.name}}.png"
               onerror="whenError(this,'role')"
             />
             <div class="desc">{{val.value}}次</div>
-            <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+            <img class="fill_img" src="{{_res_path}}/genshin/life/fill.png" />
           </div>
           {{/each}}
         </div>
@@ -47,7 +47,7 @@
           <div class="item">
             最多击破：{{defeat.num}}
             <img
-              src="../../../../resources/genshin/logo/side/{{defeat.name}}.png"
+              src="{{_res_path}}/genshin/logo/side/{{defeat.name}}.png"
               class="line-icon two_img"
               onerror="whenError(this,'side')"
             />
@@ -56,14 +56,14 @@
         <div class="row two">
           <div class="item">
             承受伤害：{{take_damage.num}}<img
-              src="../../../../resources/genshin/logo/side/{{take_damage.name}}.png"
+              src="{{_res_path}}/genshin/logo/side/{{take_damage.name}}.png"
               class="line-icon"
               onerror="whenError(this,'side')"
             />
           </div>
           <div class="item">
             元素战技：{{normal_skill.num}}<img
-              src="../../../../resources/genshin/logo/side/{{normal_skill.name}}.png"
+              src="{{_res_path}}/genshin/logo/side/{{normal_skill.name}}.png"
               class="line-icon two_img"
               onerror="whenError(this,'side')"
             />
@@ -72,14 +72,14 @@
         <div class="row">
           <div class="item">
             最强一击：{{damage.num}}<img
-              src="../../../../resources/genshin/logo/side/{{damage.name}}.png"
+              src="{{_res_path}}/genshin/logo/side/{{damage.name}}.png"
               class="line-icon"
               onerror="whenError(this,'side')"
             />
           </div>
           <div class="item">
             元素爆发：{{energy_skill.num}}<img
-              src="../../../../resources/genshin/logo/side/{{energy_skill.name}}.png"
+              src="{{_res_path}}/genshin/logo/side/{{energy_skill.name}}.png"
               class="line-icon two_img"
               onerror="whenError(this,'side')"
             />
@@ -91,7 +91,7 @@
   <script type="text/javascript">
     function whenError(a, type) {
       // a.onerror = null;
-      // a.src = "../../../../resources/genshin/logo/" + type + "/荧.png";
+      // a.src = "{{_res_path}}/genshin/logo/" + type + "/荧.png";
     }
   </script>
 </html>

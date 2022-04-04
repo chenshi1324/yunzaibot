@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" type="text/css" href="../../../../resources/genshin/abyssFloor/abyssFloor.css?v=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/abyssFloor/abyssFloor.css?v=1.0" />
   </head>
   <body>
     <div class="container" id="container">
@@ -15,7 +15,7 @@
             <div class="title">深境第{{floorIndex}}层</div>
           </div>
           <div class="star">
-            <img src="../../../../resources/genshin/abyssFloor/star.png" />
+            <img src="{{_res_path}}/genshin/abyssFloor/star.png" />
             <span>{{floor.star}}/{{floor.max_star}}</span>
           </div>
         </div>
@@ -39,11 +39,11 @@
                     {{/if}}
                     <img
                       class="role_img bg{{v.rarity}}"
-                      src="../../../../resources/genshin/logo/role/{{v.name}}.png"
+                      src="{{_res_path}}/genshin/logo/role/{{v.name}}.png"
                       onerror="whenError(this)"
                     />
                     <div class="desc">Lv.{{v.level}}</div>
-                    <img class="fill_img" src="../../../../resources/genshin/life/fill.png" />
+                    <img class="fill_img" src="{{_res_path}}/genshin/life/fill.png" />
                   </div>
                   {{/each}}
                   <div class="split-text split-text-{{vv.index}}">{{if vv.index==1 }}上{{else}}下{{/if}}半</div>
@@ -51,9 +51,9 @@
                 {{ /each}}
               </div>
               <div class="star-box">
-                <img class="{{if val.star<1 }}nostar{{/if}}" src="../../../../resources/genshin/abyssFloor/star.png" />
-                <img class="{{if val.star<2 }}nostar{{/if}}" src="../../../../resources/genshin/abyssFloor/star.png" />
-                <img class="{{if val.star<3 }}nostar{{/if}}" src="../../../../resources/genshin/abyssFloor/star.png" />
+                <img class="{{if val.star<1 }}nostar{{/if}}" src="{{_res_path}}/genshin/abyssFloor/star.png" />
+                <img class="{{if val.star<2 }}nostar{{/if}}" src="{{_res_path}}/genshin/abyssFloor/star.png" />
+                <img class="{{if val.star<3 }}nostar{{/if}}" src="{{_res_path}}/genshin/abyssFloor/star.png" />
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
   <script type="text/javascript">
     function whenError(a) {
       // a.onerror = null;
-      // a.src = "../../../../resources/genshin/logo/role/荧.png";
+      // a.src = "{{_res_path}}/genshin/logo/role/荧.png";
     }
   </script>
 </html>
