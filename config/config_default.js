@@ -41,6 +41,11 @@ let config = {
   ],
   allowUseNoteCookie: false, // 是否允许Bot使用NoteCookie中的记录进行查询
 
+  //默认cookie帮助文档链接地址，其他ck帮助链接
+  //https://www.wolai.com/tremorstar/jRjczxsfdsmzWDaDVVwVEM
+  //https://yakultoo.feishu.cn/docs/doccnnepmeWeweGSbjgBM8vIsCe
+  cookieDoc:"https://docs.qq.com/doc/DUWNVQVFTU3liTVlO",
+
   //推送任务
   pushTask:{
     signTime: "0 2 0 * * ?", //签到任务执行时间，Cron表达式，默认00:02开始执行，每10s签到一个
