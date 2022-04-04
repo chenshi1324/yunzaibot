@@ -121,6 +121,8 @@ body {
 .uid .uid-inner {
   position: relative;
   z-index: 100;
+  white-space:nowrap;
+  overflow: hidden;
 }
 
 .uid-process {
