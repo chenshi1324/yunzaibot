@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/admin/user-stat/user-stat.css?v=1.0"/>
+  </head>
+  <body id="container">
+    <div class="container">
+      <div class="stat">
+        <div class="total">{{canQuery}}</div>
+        <ul class="detail">
+          <li>{{noteCount}}</li>
+          <li>{{botCount}}</li>
+          <li>{{available}}/{{disable}}</li>
+          <li>{{queryCount}}</li>
+        </ul>
+        {{if useNoteCookie}}
+        <div class="cookie-type yes">已使用NoteCookie</div>
+        {{else}}
+        <div class="cookie-type no">未使用NoteCookie</div>
+        {{/if}}
+      </div>
+      <div class="cont-title">CK-UID状态</div>
+      <div class="uids">
+        {{each uids uid}}
+        <div class="uid type-{{uid.type}}">
+          <div class="uid-inner">
+            <span>{{uid.count>27 ? "×" : uid.count}}</span>
+            {{uid.uid}}
+          </div>
+          <div class="uid-process" style="left:-{{ 100-uid.process }}%"></div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="notice">
+        <ul>
+          {{if !showAll}}
+          <li>为保护隐私，在群聊中使用时UID进行了加密展示</li>
+          {{/if}}
+          {{if useNoteCookie}}
+          <li>已开启NoteCookie的使用，系统将使用所有可用CK记录</li>
+          <li>系统将全局最优化使用查询CK，可大幅降低CK使用次数消耗</li>
+          {{else}}
+          <li>当前系统未使用NoteCookie，管理员可以使用命令<span>#使用全部ck</span>开启使用。
+            开启后系统将使用所有CK，并最优化查询CK分配。
+          </li>
+          {{/if}}
+          <li>管理员可以使用命令<span>#重置用户统计</span>来强制重置并刷新查询记录，重置后今日的统计次数可能不准确</li>
+          <li>查询所有注册Cookie的用户，以及今日已查询过的角色均不会消耗查询次数</li>
+          <li>预计剩余查询次数为预计值，仅供参考</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

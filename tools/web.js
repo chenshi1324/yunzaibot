@@ -4,9 +4,9 @@ import fs from "fs";
 
 
 /*
-* npm run dev开启Bot后
+* npm run app web-debug开启Bot后
 * 可另外通过 npm run web 开启浏览器调试
-* 访问 http://localhost:8000/${type} 即可看到对应页面
+* 访问 http://localhost:8000/ 即可看到对应页面
 * 页面内的资源需使用 {{_res_path}}来作为resources目录的根目录
 * 可编辑模板与页面查看效果
 * todo: 预览页面的热更
@@ -50,18 +50,17 @@ app.get('/:type', function (req, res) {
   let data = JSON.parse(fs.readFileSync(_path + "/data/ViewData/" + page + ".json", "utf8"));
   data = data || {};
   data._res_path = "";
-  data._app_res_path = data._res_path;
+  data._sys_res_path = data._res_path;
+
   let app = data._app || "genshin";
   if (data._plugin) {
-    data._app_res_path = `/plugins/${app}/resources/`;
+    console.log(data._plugin);
+    data._res_path = `/plugins/${data._plugin}/resources/`;
   }
   let tplPath = `${app}/${page}/${page}.html`;
   if (data._plugin) {
-    tplPath = `../plugins/${app}/resources/${page}/${page}.html`
+    tplPath = `../plugins/${data._plugin}/resources/${app}/${page}.html`
   }
-
-  console.log(data);
-  
   res.render(tplPath, data)
 });
 

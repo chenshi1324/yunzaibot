@@ -6,7 +6,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../../../resources/genshin/life/life.css?v=1.0"
+      href="{{_res_path}}/genshin/life/life.css?v=1.0"
     />
   </head>
   <body {{ if list.length<=8}}class="list8"{{/if}}>
@@ -24,13 +24,13 @@
               <span class="life life{{val.actived_constellation_num}}"> {{val.actived_constellation_num}}命</span>
               {{/if}}
               <div class="bg{{val.rarity}}"></div>
-              <img class="role_img" src="../../../../resources/genshin/logo/role/{{val.name}}{{val.costumesLogo}}.png" onerror="whenError(this)" />
+              <img class="role_img" src="{{_res_path}}/genshin/logo/role/{{val.name}}{{val.costumesLogo}}.png" onerror="whenError(this)" />
               <div class="desc">Lv.{{val.level}}</div>
             </div>
             <div class="text_box">
               <div class="weapon_box">
                 <div class="weapon_boder">
-                  <img class="weapon_img" src="../../../../resources/genshin/logo/weapon/{{val.weapon.name}}.png" />
+                  <img class="weapon_img" src="{{_res_path}}/genshin/logo/weapon/{{val.weapon.name}}.png" />
                 </div>
               </div>
               <div class="weapon_name_box">
@@ -49,7 +49,7 @@
   <script type="text/javascript">
     function whenError(a) {
       // a.onerror = null;
-      // a.src = "../../../../resources/genshin/logo/role/荧.png";
+      // a.src = "{{_res_path}}/genshin/logo/role/荧.png";
     }
   </script>
 </html>
