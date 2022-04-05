@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
 @font-face {
   font-family: "tttgbnumber";
   src: url("../../font/tttgbnumber.ttf");
@@ -23,7 +29,7 @@
 .data_box{
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   border-radius: 15px;
-  font-family: tttgbnumber;
+  background-color: #fff;
 }
 .head_box .id_text {
   font-size: 24px;
@@ -48,6 +54,8 @@ body {
     background: #f5f6fb;
     font-size: 16px;
     width: 530px;
+    transform: scale(1.2);
+    transform-origin: 0 0;
 }
 strong {
     font-weight: 600;
@@ -69,29 +77,37 @@ h1 {
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
     color: #333;
-    margin: 15px auto;
+    margin: 10px 0 15px 60px;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
     font-size: 1.03em;
-    padding: 30px;
+    padding: 30px 20px 20px 30px;
     list-style: none;
     text-align: left;
-    font-weight: 1;
-    max-width: 75%;
 }
-.timeline h1,
-.timeline h2,
-.timeline h3 {
-    letter-spacing: 1.5px;
-    font-weight: 100;
-    font-size: 1.4em;
-}
+
 .timeline .event {
     border-bottom: 1px dashed #4298c3;
-    padding-bottom: 25px;
-    margin-bottom: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
     position: relative;
+}
+.timeline .event .event_day{
+  font-family: tttgbnumber;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.timeline .event p{
+  font-family: tttgbnumber;
+  margin: 10px 0;
+  word-wrap:break-word;
+  word-break:break-all;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
 }
 .timeline .event:last-of-type {
     padding-bottom: 0;
