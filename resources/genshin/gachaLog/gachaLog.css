@@ -29,7 +29,7 @@ body {
 .container {
   width: 465px;
   padding: 20px 15px 10px 15px;
-  background-color: #ececec;
+  background-color: #f5f6fb;
 }
 
 .head_box {
@@ -335,4 +335,16 @@ body {
 
 .purple {
   color: #7500ff;
+}
+.minimum{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px 3px;
+  background-color: rgb(0 0 0 / 80%);
 }
