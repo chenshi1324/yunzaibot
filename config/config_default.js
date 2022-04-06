@@ -42,9 +42,9 @@ let config = {
   allowUseNoteCookie: false, // 是否允许Bot使用NoteCookie中的记录进行查询
 
   //默认cookie帮助文档链接地址，其他ck帮助链接
-  //https://www.wolai.com/tremorstar/jRjczxsfdsmzWDaDVVwVEM
-  //https://yakultoo.feishu.cn/docs/doccnnepmeWeweGSbjgBM8vIsCe
-  cookieDoc:"https://docs.qq.com/doc/DUWNVQVFTU3liTVlO",
+  //www.wolai.com/tremorstar/jRjczxsfdsmzWDaDVVwVEM
+  //yakultoo.feishu.cn/docs/doccnnepmeWeweGSbjgBM8vIsCe
+  cookieDoc:"docs.qq.com/doc/DUWNVQVFTU3liTVlO",
 
   //推送任务
   pushTask:{
