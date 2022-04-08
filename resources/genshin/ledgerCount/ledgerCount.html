@@ -4,10 +4,13 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/ledgerCount/ledgerCount.css?v=1.0" />
+    <link rel="preload" href="{{_res_path}}/js/g2plot.min.js" as="script" />
     <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font" />
+    <link rel="preload" href="{{_res_path}}/genshin/roleAll/原神.png" as="image">
+    <link rel="preload" href="{{_res_path}}/genshin/logo/namecard/神里绫人.png" as="image">
     <style>
       .head_box {
-        background: url({{_res_path}}/genshin/logo/namecard/雷电将军.png) #fff;
+        background: url({{_res_path}}/genshin/logo/namecard/神里绫人.png) #fff;
         background-position-x: 42px;
         background-repeat: no-repeat;
         background-size: auto 101%;
@@ -86,7 +89,7 @@
       seriesField: "name",
       animation: false,
       renderer: "svg",
-      padding: [40, 10, 30, 40],
+      padding: [40, 10, 30, 50],
       label: {
         style: {
           fontFamily: "tttgbnumber",
@@ -106,7 +109,6 @@
         label: {
           style: {
             fontFamily: "tttgbnumber",
-            "fontSize": 10,
           },
         },
       },
