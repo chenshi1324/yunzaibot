@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   color: #1e1f20;
   font-family: PingFangSC-Medium, PingFang SC, sans-serif;
-  transform: scale(2);
+  transform: scale(1.5);
   transform-origin: 0 0;
   width: 465px;
 }
@@ -29,7 +29,7 @@ body {
 .container {
   width: 465px;
   padding: 20px 15px 10px 15px;
-  background-color: #ececec;
+  background-color: #f5f6fb;
 }
 
 .head_box {
@@ -69,8 +69,8 @@ body {
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px 15px 5px 15px;
-  background: #f5f5f5;
+  padding: 20px 0px 5px 10px;
+  background: #fff;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   position: relative;
 }
@@ -91,6 +91,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 14px;
+  padding-right: 10px;
 }
 
 .data_line_item {
@@ -127,17 +128,27 @@ body {
   margin-bottom: 10px;
 }
 
+.info_box_border{
+  border-radius: 15px;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  padding: 6px 0px 5px 10px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  position: relative;
+}
+
 .card_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card_list .item {
-  margin: 0px 0 10px 10px;
+  margin: 0px 8px 10px 0px;
   border-radius: 7px;
   box-shadow: 0 2px 6px 0 rgb(132 93 90 / 30%);
-  height: 88px;
+  height: 90px;
   position: relative;
   overflow: hidden;
   background: #e7e5d9;
@@ -184,7 +195,7 @@ body {
 .card_list .item .name,
 .card_list .item .num_name {
   position: absolute;
-  top: 70px;
+  top: 71px;
   left: 0px;
   z-index: 9;
   font-size: 12px;
@@ -196,7 +207,7 @@ body {
 
 .card_list .item .num_name {
   font-family: "tttgbnumber";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .base_info {
@@ -324,4 +335,16 @@ body {
 
 .purple {
   color: #7500ff;
+}
+.minimum{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px 3px;
+  background-color: rgb(0 0 0 / 80%);
 }

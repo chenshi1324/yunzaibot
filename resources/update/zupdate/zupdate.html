@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="{{_res_path}}/update/zupdate/zupdate.css?v=1.0" />
+  </head>
+  <body>
+  <div class="container" id="container">
+    <div class="head_box">
+        <div class="id_text">Yunzai-Bot</div>
+        <h2 class="day_text">{{name}} - v{{version}}</h2>
+        <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png" />
+    </div>
+	  <div class="data_box">	  
+      <ul class="timeline">
+        {{each daylogs dlog}}
+        <li class="event">
+          <h3 class="event_day">{{dlog.time}}</h3>
+            {{each dlog.logs log}}
+             <p>{{log}}</p>
+             {{/each}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="logo"> {{more}}</div>
+    <div class="logo">Create By Yunzai-Bot</div>
+  </div>
+  </body>
+  <script type="text/javascript"></script>
+</html>

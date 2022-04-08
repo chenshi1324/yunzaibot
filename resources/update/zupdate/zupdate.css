@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+@font-face {
+  font-family: "tttgbnumber";
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 530px;
+  padding: 20px 15px 10px 15px;
+  background-color: #f5f6fb;
+}
+.head_box {
+  border-radius: 15px;
+  font-family: tttgbnumber;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  background: url(bg.png) #fff;
+  background-position-x: 54px;
+  background-repeat: no-repeat;
+  background-size: auto 101%;
+}
+.data_box{
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  background-color: #fff;
+}
+.head_box .id_text {
+  font-size: 24px;
+}
+.head_box .day_text {
+  font-size: 20px;
+}
+.head_box .genshin_logo {
+  position: absolute;
+  top: -1px;
+  right: 15px;
+  width: 97px;
+}
+.logo {
+  font-size: 14px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+}
+
+body {
+    background: #f5f6fb;
+    font-size: 16px;
+    width: 530px;
+    transform: scale(1.2);
+    transform-origin: 0 0;
+}
+strong {
+    font-weight: 600;
+}
+h1 {
+    letter-spacing: 1.5px;
+    color: #333;
+    font-weight: 100;
+    font-size: 2.4em;
+}
+#content {
+    margin-top: 50px;
+    text-align: center;
+    /* Timeline */
+}
+.timeline {
+    border-left: 3px solid #4298c3;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: #333;
+    margin: 10px 0 15px 60px;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 30px 20px 20px 30px;
+    list-style: none;
+    text-align: left;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #4298c3;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.timeline .event .event_day{
+  font-family: tttgbnumber;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.timeline .event p{
+  font-family: tttgbnumber;
+  margin: 10px 0;
+  word-wrap:break-word;
+  word-break:break-all;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
+}
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.timeline .event:before {
+    left: -217.5px;
+    color: #717171;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 400;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+.timeline .event:after {
+    box-shadow: 0 0 0 2px #169eda;
+    left: -37px;
+    background: #91c740;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
+.logo {
+  font-size: 14px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+}
