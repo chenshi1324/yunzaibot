@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "tttgbnumber";
+}
+@font-face {
+  font-family: "tttgbnumber";
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 700px;
+  padding: 20px 15px 10px 15px;
+  background-color: #f5f6fb;
+}
+.head_box {
+  border-radius: 15px;
+  font-family: "tttgbnumber";
+  padding: 20px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  background-color: #f5f6fb;
+}
+.head_box h1{
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+  display: block;
+}
+body {
+  background: #f0f1f5;
+  line-height:150%;
+  color: #333;
+  font-size: 16px;
+  width: 700px;
+  transform: scale(1.2);
+  transform-origin: 0 0;
+  
+}
+.body_box{
+  padding: 20px 0px;
+}
+.data_box {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: "tttgbnumber";
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  word-break: break-word;
+  height: auto;
+  overflow-x: hidden;
+}
+.newscard {
+  display: flex;
+  padding: 30px 30px 24px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.newscard-left {
+  width: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.newscard-comment {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  display:table-cell;
+  display: table;
+  vertical-align: middle;
+}
+.newscard-info {
+  display: block;
+  margin-left: 20px;
+  padding: 8px 0 6px;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.newscard-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.newscard-content {
+  display: -webkit-box;
+  margin-top: 6px;
+  color: #999;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 22px;
+  max-height: 66px;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-size: 14px;
+  outline: none;
+}
+.newscard-time {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1;
+  margin-top: 8px;
+}
+.newscard-cover {
+  width: 242px;
+  height: 106px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+.newscard-cover img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+.logo {
+  font-size: 14px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+}
