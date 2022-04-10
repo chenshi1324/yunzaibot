@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "tttgbnumber";
+}
+@font-face {
+  font-family: "tttgbnumber";
+  src: url("../../font/tttgbnumber.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  width: 700px;
+  padding: 20px 15px 10px 15px;
+  background-color: #f5f6fb;
+}
+.head_box {
+  border-radius: 15px;
+  font-family: "tttgbnumber";
+  padding: 20px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  background-color: #f5f6fb;
+  border-radius: 15px;
+}
+.head_box .day_text {
+  font-size: 20px;
+  padding: 20px 20px 0px;
+}
+.head_box h1{
+  font-size: 30px;
+  line-height: 36px;
+}
+.head_box .updateTime {
+  position: absolute;
+  right: 15px;
+  width: auto;
+}
+body {
+  background: #f0f1f5;
+  line-height:150%;
+  color: #333;
+  font-size: 16px;
+  width: 700px;
+  transform: scale(1.2);
+  transform-origin: 0 0;
+  
+}
+.body_box{
+  padding: 20px 0px;
+}
+.data_box {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: "tttgbnumber";
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  word-break: break-word;
+  height: auto;
+  overflow-x: hidden;
+}
+.ql-image-box {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.ql-image-box img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+.logo {
+  font-size: 14px;
+  font-family: "tttgbnumber";
+  text-align: center;
+  color: #7994a7;
+}
