@@ -81,6 +81,7 @@
     const { Column, Pie } = G2Plot;
 
     const primogemsMonth = JSON.parse(`{{@ primogemsMonth}}`);
+    const primogemsMax = {{maxPrimogems.value}};
     const stackedColumnPlot = new Column("chartContainer", {
       data: primogemsMonth,
       isGroup: true,
@@ -89,7 +90,7 @@
       seriesField: "name",
       animation: false,
       renderer: "svg",
-      padding: [40, 10, 30, 50],
+      padding: [40, 10, 30, 52],
       label: {
         style: {
           fontFamily: "tttgbnumber",
@@ -102,6 +103,7 @@
           },
           style: {
             fontFamily: "tttgbnumber",
+            fontSize: 14,
           },
         },
       },
@@ -109,6 +111,7 @@
         label: {
           style: {
             fontFamily: "tttgbnumber",
+            fontSize: 14,
           },
         },
       },
