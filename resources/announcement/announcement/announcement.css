@@ -22,7 +22,9 @@
   padding: 20px 20px;
   position: relative;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-  background-color: #fff;
+  background: url(../../genshin/logo/chapterBg/稻妻.png) #fff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   border-radius: 15px;
 }
 .head_box .day_text {
@@ -58,9 +60,9 @@ body {
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   border-radius: 15px;
   background-color: #fff;
-  font-family: "tttgbnumber";
   padding: 20px 20px 20px 20px;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 34px;
   word-wrap: break-word;
   word-break: break-word;
   height: auto;
