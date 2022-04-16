@@ -10,7 +10,9 @@
   <body>
     <div class="container" id="container">
       <div class="info-bg info-name">{{name}}</div>
-      <div class="info-bg info-count">{{info}}</div>
+      {{if fiveNum < 4}}
+        <div class="info-bg info-count">{{info}}</div>
+      {{/if}}
       {{if isWeapon}}
         {{if bingWeapon}}
           <div class="info-bg poor-info">定轨：{{bingWeapon}}</div>
@@ -40,7 +42,7 @@
               </div>
             {{/if}}
             
-            {{if $value.star==5}}
+            {{if $value.star==5 && fiveNum < 4 }}
             <div class="times">「{{$value.num}}抽」</div>
             {{/if}}
             <img class="item-element"  src="{{_res_path}}/genshin/gacha/items/{{$value.element}}.png"/>
