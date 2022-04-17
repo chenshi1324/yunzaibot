@@ -56,8 +56,8 @@
       <div class="card_list">
         {{each fiveArr val}}
         <div class="item star5">
-          {{ if val.minimum && typeName == '角色' }}
-            <!-- <span class="minimum">歪</span> -->
+          {{ if val.isUP && typeName == '角色' }}
+            <span class="minimum">UP</span>
           {{/if}}
           <img class="role"
                src="{{_res_path}}/genshin/logo/{{val.item_type=='角色'?'role':'weapon'}}/{{val.name}}.png"
