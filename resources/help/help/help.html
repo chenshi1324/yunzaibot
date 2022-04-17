@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="{{_res_path}}/help/help/help.css" />
+  <link rel="shortcut icon" href="#" />
+</head>
+<style type="text/css">
+  .head_box {
+    background: url({{_res_path}}/genshin/logo/namecard/{{hd_bg}}.png) #fff;
+    background-position-x: 52px;
+    background-repeat: no-repeat;
+    background-size: auto 101%;
+  }
+</style>
+
+<body>
+  <div class="container" id="container">
+    <div class="head_box">
+      <div class="id_text">Yunzai-Bot</div>
+      <h2 class="day_text">使用说明-v2.1.2</h2>
+      <img class="genshin_logo" src="{{_res_path}}/genshin/roleAll/原神.png" />
+    </div>
+    {{each helpData val}}
+    <div class="data_box">
+      <div class="tab_lable">{{val.group}}</div>
+      <div class="list">
+        {{each val.list item}}
+        <div class="item">
+          <img class="icon" src="{{_res_path}}/help/help/icon/{{item.icon}}.png" />
+          <div class="title">
+            <div class="text">{{item.title}}</div>
+            <div class="dec">{{item.desc}}</div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/each}}
+    <div class="logo">Create By Yunzai-Bot</div>
+  </div>
+</body>
+
+</html>
