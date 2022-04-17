@@ -119,6 +119,9 @@ body {
   margin-left: 6px;
   line-height: 20px;
 }
+.list .item .title .text{
+  white-space: nowrap;
+}
 .list .item .title .dec{
   font-size: 12px;
   color: #999;
