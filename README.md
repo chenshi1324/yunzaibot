@@ -93,8 +93,8 @@ npm start
 </details>
 
 <details>
-<summary>#角色记录/#常驻记录/#武器记录</summary>
-<img src="https://user-images.githubusercontent.com/12881780/155257884-4aa214e3-3a70-4bdf-893a-91c4ea33a59f.png" alt="#角色记录">
+<summary>#角色记录/#武器记录/#常驻记录</summary>
+<img src="https://user-images.githubusercontent.com/12881780/163900983-8fb16755-0aaf-430d-a04f-7a7de7cf76fc.jpg" alt="#角色记录">
 </details>
 <details>
 <summary>#角色统计/#武器统计</summary>
@@ -124,8 +124,11 @@ npm start
 |@逍遥_xiaoyao | 提供角色，武器图鉴图片 |
 
 ## 其他
-- 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)。
-- 也可以加群 [213938015](https://qm.qq.com/cgi-bin/qm/qr?k=HN2YuYXT-Ks3eFhXmuk94OhkDood4sBy&jump_from=webapi) 反馈 ，最后再求个star，你的支持是维护本项目的动力~~
+- 有什么问题、Bug，或有其它建议，欢迎提 [issue](https://github.com/Le-niao/Yunzai-Bot/issues)
+- 最后再求个star，你的支持是维护本项目的动力~~
 - 图片素材来源于网络，仅供交流学习使用
 - 严禁用于任何商业用途和非法行为
+<!---
+- QQ群 [213938015](https://qm.qq.com/cgi-bin/qm/qr?k=HN2YuYXT-Ks3eFhXmuk94OhkDood4sBy&jump_from=webapi)
 - [爱发电](https://afdian.net/@Le-niao)
+-->
