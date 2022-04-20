@@ -1,6 +1,6 @@
 @font-face {
   font-family: "tttgbnumber";
-  src: url("../font/tttgbnumber.ttf");
+  src: url("../../font/tttgbnumber.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,6 +11,7 @@
   user-select: none;
 }
 body {
+  font-family: sans-serif;
   font-size: 16px;
   width: 530px;
   color: #1e1f20;
@@ -28,10 +29,6 @@ body {
   padding: 10px 20px;
   position: relative;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
-  background: url(../genshin/logo/namecard/神里绫人.png) #fff;
-  background-position-x: 54px;
-  background-repeat: no-repeat;
-  background-size: auto 101%;
 }
 .head_box .id_text {
   font-size: 24px;
@@ -121,6 +118,9 @@ body {
   font-size: 16px;
   margin-left: 6px;
   line-height: 20px;
+}
+.list .item .title .text{
+  white-space: nowrap;
 }
 .list .item .title .dec{
   font-size: 12px;

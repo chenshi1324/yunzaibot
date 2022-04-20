@@ -3,16 +3,15 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{_res_path}}/genshin/character/character.css?v=1.0"
-    />
     <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/character/character.css?v=1.0" />
     <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font">
     <link rel="preload" href="{{_res_path}}/font/华文中宋.TTF" as="font">
     <link rel="preload" href="{{_res_path}}/genshin/logo/bg/{{name}}1.png" as="image">
     <link rel="preload" href="{{_res_path}}/genshin/logo/bg/{{name}}2.png" as="image">
+    <link rel="preload" href="{{_res_path}}/genshin/character/星星.png" as="image">
+    {{each list val}}
+      <link rel="preload" href="{{_res_path}}/genshin/logo/{{val.type}}/{{val.name}}.png" as="image">      
+    {{/each}}
   </head>
   <body>
     <div class="container {{name}}_bg1" id="container">

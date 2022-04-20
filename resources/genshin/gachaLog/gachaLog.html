@@ -3,9 +3,12 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
   <link rel="shortcut icon" href="#"/>
-  <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/common.css?v=1.0"/>
-  <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/data-box.css?v=1.0"/>
+  <!-- <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/common.css?v=1.0"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{_res_path}}/common/data-box.css?v=1.0"/> -->
   <link rel="stylesheet" type="text/css" href="{{_res_path}}/genshin/gachaLog/gachaLog.css?v=1.0"/>
+  <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font">
+  <link rel="preload" href="{{_res_path}}/genshin/logo/namecard/神里绫人.png" as="image">
+  <link rel="preload" href="{{_res_path}}/genshin/life/bg5.png" as="image">
   <style>
     .head_box {
       background: url({{_res_path}}/genshin/logo/namecard/神里绫人.png) #fff;
@@ -53,8 +56,8 @@
       <div class="card_list">
         {{each fiveArr val}}
         <div class="item star5">
-          {{ if val.minimum && val.item_type=='角色' }}
-            <!-- <span class="minimum">歪</span> -->
+          {{ if val.isUP && typeName == '角色' }}
+            <span class="minimum">UP</span>
           {{/if}}
           <img class="role"
                src="{{_res_path}}/genshin/logo/{{val.item_type=='角色'?'role':'weapon'}}/{{val.name}}.png"
