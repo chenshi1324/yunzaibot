@@ -4,7 +4,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+body {
+	transform: scale(1.5);
+	transform-origin: 0 0;
+  }
 .container {
 	width: 550px;
 	padding: 5px 15px 15px 15px;
@@ -57,7 +60,7 @@
 }
 
 .item {
-	margin: 20px 0px;
+	margin: 30px 0px;
 	border-radius: 7px;
 	background: #e9e5dc;
 	display: flex;
