@@ -96,6 +96,7 @@ body {
 	width: 120px;
 	height: 40px;
 	line-height: 30px;
+	white-space: nowrap;
 }
 
 .weapon_box {
@@ -127,6 +128,7 @@ body {
 	width: 120px;
 	height: 40px;
 	line-height: 30px;
+	white-space: nowrap;
 }
 
 .weapon_bg5 {
