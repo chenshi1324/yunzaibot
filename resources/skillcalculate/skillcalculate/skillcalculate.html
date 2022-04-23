@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="shortcut icon" href="#" />
+		<link rel="stylesheet" type="text/css" href="{{_res_path}}/skillcalculate/skillcalculate/skillcalculate.css?v=1.0" />
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="uidRight">
+				<span>UID : {{uid}}</span>
+			</div>
+			<div class="topLeft">
+				<span>角色养成计算</span>
+			</div>
+
+			<div class="head_box">
+				<div class="item">
+					<div class="role_box">
+						<div class="bg{{dataCharacter.rarity}}">
+							<img class="role_img" src="{{dataCharacter.icon}}" onerror="whenError(this)" />
+						</div>
+
+					</div>
+					<div class="role_name">
+						{{dataCharacter.name}}
+						<div class="role_LV">Lv.{{dataCharacter.level}} &nbsp;→&nbsp; Lv.{{setSkill[0]}}</div>
+					</div>
+
+					<div class="weapon_box">
+						<div class="weapon_bg{{dataCharacter.weapon.rarity}}">
+							<img class="weapon_img"
+								src="{{dataCharacter.weapon.icon}}"
+								onerror="whenError(this)" />
+						</div>
+
+					</div>
+					<div class="weapon_name">
+						{{dataCharacter.weapon.name}}
+						<div class="weapon_LV">Lv.{{dataCharacter.weapon.level}} &nbsp;→&nbsp; Lv.{{setSkill[1]}}</div>
+					</div>
+
+				</div>
+				
+				{{each skill_list skill i}}
+				<div class="skill">
+					<div class="skillimg">
+						<img class="skillimgC"
+							src="{{skill.icon}}" />
+					</div>
+					<div class="skillname">
+						{{skill.name}}
+						<div class="skillLv">Lv.10</div>
+					</div>
+					<div class="skillRight">
+						<div class="skillNow"> {{skill.level_current}} </div>
+						<div class="skillJt">&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;</div>
+						<div class="skillNow"> {{setSkill[i+2]}} </div>
+					</div>
+				</div>
+				{{/each}}
+				
+			</div>
+			{{if computes.avatar_consume.length + computes.avatar_skill_consume.length + computes.weapon_consume.length > 0}}
+			<div class="data_box">
+				{{if computes.avatar_consume.length > 0}}
+				<div class="role_top">
+					<div class="role_top_name">{{dataCharacter.name}}</div>
+					<div class="role_top_LV">Lv.{{dataCharacter.level}} &nbsp;→&nbsp; Lv.{{setSkill[0]}}</div>
+				</div>
+				
+				<div class="role_separate">
+					<img width="100%" height="100%" src="{{_res_path}}/skillcalculate/skillcalculate/jsxh.png"/>
+				</div>
+				<div class="cailiao_box">
+					{{each computes.avatar_consume avatar_consume}}
+					<div class="cailiao_item">
+						<img class="cailiao_item_img" src="{{avatar_consume.icon}}"/>
+						<div class="cailiao_item_title">{{avatar_consume.name}} x {{avatar_consume.num}}</div>
+					</div>
+					{{/each}}
+				</div>
+				{{/if}}
+				
+				{{if computes.avatar_skill_consume.length > 0}}
+				<div class="role_separate">
+					<img width="100%" height="100%" src="{{_res_path}}/skillcalculate/skillcalculate/tfxh.png"/>
+				</div>
+				<div class="cailiao_box">
+					{{each computes.avatar_skill_consume avatar_skill_consume}}
+					<div class="cailiao_item">
+						<img class="cailiao_item_img" src="{{avatar_skill_consume.icon}}"/>
+						<div class="cailiao_item_title">{{avatar_skill_consume.name}} x {{avatar_skill_consume.num}}</div>
+					</div>
+					{{/each}}
+				</div>
+				{{/if}}
+
+				{{if computes.weapon_consume.length > 0}}
+				<div class="role_top">
+					<div class="role_top_name">{{dataCharacter.weapon.name}}</div>
+					<div class="role_top_LV">Lv.{{dataCharacter.weapon.level}} &nbsp;→&nbsp; Lv.{{setSkill[1]}}</div>
+				</div>
+				<div class="role_separate"></div>
+				<div class="cailiao_box">
+					{{each computes.weapon_consume weapon_consume}}
+					<div class="cailiao_item">
+						<img class="cailiao_item_img" src="{{weapon_consume.icon}}"/>
+						<div class="cailiao_item_title">{{weapon_consume.name}} x {{weapon_consume.num}}</div>
+					</div>
+					{{/each}}					
+				</div>
+				{{/if}}
+				
+			</div>
+			{{else}}
+			<div class="data_box">
+				<div class="biye">毕业了，下一位 ！</div>
+			</div>
+			{{/if}}
+		</div>
+	</body>
+	<script type="text/javascript"></script>
+</html>

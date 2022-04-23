@@ -1,0 +1,327 @@
+@font-face {
+	font-family: "tttgbnumber";
+	src: url("../../font/tttgbnumber.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	width: 550px;
+	padding: 5px 15px 15px 15px;
+	background-color: #fff;
+}
+
+.head_box {
+	padding: 10px;
+	border-radius: 15px;
+	font-family: tttgbnumber;
+	box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+
+.data_box {
+	padding: 5px 10px 5px 10px;
+	margin-top: 20px;
+	box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+	border-radius: 15px;
+	font-family: tttgbnumber;
+	background-color: #f2eee6;
+}
+
+.uidRight {
+	position: absolute;
+	top: 5px;
+	left: 440px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 7px;
+	font-family: "tttgbnumber";
+	background-color: #a57f72;
+	box-shadow: 0 3px 6px 0 rgb(132 93 90 / 40%);
+}
+
+.topLeft {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 9;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 7px;
+	font-family: "tttgbnumber";
+	background-color: #a57f72;
+	box-shadow: 0 3px 6px 0 rgb(132 93 90 / 40%);
+}
+
+.item {
+	margin: 20px 0px;
+	border-radius: 7px;
+	background: #e9e5dc;
+	display: flex;
+	box-shadow: 0 3px 6px 0 rgb(132 93 90 / 40%);
+}
+
+.role_box {
+	margin: 10px 0px 10px 10px;
+	height: 95px;
+	width: 95px;
+	background: #e9e5dc;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.role_img {
+	width: 100%;
+	height: 100%;
+}
+
+.role_name {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 120px;
+	color: #91837a;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.role_LV {
+	margin-top: 10px;
+	width: 120px;
+	height: 40px;
+	line-height: 30px;
+}
+
+.weapon_box {
+	margin: 10px 0px 10px 20px;
+	height: 95px;
+	width: 95px;
+	background: #e9e5dc;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.weapon_img {
+	width: 100%;
+	height: 100%;
+}
+
+.weapon_name {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 120px;
+	color: #91837a;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.weapon_LV {
+	margin-top: 10px;
+	width: 120px;
+	height: 40px;
+	line-height: 30px;
+}
+
+.weapon_bg5 {
+	background-image: url(../../genshin/life/bg5.png);
+	width: 100%;
+	height: 95px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.weapon_bg4 {
+	width: 100%;
+	height: 95px;
+	background-image: url(../../genshin/life/bg4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.weapon_bg3 {
+	width: 100%;
+	height: 95px;
+	background-image: url(../../genshin/life/bg3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.weapon_bg2 {
+	width: 100%;
+	height: 95px;
+	background-image: url(../../genshin/life/bg3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.weapon_bg1 {
+	width: 100%;
+	height: 95px;
+	background-image: url(../../genshin/life/bg3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.bg105 {
+	background-image: url(../../genshin/life/bg105.png);
+	width: 100%;
+	height: 95px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.bg5 {
+	background-image: url(../../genshin/life/bg5.png);
+	width: 100%;
+	height: 95px;
+	/*filter: brightness(1.1);*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.bg4 {
+	width: 100%;
+	height: 95px;
+	background-image: url(../../genshin/life/bg4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.skill {
+	margin: 5px 0px 0px 0px;
+	background: #f1eee5;
+	display: flex;
+	border-radius: 7px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d9d3c7;
+}
+
+.skillimg {
+	margin: 5px;
+	width: 60px;
+	height: 60px;
+	background-image: url(skillbg.png);
+	background-size: 100%;
+}
+
+.skillimgC {
+	width: 55px;
+	height: 55px;
+	margin: 2px 0px 0px 2px;
+}
+
+.skillname {
+	margin: 10px;
+	width: 250px;
+	height: 20px;
+	line-height: 20px;
+	color: #91837a;
+	font-weight: bold;
+}
+
+.skillLv {
+	margin-top: 5px;
+	width: 250px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.skillRight {
+	margin-top: 17px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+}
+
+.skillJt {
+	line-height: 32px;
+	font-weight: bold;
+	color: #91837a;
+}
+
+.skillNow {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d9d3c7;
+	border-radius: 7px;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #91837a;
+	font-weight: bold;
+}
+
+.role_top {
+	margin-top: 3px;
+	padding: 5px 10px 5px 10px;
+	box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+	border-radius: 3px;
+	font-family: tttgbnumber;
+	background-color: #e2d9ce;
+	display: flex;
+	color: #91837a;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+
+.role_top .role_top_name {
+	width: 50%;
+}
+
+.role_top .role_top_LV {
+	width: 50%;
+	text-align: right;
+}
+
+.role_separate{
+	margin-top: 20px;
+	font-size: 7px;
+	text-align: center;
+	color: #91837a;
+	font-weight: bold;
+	width: 100%;
+}
+
+.cailiao_box{
+	display: flex;
+	flex-wrap: wrap;
+	color: #91837a;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.cailiao_item{
+	margin-left: 25px;
+	margin-top: 5px;
+	width: 240px;
+	display: flex;
+}
+.cailiao_item_img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.cailiao_item_title {
+	width: 245px;
+	line-height: 30px;
+}
+.biye {
+	text-align: center;
+	font-family: "tttgbnumber";
+	line-height: 30px;
+	color: #91837a;
+}
+
+.logo {
+	font-size: 14px;
+	font-family: "tttgbnumber";
+	text-align: center;
+	color: #7994a7;
+}
