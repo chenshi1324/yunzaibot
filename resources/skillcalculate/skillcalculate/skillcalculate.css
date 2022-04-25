@@ -88,6 +88,7 @@ body {
   background: #e9e5dc;
   border-radius: 7px;
   overflow: hidden;
+  position: relative;
 }
 
 .role_img {
@@ -397,4 +398,36 @@ body {
   height: 8px;
   display: inline-block;
   margin: 0 5px 2px 5px;
+}
+
+.role_box .life {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 9;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-family: "tttgbnumber";
+}
+.life1 {
+  background-color: #62a8ea;
+}
+.life2 {
+  background-color: #62a8ea;
+}
+.life3 {
+  background-color: #45b97c;
+}
+.life4 {
+  background-color: #45b97c;
+}
+.life5 {
+  background-color: #ff5722;
+}
+.life6 {
+  background-color: #ff5722;
 }

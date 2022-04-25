@@ -18,6 +18,9 @@
 			<div class="head_box">
 				<div class="item">
 					<div class="role_box">
+						{{ if dataCharacter.actived_constellation_num>0}}
+						<span class="life life{{dataCharacter.actived_constellation_num}}"> {{dataCharacter.actived_constellation_num}}命</span>
+						{{/if}}
 						<div class="bg{{dataCharacter.rarity}}">
 							<img class="role_img" src="{{dataCharacter.icon}}" onerror="whenError(this)" />
 						</div>
