@@ -54,7 +54,7 @@ body {
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 15px;
-  padding: 20px 8px 5px 5px;
+  padding: 20px 0px 5px 0px;
   background: #fff;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
   position: relative;
@@ -98,7 +98,7 @@ body {
 }
 
 .list .item {
-  width: 230px;
+  width: 235px;
   display: flex;
   align-items: center;
   background: #f1f1f1;
