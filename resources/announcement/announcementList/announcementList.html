@@ -4,6 +4,10 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" type="text/css" href="{{_res_path}}/announcement/announcementList/announcementList.css?v=1.0" />
+    <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font" />
+    {{each datas data iCount}}
+    <link rel="preload" href="{{data.post.images[0]}}?x-oss-process=image/resize,s_300/quality,q_80/auto-orient,0/interlace,1/format,jpg" as="image">
+    {{/each}}
   </head>
   <body>
   <div class="container" id="container">
@@ -30,7 +34,7 @@
                 <div class="newscard-time">{{data.post.created_at}}</div>
               </div> 
               <div class="newscard-cover">
-                <div class="newscard-img" style='background-image: url("{{data.post.images[0]}}");'></div>
+                <div class="newscard-img" style='background-image: url("{{data.post.images[0]}}?x-oss-process=image/resize,s_300/quality,q_80/auto-orient,0/interlace,1/format,jpg");'></div>
               </div>
           </div>
           {{/each}}
