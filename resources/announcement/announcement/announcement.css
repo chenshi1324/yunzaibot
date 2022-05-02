@@ -14,6 +14,8 @@ body {
   background-color: #fff;
   font-size: 22px;
   letter-spacing: 1px;
+  max-height: 20000px;
+  overflow: hidden;
 }
 
 .mhy-layout {
@@ -1744,7 +1746,7 @@ textarea::placeholder {
   position: relative;
 }
 .mhy-article-page__main {
-  padding: 40px 20px 40px 20px;
+  padding: 40px 30px 40px 30px;
 }
 .mhy-article-page__title {
   display: -webkit-box;

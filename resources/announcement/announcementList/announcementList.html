@@ -4,6 +4,10 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" type="text/css" href="{{_res_path}}/announcement/announcementList/announcementList.css?v=1.0" />
+    <link rel="preload" href="{{_res_path}}/font/tttgbnumber.ttf" as="font" />
+    {{each datas data iCount}}
+    <link rel="preload" href="{{data.post.images[0]}}?x-oss-process=image/resize,s_300/quality,q_80/auto-orient,0/interlace,1/format,jpg" as="image">
+    {{/each}}
   </head>
   <body>
   <div class="container" id="container">
@@ -37,7 +41,7 @@
       </div> 
     </div>
     <div class="logo">详情内容使用【#{{typeName}}】加上序号查看，如【#{{typeName}}2】</div>
-    <div class="logo">Create By Yunzai-Bot</div>
+    <div class="logo">Created By Yunzai-Bot</div>
   </div>
   </body>
   <script type="text/javascript"></script>
