@@ -5,14 +5,14 @@ services:
     # image: ccr.ccs.tencentyun.com/xm798/yunzai-bot:latest   # 使用镜像
     restart: on-failure:5
     volumes:
-      - $PWD/Yunzai/config.js:/app/Yunzai-Bot/config/config.js # config.js 配置文件，配置文件中 redis 地址填写 "redis"
-      - $PWD/Yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
-      - $PWD/Yunzai/data:/app/Yunzai-Bot/data # 数据文件
+      - ./Yunzai/config.js:/app/Yunzai-Bot/config/config.js # config.js 配置文件，配置文件中 redis 地址填写 "redis"
+      - ./Yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
+      - ./Yunzai/data:/app/Yunzai-Bot/data # 数据文件
       # 以下目录映射有需要可创建对应文件夹，并自行取消注释。
-      # - $PWD/Yunzai/global_img:/app/Yunzai-Bot/resources/global_img         # 全局表情目录
-      # - $PWD/Yunzai/global_record:/app/Yunzai-Bot/resources/global_record   # 全局语音目录
-      # - $PWD/Yunzai/lib/example:/app/Yunzai-Bot/lib/example                 # 自定义js插件目录
-      # - $PWD/Yunzai/plugins:/app/Yunzai-Bot/plugins                         # 插件目录
+      # - ./Yunzai/global_img:/app/Yunzai-Bot/resources/global_img         # 全局表情目录
+      # - ./Yunzai/global_record:/app/Yunzai-Bot/resources/global_record   # 全局语音目录
+      # - ./Yunzai/lib/example:/app/Yunzai-Bot/lib/example                 # 自定义js插件目录
+      # - ./Yunzai/plugins:/app/Yunzai-Bot/plugins                         # 插件目录
     depends_on:
       - redis
 
@@ -20,7 +20,7 @@ services:
     image: "redis:alpine"
     restart: on-failure:5
     volumes:
-      - $PWD/redis/data:/data
-      - $PWD/redis/logs:/logs
+      - ./redis/data:/data
+      - ./redis/logs:/logs
     ports:
       - "6379:6379"
