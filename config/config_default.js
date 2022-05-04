@@ -40,6 +40,7 @@ let config = {
     // 'ltoken=***;ltuid=***;',
   ],
   allowUseNoteCookie: false, // 是否允许Bot使用NoteCookie中的记录进行查询
+  roleAllAvatar: false, // #角色 命令下是否展示全部角色 true：展示全部角色，false：展示12个角色，默认false
 
   //默认cookie帮助文档链接地址，其他ck帮助链接
   //www.wolai.com/tremorstar/jRjczxsfdsmzWDaDVVwVEM
@@ -59,7 +60,7 @@ let config = {
       delMsg: 0,        //隔多少毫秒后撤回消息（十连），0不撤回
       gachaDayNum: 1,   //每天抽卡次数，限制次数，防止刷屏,4点重置
       LimitSeparate:0,  //角色池，武器池限制分开计算 0-不分开 1-分开
-      
+
       //米游社信息查询
       mysDayLimit: 30,  //每天每人查询次数
       mysUidLimit: 5,   //每天每人查询uid个数
@@ -88,7 +89,7 @@ let config = {
       delMsg: 0,        //隔多少毫秒后撤回消息（十连），0不撤回
       gachaDayNum: 1,   //每天抽卡次数，限制次数，防止刷屏,4点重置
       LimitSeparate:0,  //角色池，武器池限制分开计算 0-不分开 1-分开
-      
+
       //米游社信息查询
       mysDayLimit: 30,  //每天每人查询次数
       mysUidLimit: 5,   //每天每人查询uid个数
@@ -121,7 +122,7 @@ let config = {
   tencentAI:{
     secretId:  "",//云产品-管理与审计-访问秘钥获取
     secretKey: "",//云产品-管理与审计-访问秘钥获取
-    BotId:     "",//腾讯智能对话平台-Bot信息-BotId	
+    BotId:     "",//腾讯智能对话平台-Bot信息-BotId
     BotEnv:    "dev",//不用管就填dev
     BotName:   "云崽",//机器人名称
   },
