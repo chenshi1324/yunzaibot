@@ -14,8 +14,9 @@ let config = {
     autoQuit:1,      //1-自动退小群 0-不处理
   },
 
-  //redis配置(默认配置就好，一般都不用改)
+  //redis配置(默认配置就好，一般都不用改，使用docker搭建的用户需要更改host项)
   redis: {
+    //host: "redis",   //docker redis容器地址，如果使用docker请取消注释此行并注释下一行
     host: "127.0.0.1", //redis地址
     port: 6379,        //redis端口
     password: "",      //redis密码，没有密码可以为空

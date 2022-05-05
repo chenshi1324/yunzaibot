@@ -14,7 +14,7 @@ services:
       # - ./Yunzai/lib/example:/app/Yunzai-Bot/lib/example                 # 自定义js插件目录
       # - ./Yunzai/plugins:/app/Yunzai-Bot/plugins                         # 插件目录
     depends_on:
-      - redis
+      redis: { condition: service_healthy }
 
   redis:
     image: "redis:alpine"
@@ -22,5 +22,8 @@ services:
     volumes:
       - ./redis/data:/data
       - ./redis/logs:/logs
-    ports:
-      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "PING"]
+      start_period: 10s
+      interval: 5s
+      timeout: 1s
