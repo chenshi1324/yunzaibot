@@ -3,6 +3,8 @@ import { init } from "./lib/init.js";
 import { createClient } from "oicq";
 import solve from "./lib/dealMsg.js";
 
+process.title = 'Yunzai-Bot';
+
 //检查配置文件
 await check();
 
