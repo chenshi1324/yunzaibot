@@ -117,6 +117,7 @@ dist
 /config/config.js
 /config/command.json
 
+package-lock.json
 dump.rdb
 
 /lib/example/*
