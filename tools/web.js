@@ -1,6 +1,7 @@
 import express from 'express';
 import template from 'express-art-template'
 import fs from "fs";
+import lodash from "lodash";
 
 
 /*
@@ -32,14 +33,19 @@ app.get('/', function (req, res) {
     '如果页面内资源路径不正确请使用{{_res_path}}作为根路径，对应之前的../../../../',
     '可直接修改模板html或css刷新查看效果'
   ];
-  let li = [];
+  let li = {};
   for (let idx in fileList) {
     let ret = /(.+)\.json$/.exec(fileList[idx]);
     if (ret && ret[1]) {
-      li.push(`<li><a href="/${ret[1]}">${ret[1]}</a></li>`);
+      let data = JSON.parse(fs.readFileSync(_path + "/data/ViewData/" + ret[1] + ".json", "utf8"));
+      let text = [(data._app || "genshin"), ret[1]];
+      if (data._plugin) {
+        text.unshift(data._plugin);
+      }
+      li[text.join("")] = (`<li style="font-size:18px; line-height:30px;"><a href="/${ret[1]}">${text.join(" / ")}</a></li>`);
     }
   }
-  res.send(html.join('</br>') + '<ul>' + li.join('') + '</ul>');
+  res.send(html.join('</br>') + '<ul>' + lodash.values(li).join('') + '</ul>');
 });
 
 app.get('/:type', function (req, res) {
