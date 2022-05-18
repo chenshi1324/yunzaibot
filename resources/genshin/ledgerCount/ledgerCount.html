@@ -55,12 +55,16 @@
             <div class="lable">摩拉最多</div>
           </div>
           <div class="data_line_item">
+            {{if group_by.length>0 }}
             <div class="num">{{group_by[0].num}}</div>
             <div class="lable">{{group_by[0].action}}</div>
+            {{/if}}
           </div>
           <div class="data_line_item">
+            {{if group_by.length>0 }}
             <div class="num">{{group_by[1].num}}</div>
             <div class="lable">{{group_by[1].action}}</div>
+            {{/if}}
           </div>
         </div>
       </div>
