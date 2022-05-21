@@ -3,7 +3,7 @@ services:
   yunzai-bot:
     build: . # 使用 Dockerfile 本地构建
     # image: ccr.ccs.tencentyun.com/xm798/yunzai-bot:latest   # 使用镜像
-    # image: sirly/yunzai-bot:latest                          # 备用精简镜像（514M）
+    # image: swr.cn-south-1.myhuaweicloud.com/sirly/yunzai-bot:latest   # 备用精简镜像
     restart: always
     volumes:
       - ./Yunzai/config.js:/app/Yunzai-Bot/config/config.js # config.js 配置文件，配置文件中 redis 地址填写 "redis"
@@ -19,7 +19,7 @@ services:
 
   redis:
     image: "redis:alpine"
-    restart: on-failure:5
+    restart: always
     volumes:
       - ./redis/data:/data
       - ./redis/logs:/logs
