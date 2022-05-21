@@ -3,7 +3,8 @@ services:
   yunzai-bot:
     build: . # 使用 Dockerfile 本地构建
     # image: ccr.ccs.tencentyun.com/xm798/yunzai-bot:latest   # 使用镜像
-    restart: on-failure:5
+    # image: sirly/yunzai-bot:latest                          # 备用精简镜像（514M）
+    restart: always
     volumes:
       - ./Yunzai/config.js:/app/Yunzai-Bot/config/config.js # config.js 配置文件，配置文件中 redis 地址填写 "redis"
       - ./Yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
