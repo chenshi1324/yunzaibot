@@ -117,3 +117,7 @@ body {
   color: #504c49;
   line-height: 55px;
 }
+
+.item .right .red{
+  color: #f24e4c;
+}

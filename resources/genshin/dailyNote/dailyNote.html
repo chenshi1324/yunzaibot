@@ -31,6 +31,7 @@
           </div>
         </div>
         <div class="right">
+          <!-- <span class="{{if current_resin >= max_resin}}red{{/if}}">{{current_resin}}/{{max_resin}}</span> -->
           <span>{{current_resin}}/{{max_resin}}</span>
         </div>
       </div>
@@ -48,7 +49,7 @@
           </div>
         </div>
         <div class="right">
-          <span>{{current_home_coin}}/{{max_home_coin}}</span>
+          <span class="{{if current_home_coin/max_home_coin > 0.9}}red{{/if}}">{{current_home_coin}}/{{max_home_coin}}</span>
         </div>
       </div>
       <div class="item">
@@ -114,7 +115,7 @@
           </div>
         </div>
         <div class="right">
-          <span>{{if transformer.obtained }}{{if transformer.reached}}可使用{{else}}冷却中{{/if}}{{else}}尚未获得{{/if}}</span>
+          <span class="{{if transformer.obtained && transformer.reached }}red{{/if}}">{{if transformer.obtained }}{{if transformer.reached}}可使用{{else}}冷却中{{/if}}{{else}}尚未获得{{/if}}</span>
         </div>
       </div>
     </div>
