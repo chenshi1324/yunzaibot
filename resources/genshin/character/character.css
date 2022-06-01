@@ -885,4 +885,16 @@ body {
   background-size: 100%;
   background-position: 110px 0px;
 }
-
+.夜兰_bg1 {
+  background: url(../logo/bg/夜兰1.png) no-repeat;
+  background-size: auto 300px;
+  background-position: 40% 0%;
+}
+.夜兰_drag {
+  background-position: -60px -55px;
+}
+.夜兰_bg2 {
+  background-image: url(../logo/bg/夜兰2.png);
+  background-size: 100%;
+  background-position: 100px 0px;
+}
