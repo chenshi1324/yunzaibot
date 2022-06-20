@@ -898,3 +898,16 @@ body {
   background-size: 100%;
   background-position: 100px 0px;
 }
+.久岐忍_bg1 {
+  background: url(../logo/bg/久岐忍1.png) no-repeat;
+  background-size: auto 300px;
+  background-position: 46% 0%;
+}
+.久岐忍_drag {
+  background-position: -69px -55px;
+}
+.久岐忍_bg2 {
+  background-image: url(../logo/bg/久岐忍2.png);
+  background-size: 100%;
+  background-position: 20px 0px;
+}
