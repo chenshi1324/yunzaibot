@@ -31,6 +31,7 @@
 						<div class="role_LV">Lv.{{dataCharacter.level}} <span class="jt"></span> Lv.{{setSkill[0]}}</div>
 					</div>
 
+					{{ if dataCharacter.weapon}}
 					<div class="weapon_box">
 						<div class="weapon_bg{{dataCharacter.weapon.rarity}}">
 							<img class="weapon_img"
@@ -43,7 +44,7 @@
 						{{dataCharacter.weapon.name}}
 						<div class="weapon_LV">Lv.{{dataCharacter.weapon.level}} <span class="jt"></span> Lv.{{setSkill[1]}}</div>
 					</div>
-
+					{{/if}}
 				</div>
 				
 				{{each skill_list skill i}}
